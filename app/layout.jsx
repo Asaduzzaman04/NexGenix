@@ -1,6 +1,9 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
+import SmoothScroll from "@/lib/SmoothScroll";
+
 
 
 const poppins = Poppins({
@@ -17,9 +20,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${poppins.className} bg-primary`}>
+      <SmoothScroll>
+
         {/* Navbar component */}
         <Navbar/>
         {children}
+        {/* footer component */}
+        <Footer/>
+      </SmoothScroll>
+        
         </body>
     </html>
   );

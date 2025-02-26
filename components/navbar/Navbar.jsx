@@ -1,14 +1,14 @@
 "use client"; // Indicates this is a Client Component in Next.js
 
 import Image from "next/image";
-import Link from "next/link"; 
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react"; 
-import { IoMdContact } from "react-icons/io"; 
+import { useState } from "react";
+import { IoMdContact } from "react-icons/io";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
-import nexgenixlogo from "@/public/images/nglogo.png"; 
-import navigationlink from "@/static/navigationlink.json"; 
-import { usePathname } from "next/navigation"; 
+import nexgenixlogo from "@/public/images/nglogo.png";
+import navigationlink from "@/static/navigationlink.json";
+import { usePathname } from "next/navigation";
 import { RippleButton } from "../Button";
 
 // Main Navbar component
@@ -49,28 +49,28 @@ export const Navbar = () => {
       initial={{ opacity: 0, y: -20 }} // Starts invisible and above viewport
       animate={{ opacity: 1, y: 0 }} // Fades in and slides down
       transition={{ duration: 0.5 }} // Animation timing for navbar entrance
-      className="fixed w-full top-0 z-50 bg-white shadow-lg   "
+      className="fixed w-full top-0 z-50 bg-white shadow-lg  px-6 md:px-0"
     >
       {/* Container with max width and responsive padding */}
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+      <div className="w-full   mx-auto md:px-10 lg:px-20 xl:px-40   ">
+        <div className="flex justify-between  items-center h-20 ">
           {/* Logo Section */}
           <div className="flex-shrink-0">
             <Link href="/">
-            <motion.div
-              whileHover={{ scale: 1.05 }} // Slight scale on hover
-              transition={{ duration: 0.2 }}
-              className="w-[100px] sm:w-[170px] md:w-[140px] h-[70px] sm:h-[60px] relative"
+              <motion.div
+                whileHover={{ scale: 1.05 }} // Slight scale on hover
+                transition={{ duration: 0.2 }}
+                className="w-[100px] sm:w-[160px] md:w-[140px] h-[60px] sm:h-[60px] relative"
               >
-              <Image
-                src={nexgenixlogo}
-                alt="thenexgenix logo"
-                fill // Fills container
-                priority // Loads immediately
-                className="object-contain" // Maintains aspect ratio
+                <Image
+                  src={nexgenixlogo}
+                  alt="thenexgenix logo"
+                  fill // Fills container
+                  priority // Loads immediately
+                  className="object-contain" // Maintains aspect ratio
                 />
-            </motion.div>
-                </Link>
+              </motion.div>
+            </Link>
           </div>
 
           {/* Desktop Navigation Menu - Hidden on mobile */}
@@ -85,7 +85,7 @@ export const Navbar = () => {
                 });
 
                 return (
-                  <li key={link.id} className="py-2">
+                  <li key={link.id} className="py-">
                     <Link
                       href={link.link}
                       className={`relative text-text-color font-medium transition-colors
@@ -131,12 +131,12 @@ export const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)} // Toggles mobile menu
-              className="text-gray-700 hover:text-blue-600 transition-colors z-50"
+              className="text-gray-700 hover:text-hover-button transition-colors z-50"
             >
               {isOpen ? (
-                <RiCloseLine className="h-6 w-6" /> // Close icon when menu is open
+                <RiCloseLine className="h-8 w-8" /> // Close icon when menu is open
               ) : (
-                <RiMenu3Line className="h-6 w-6" /> // Menu icon when closed
+                <RiMenu3Line className="h-8 w-8" /> // Menu icon when closed
               )}
             </button>
           </div>
@@ -172,10 +172,18 @@ export const Navbar = () => {
                         href={link.link}
                         onClick={() => setIsOpen(false)} // Close menu on link click
                         className={`block text-lg font-medium px-4 py-4 relative
-                          ${pathname === link.link ? "text-hover-button" : "text-text-color"}
+                          ${
+                            pathname === link.link
+                              ? "text-hover-button"
+                              : "text-text-color"
+                          }
                           after:content-[''] after:absolute after:bottom-0 after:left-0
                           after:w-full after:h-[2px] after:bg-[#FBFDF7]
-                          ${pathname === link.link ? "after:opacity-100" : "after:opacity-0"}`}
+                          ${
+                            pathname === link.link
+                              ? "after:opacity-100"
+                              : "after:opacity-0"
+                          }`}
                       >
                         {link.text}
                       </Link>
@@ -185,7 +193,10 @@ export const Navbar = () => {
                   <motion.div
                     initial={{ x: -20, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 0.3, delay: navigationlink.length * 0.1 }} // Delayed to appear last
+                    transition={{
+                      duration: 0.3,
+                      delay: navigationlink.length * 0.1,
+                    }} // Delayed to appear last
                     className="px-4"
                   >
                     <Link

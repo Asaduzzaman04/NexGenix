@@ -1,6 +1,6 @@
 import React from "react";
 
  const layout = ({ children }) => {
-  return <div>{children}</div>;
+  return <main  className="mt-20">{children}</main >;
 };
 export default layout;

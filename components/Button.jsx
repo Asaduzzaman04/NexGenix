@@ -24,7 +24,7 @@ export const RippleButton = ({ children, ...props }) => {
   return (
     // Button with motion capabilities and ripple effect
     <motion.button
-      className="relative w-full px-6 py-2 rounded-full overflow-hidden border-2 border-hover-button text-hover-button text-text-color transition-colors duration-300"
+      className={`relative w-full px-6 py-2 rounded-full overflow-hidden border-2 border-text-color  text-text-color transition-colors duration-300`}
       onMouseEnter={handleMouseEnter} // Start ripple on mouse enter
       onMouseLeave={() => setIsHovered(false)} // Reset ripple on mouse leave
       {...props} // Spread additional props (e.g., onClick, disabled)
