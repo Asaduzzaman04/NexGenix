@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView } from "motion/react";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import projectsData from "@/data/projectsData.json";
