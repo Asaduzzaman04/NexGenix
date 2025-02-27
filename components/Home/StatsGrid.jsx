@@ -1,8 +1,7 @@
-"use client";
+"use client"
 
-import React, { useRef, useEffect } from "react";
-import { motion, useInView } from "framer-motion"; // Use framer-motion
-import { useAnimation } from "framer-motion";
+import { motion } from "motion/react";
+import { StatsCard } from "./StatsCard";
 
 
 
@@ -24,9 +23,9 @@ const StatsGrid = () => {
           viewport={{ once: true }}
           className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6"
         >
-          {stats.map((stat, index) => (
+          {stats?.map((stat, index) => (
             <div key={index} className="relative 5">
-              <StatCard
+              <StatsCard
                 start={stat.start}
                 end={stat.end}
                 label={stat.label}
@@ -42,51 +41,3 @@ const StatsGrid = () => {
 };
 
 export default StatsGrid;
-
-
-
-const StatCard = ({ start, end, label, duration = 2, isPlus }) => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-  const controls = useAnimation();
-
-  // Smooth number animation with framer-motion's animate prop
-  const [currentNumber, setCurrentNumber] = React.useState(start);
-
-  useEffect(() => {
-    if (isInView) {
-      let count = start;
-      const increment = () => {
-        count += Math.ceil((end - start) / (duration * 50));
-        if (count <= end) {
-          setCurrentNumber(count);
-          requestAnimationFrame(increment);
-        } else {
-          setCurrentNumber(end);
-        }
-      };
-      increment();
-    }
-  }, [isInView, end, start, duration]);
-
-  useEffect(() => {
-    if (isInView) {
-      controls.start({ opacity: 1, y: 0 });
-    }
-  }, [isInView, controls]);
-
-  return (
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, y: 50 }}
-      animate={controls}
-      className="flex flex-col items-center justify-center p-4 gap-5 bg-custom-gradient rounded-2xl shadow-lg text-white relative  py-5 lg:py-10 w-full h-full"
-    >
-      <motion.span className="text-3xl md:text-4xl font-bold">
-        {currentNumber.toLocaleString()}
-        {isPlus && "+"} {/* Add "+" for specific cards */}
-      </motion.span>
-      <span className="text-sm md:text-base">{label}</span>
-    </motion.div>
-  );
-};
