@@ -90,7 +90,7 @@ const Hero = () => {
               : { opacity: 0, scale: 0.8, y: 0, x: 0 }
           }
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="absolute inset-0 border-4 border-purple-300 rounded-lg"
+          className="absolute inset-0 border-4 border-[#330B51]  rounded-lg"
         />
         <motion.div
           initial={{ opacity: 0, scale: 0.9, x: 0, y: 0 }}
@@ -100,7 +100,7 @@ const Hero = () => {
               : { opacity: 0, scale: 0.9, x: 0, y: 0 }
           }
           transition={{ duration: 0.5, delay: 0.5 }}
-          className="absolute inset-0 border-4 border-purple-500 rounded-lg"
+          className="absolute inset-0 border-4 border-[#330B51] rounded-lg"
         />
         {/* Image */}
         <motion.div

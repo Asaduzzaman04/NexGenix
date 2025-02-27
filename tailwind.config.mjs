@@ -9,7 +9,7 @@ export default {
   theme: {
   	extend: {
 		backgroundImage: {
-			'custom-gradient': 'linear-gradient(147deg, #923cb5 0%, #000000 70%)',
+			'custom-gradient': 'linear-gradient(155deg, #330B51 18.41%, #5F1D91 139.88%)',
 		  },
   		colors: {
   			'hover-button': '#F7CFD8',

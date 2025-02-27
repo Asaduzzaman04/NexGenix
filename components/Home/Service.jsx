@@ -36,17 +36,17 @@ const servicesDesc = [
 
 const Service = () => {
   return (
-    <section className="py-12 bg-primary  text-center flex flex-col justify-center item-center gap-3 md:gap-5 lg:gap-8 ">
+    <section className="py-12  bg-primary  text-center flex flex-col justify-center item-center gap-3 md:gap-5 lg:gap-8 ">
       <h2 className="text-3xl md:text-4xl font-bold text-purple-800 mb-8">Our Services</h2>
 
       {/* Service Cards with Responsive Layout */}
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-6 justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-6  justify-center">
   {servicesDesc?.map((service, index) => {
     const IconComponent = icons[service.icon];
     return (
       <div
         key={index}
-        className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 relative"
+        className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 relative border-2 border-[#330B51]"
       >
         <div className="text-4xl text-purple-600 mb-4 flex justify-center">
           {IconComponent && <IconComponent />}

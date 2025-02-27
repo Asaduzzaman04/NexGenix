@@ -39,7 +39,7 @@ const StatCard = ({ start, end, label, duration = 2, isPlus }) => {
       ref={ref}
       initial={{ opacity: 0, y: 50 }}
       animate={controls}
-      className="flex flex-col items-center justify-center p-4 gap-5 bg-custom-gradient rounded-2xl shadow-lg text-white relative"
+      className="flex flex-col items-center justify-center p-4 gap-5 bg-custom-gradient rounded-2xl shadow-lg text-white relative  py-5 lg:py-10 w-full h-full"
     >
       <motion.span className="text-3xl md:text-4xl font-bold">
         {currentNumber.toLocaleString()}
@@ -60,16 +60,16 @@ const StatsGrid = () => {
 
   return (
     <section className="py-12 ">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4  ">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6"
+          className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6"
         >
           {stats.map((stat, index) => (
-            <div key={index} className="relative">
+            <div key={index} className="relative 5">
               <StatCard
                 start={stat.start}
                 end={stat.end}

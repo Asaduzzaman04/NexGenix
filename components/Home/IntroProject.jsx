@@ -1,85 +1,101 @@
 "use client";
 
-//code start form here
-import  { useRef } from "react";
-import { motion, useInView } from "motion/react"; 
-import Image from "next/image";
-import { RippleButton } from "@/components/Button.jsx"; 
-import { projectsData } from "@/data/projectsData"; 
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
+import projectsData from "@/data/projectsData.json";
+import { RippleButton } from "@/components/Button.jsx";
+
+const cardVariants = {
+  hidden: { opacity: 0, scale: 0.9 },
+  visible: (i) => ({
+    opacity: 1,
+    scale: 1,
+    transition: { duration: 0.6, delay: i * 0.1, ease: "easeOut" },
+  }),
+};
+
+const textVariants = {
+  hidden: { opacity: 0, y: 50 },
+  hover: { opacity: 1, y: 0, transition: { duration: 0.3, ease: "easeOut" } },
+};
+
+const sectionVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: (delay) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.8, delay, ease: "easeOut" },
+  }),
+};
 
 const IntroProject = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true }); // Trigger animation only once
+  const isInView = useInView(ref, { once: true });
 
   return (
-    <section className="py-12 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <motion.h2
-          ref={ref}
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-2xl md:text-3xl font-bold text-purple-800 text-center mb-8"
-        >
-          Our Projects
-        </motion.h2>
+    <section className="py-16  flex flex-col items-center text-center">
+      <motion.h2
+        ref={ref}
+        variants={sectionVariants}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+        custom={0}
+        className="text-3xl md:text-4xl font-bold text-purple-800 mb-12"
+      >
+        Our Projects
+      </motion.h2>
 
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="flex flex-col md:flex-row justify-center items-center gap-6 mb-8"
-        >
-          {projectsData.map((project) => (
+      <motion.div
+        variants={sectionVariants}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+        custom={0.2}
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-8xl px-4 mx-auto"
+      >
+        {projectsData.map(({ id, title }, index) => (
+          <motion.div
+            key={id}
+            variants={cardVariants}
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"} 
+            custom={index}
+            className="relative h-[300px] bg-white rounded-2xl shadow-lg overflow-hidden"
+            whileHover={{ scale: 1.02 }}
+          >
+            {/* Uncomment if using images */}
+            {/* <Image
+              src={image || "/placeholder.jpg"}
+              alt={title}
+              fill
+              className="object-cover rounded-2xl"
+            /> */}
             <motion.div
-              key={project.id}
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={
-                isInView
-                  ? { opacity: 1, scale: 1 }
-                  : { opacity: 0, scale: 0.9 }
-              }
-              transition={{
-                duration: 0.6,
-                delay: 0.1 * project.id,
-                ease: "easeOut",
-              }}
-              className="relative w-full max-w-[250px] h-[300px] bg-white rounded-2xl shadow-lg overflow-hidden"
+              variants={textVariants}
+              initial="hidden"
+              whileHover="hover"
+              className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-purple-800/90 to-transparent p-4 text-white flex items-end"
             >
-              {/* <Image
-                src={project.image || "/placeholder.jpg"} // Fallback to a placeholder image
-                alt={project.title}
-                width={250}
-                height={300}
-                className="object-cover w-full h-full"
-                onError={(e) => {
-                  e.target.src = "/placeholder.jpg"; // Fallback if image fails to load
-                }}
-              /> */}
-              <div>image</div>
-              <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-purple-800 to-transparent text-white rounded-b-2xl">
-                <h3 className="text-lg font-semibold">{project.title}</h3>
-              </div>
-              <div className="absolute inset-0 bg-[rgba(255,255,255,0.1)] rounded-2xl flex justify-center items-center">
-                {/* White dots pattern (simulated with CSS) */}
-                <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 20 20%22%3E%3Ccircle cx=%2210%22 cy=%2210%22 r=%222%22 fill=%22%23FFFFFF%22/%3E%3C/svg%3E')] opacity-50"></div>
-              </div>
+              <h3 className="text-lg font-semibold">{title}</h3>
             </motion.div>
-          ))}
-        </motion.div>
+          </motion.div>
+        ))}
+      </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-          transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-          className="flex justify-center w-fit"
-        >
-          <RippleButton >
-            See More →
+      <motion.div
+        variants={sectionVariants}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+        custom={0.4}
+        className="mt-12"
+      >
+        <Link href="/our-works">
+          <RippleButton>
+            See More <FaArrowRight size={20} />
           </RippleButton>
-        </motion.div>
-      </div>
+        </Link>
+      </motion.div>
     </section>
   );
 };
