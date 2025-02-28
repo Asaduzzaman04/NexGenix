@@ -124,7 +124,7 @@ const Footer = () => {
         <div className="mt-12 pt-6 border-t border-gray-600 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm mb-4 md:mb-0">Typeface by Dinamo</p>
           <div className="flex space-x-4 text-sm">
-            <p>© 2022</p>
+            <p>© 2025</p>
             <a href="#" className="hover:underline flex items-center">
               <FaArrowRight size={14} className="mr-1" />
               Data Privacy

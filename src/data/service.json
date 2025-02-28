@@ -1,0 +1,58 @@
+[
+    {
+      "id": 1,
+      "title": "Google Ads",
+      "icon": "flask",
+      "description": "Skyrocket Your Online Visibility And Conversions With Our Google Ads Services. We Create And Manage High-Performing Campaigns Tailored To Your Business Goals.",
+      "color": "bg-purple-100"
+    },
+    {
+      "id": 2,
+      "title": "Social Media Marketing",
+      "icon": "pie-chart",
+      "description": "Elevate Your Brand With Our SMM Services! We Help You Create, Schedule, And Manage Content And Boost Engagement Through Expert Content And Targeted Campaigns.",
+      "color": "bg-purple-100"
+    },
+    {
+      "id": 3,
+      "title": "Search Engine Optimization",
+      "icon": "send",
+      "description": "From SEO And Social Media To Email Marketing And PPC, We Leverage The Latest Digital Tools And Platforms To Enhance Visibility And Drive Measurable Growth.",
+      "color": "bg-purple-100"
+    },
+    {
+      "id": 4,
+      "title": "Design & Production",
+      "icon": "pen-tool",
+      "description": "From Concept To Final Execution, Our Production Workflows Are Optimized For Efficiency, Ensuring Timely Delivery Without Compromising On Quality.",
+      "color": "bg-purple-100"
+    },
+    {
+      "id": 5,
+      "title": "Design & Production",
+      "icon": "globe",
+      "description": "From Concept To Final Execution, Our Production Workflows Are Optimized For Efficiency, Ensuring Timely Delivery Without Compromising On Quality.",
+      "color": "bg-purple-100"
+    },
+    {
+      "id": 6,
+      "title": "Content Marketing",
+      "icon": "book-open",
+      "description": "We Foster A Collaborative Workspace, Encouraging Partnerships With Industry Experts, Academic Researchers, And Students To Solve Real-World Problems Through Groundbreaking Research.",
+      "color": "bg-purple-100"
+    },
+    {
+      "id": 7,
+      "title": "Video Production",
+      "icon": "video",
+      "description": "From SEO And Social Media To Email Marketing And PPC, We Leverage The Latest Digital Tools And Platforms To Enhance Visibility And Drive Measurable Growth.",
+      "color": "bg-purple-100"
+    },
+    {
+      "id": 8,
+      "title": "Content Solution",
+      "icon": "lightbulb",
+      "description": "From Concept To Final Execution, Our Production Workflows Are Optimized For Efficiency, Ensuring Timely Delivery Without Compromising On Quality.",
+      "color": "bg-purple-100"
+    }
+  ]
