@@ -1,0 +1,72 @@
+{
+    "title": "Awards",
+    "awards": [
+      {
+        "year": 2015,
+        "title": "The Marketing Excellence Awards",
+        "descriptions": [
+          "Recognized for an outstanding marketing campaign.",
+          "Achieved exceptional engagement and brand recognition.",
+          "Demonstrated creativity and innovation in execution."
+        ],
+        "image": "image_url_here",
+        "extra_image": "extra_image_url_here"
+      },
+      {
+        "year": 2016,
+        "title": "The Golden Awards",
+        "descriptions": [
+          "Best in Social Media Marketing.",
+          "Implemented a high-impact social strategy.",
+          "Drove significant audience interaction and growth."
+        ],
+        "image": "image_url_here",
+        "extra_image": "extra_image_url_here"
+      },
+      {
+        "year": 2018,
+        "title": "The Marketing Event Awards",
+        "descriptions": [
+          "Best Integrated Marketing Campaign.",
+          "Executed a seamless multi-channel strategy.",
+          "Generated substantial ROI and brand awareness."
+        ],
+        "image": "image_url_here",
+        "extra_image": "extra_image_url_here"
+      },
+      {
+        "year": 2018,
+        "title": "The Marketing Excellence Awards",
+        "descriptions": [
+          "Excellence in Event Marketing - Gold.",
+          "Recognized for an industry-leading campaign.",
+          "Delivered outstanding engagement and results."
+        ],
+        "image": "image_url_here",
+        "extra_image": "extra_image_url_here"
+      },
+      {
+        "year": 2021,
+        "title": "The Marketing Society Awards",
+        "descriptions": [
+          "Awarded for Best Use of Technology in Marketing.",
+          "Implemented data-driven strategies for success.",
+          "Enhanced customer experience through innovation."
+        ],
+        "image": "image_url_here",
+        "extra_image": "extra_image_url_here"
+      },
+      {
+        "year": 2021,
+        "title": "Event Marketing Awards",
+        "descriptions": [
+          "Best Event Marketing - Silver.",
+          "Created a compelling and immersive brand experience.",
+          "Maximized audience participation and conversion."
+        ],
+        "image": "image_url_here",
+        "extra_image": "extra_image_url_here"
+      }
+    ]
+  }
+  

@@ -83,7 +83,7 @@ const Hero = () => {
           stroke="#000"
           strokeWidth="2"
           strokeDasharray="8 6"
-          fill="none"
+        fill='none'
         />
       </svg>
     </section>
