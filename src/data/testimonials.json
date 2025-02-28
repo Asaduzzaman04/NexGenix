@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "image": "../assets/images/nglogo.png",
+      "text": "Communication was seamless, with regular updates and reports that kept me informed every step of the way. They were always available to answer questions and adjust the strategy as needed.",
+      "rating": 4,
+      "author": "Sania Saha",
+      "company": "Sally Production Ltd."
+    },
+    {
+      "id": 2,
+      "image": "../assets/images/nglogo.png",
+      "text": "Their innovative solutions exceeded our expectations and delivered results beyond what we imagined.",
+      "rating": 5,
+      "author": "John Doe",
+      "company": "Tech Innovations Inc."
+    },
+    {
+      "id": 3,  
+      "image": "../assets/images/nglogo.png",
+      "text": "Highly professional team with a customer-first approach. Highly recommend!",
+      "rating": 4.5,
+      "author": "Ali Hasan",
+      "company": "UniPharmacy"
+    }
+  ]
