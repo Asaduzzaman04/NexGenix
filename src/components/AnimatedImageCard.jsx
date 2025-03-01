@@ -11,6 +11,7 @@ const AnimatedImageCard = ({ imageSrc, altText = 'Image' }) => {
       ref={rightRef}
       initial={{ opacity: 0, x: 50 }}
       animate={rightInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+      
       transition={{ duration: 0.8 }}
       className="relative w-full p-10 md:p-0 md:w-[500px] h-[240px] md:h-[350px] mt-16 md:mb-0 order-1 md:order-2"
     >

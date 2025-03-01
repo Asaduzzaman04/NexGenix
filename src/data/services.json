@@ -1,0 +1,711 @@
+[
+    {
+      "id": 1,
+      "title": "Google Ads",
+      "icon": "flask",
+      "description": "Skyrocket Your Online Visibility And Conversions With Our Google Ads Services. We Create And Manage High-Performing Campaigns Tailored To Your Business Goals.",
+      "color": "bg-purple-100",
+      "isAvailable": true,
+      "detailedDescription": "Our Google Ads services are designed to maximize your ROI through strategic keyword research, compelling ad copy, and continuous optimization. We focus on creating campaigns that not only increase visibility but also drive qualified traffic that converts.",
+      "offerings": [
+        {
+          "title": "Search Campaign Management",
+          "description": "Target users actively searching for your products or services with optimized search campaigns",
+          "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Display Advertising",
+          "description": "Reach potential customers with visually engaging ads across the Google Display Network",
+          "image": "https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Remarketing Campaigns",
+          "description": "Re-engage visitors who have previously interacted with your website",
+          "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Shopping Ads",
+          "description": "Showcase your products with detailed information directly in search results",
+          "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Performance Tracking",
+          "description": "Comprehensive analytics and reporting to measure campaign effectiveness",
+          "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Conversion Optimization",
+          "description": "Continuous refinement of campaigns to maximize ROI and conversion rates",
+          "image": "https://images.unsplash.com/photo-1533750349088-cd871a92f312?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "pricing": [
+        {
+          "id": 1,
+          "title": "Basic",
+          "price": 7000,
+          "duration": "monthly",
+          "features": [
+            "Up to 2 ad campaigns",
+            "Keyword research",
+            "Monthly reporting",
+            "Basic ad copy",
+            "Standard optimization"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Standard",
+          "price": 10000,
+          "duration": "monthly",
+          "features": [
+            "Up to 5 ad campaigns",
+            "Advanced keyword research",
+            "Bi-weekly reporting",
+            "A/B testing",
+            "Conversion tracking",
+            "Competitor analysis",
+            "Landing page recommendations"
+          ],
+          "isPopular": true
+        },
+        {
+          "id": 3,
+          "title": "Premium",
+          "price": 18000,
+          "duration": "monthly",
+          "features": [
+            "Unlimited ad campaigns",
+            "Comprehensive keyword strategy",
+            "Weekly reporting",
+            "Advanced A/B testing",
+            "Custom landing pages",
+            "Remarketing campaigns",
+            "Phone consultations",
+            "Dedicated account manager"
+          ]
+        }
+      ],
+      "image": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+    },
+    {
+      "id": 2,
+      "title": "Social Media Marketing",
+      "icon": "pie-chart",
+      "description": "Elevate Your Brand With Our SMM Services! We Help You Create, Schedule, And Manage Content And Boost Engagement Through Expert Content And Targeted Campaigns.",
+      "color": "bg-purple-100",
+      "isAvailable": true,
+      "detailedDescription": "Our social media marketing services help businesses build a strong online presence across various platforms. We develop tailored strategies that align with your brand voice and business objectives, creating engaging content that resonates with your target audience.",
+      "offerings": [
+        {
+          "title": "Content Creation & Curation",
+          "description": "Engaging, platform-specific content that resonates with your target audience",
+          "image": "https://images.unsplash.com/photo-1611926653458-09294b3142bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Community Management",
+          "description": "Active engagement with your audience to build relationships and loyalty",
+          "image": "https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Paid Social Campaigns",
+          "description": "Targeted advertising to reach new audiences and drive specific actions",
+          "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Social Media Strategy",
+          "description": "Comprehensive planning aligned with your business goals and target audience",
+          "image": "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Analytics & Reporting",
+          "description": "Detailed insights into performance metrics and audience behavior",
+          "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Influencer Partnerships",
+          "description": "Strategic collaborations with relevant influencers to expand reach",
+          "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "pricing": [
+        {
+          "id": 1,
+          "title": "Basic",
+          "price": 7000,
+          "duration": "monthly",
+          "features": [
+            "2 social platforms",
+            "12 posts per month",
+            "Basic content creation",
+            "Monthly performance report",
+            "Community management"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Standard",
+          "price": 10000,
+          "duration": "monthly",
+          "features": [
+            "4 social platforms",
+            "20 posts per month",
+            "Custom graphics",
+            "Hashtag research",
+            "Engagement strategy",
+            "Bi-weekly reporting",
+            "Competitor analysis"
+          ],
+          "isPopular": true
+        },
+        {
+          "id": 3,
+          "title": "Premium",
+          "price": 18000,
+          "duration": "monthly",
+          "features": [
+            "All social platforms",
+            "30+ posts per month",
+            "Premium content creation",
+            "Influencer outreach",
+            "Paid social campaigns",
+            "Weekly reporting",
+            "Crisis management",
+            "Dedicated social media manager"
+          ]
+        }
+      ],
+      "image": "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+    },
+    {
+      "id": 3,
+      "title": "Search Engine Optimization",
+      "icon": "send",
+      "description": "From SEO And Social Media To Email Marketing And PPC, We Leverage The Latest Digital Tools And Platforms To Enhance Visibility And Drive Measurable Growth.",
+      "color": "bg-purple-100",
+      "isAvailable": true,
+      "detailedDescription": "Our SEO services are designed to improve your website's visibility in search engine results. We conduct thorough keyword research, optimize on-page elements, build quality backlinks, and provide regular performance reports to track your progress.",
+      "offerings": [
+        {
+          "title": "Technical SEO Audit",
+          "description": "Comprehensive analysis of your website's technical health and search engine friendliness",
+          "image": "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Keyword Research & Strategy",
+          "description": "Identifying valuable search terms that your target audience is using",
+          "image": "https://images.unsplash.com/photo-1542744094-3a31f272c490?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "On-Page Optimization",
+          "description": "Enhancing individual pages to improve rankings and user experience",
+          "image": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Content Strategy",
+          "description": "Creating valuable, relevant content that attracts and engages your target audience",
+          "image": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Link Building",
+          "description": "Acquiring high-quality backlinks to boost your website's authority",
+          "image": "https://images.unsplash.com/photo-1545239351-ef35f43d514b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Local SEO",
+          "description": "Optimizing your online presence to attract more business from local searches",
+          "image": "https://images.unsplash.com/photo-1569212489926-a8a321b611cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "pricing": [
+        {
+          "id": 1,
+          "title": "Basic",
+          "price": 8000,
+          "duration": "monthly",
+          "features": [
+            "Keyword research",
+            "On-page optimization",
+            "Monthly reporting",
+            "Basic technical SEO",
+            "Content recommendations"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Standard",
+          "price": 12000,
+          "duration": "monthly",
+          "features": [
+            "Advanced keyword research",
+            "Comprehensive on-page SEO",
+            "Link building (5 per month)",
+            "Content creation",
+            "Technical SEO audit",
+            "Local SEO",
+            "Bi-weekly reporting"
+          ],
+          "isPopular": true
+        },
+        {
+          "id": 3,
+          "title": "Premium",
+          "price": 20000,
+          "duration": "monthly",
+          "features": [
+            "Enterprise keyword strategy",
+            "Advanced on-page & off-page SEO",
+            "Link building (15+ per month)",
+            "Content strategy & creation",
+            "Comprehensive technical audits",
+            "Competitor analysis",
+            "Weekly reporting",
+            "Dedicated SEO specialist"
+          ]
+        }
+      ],
+      "image": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+    },
+    {
+      "id": 4,
+      "title": "Design & Production",
+      "icon": "pen-tool",
+      "description": "From Concept To Final Execution, Our Production Workflows Are Optimized For Efficiency, Ensuring Timely Delivery Without Compromising On Quality.",
+      "color": "bg-purple-100",
+      "isAvailable": false,
+      "detailedDescription": "Our design and production services cover everything from brand identity to marketing materials. We focus on creating visually appealing designs that communicate your brand message effectively and help you stand out in a competitive market.",
+      "offerings": [
+        {
+          "title": "Brand Identity Design",
+          "description": "Creating distinctive visual elements that represent your brand's personality",
+          "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Print Design",
+          "description": "Professional designs for brochures, business cards, packaging, and other print materials",
+          "image": "https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Digital Design",
+          "description": "Engaging designs for websites, social media, email marketing, and digital ads",
+          "image": "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "UI/UX Design",
+          "description": "User-centered design for websites and applications that enhance user experience",
+          "image": "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Motion Graphics",
+          "description": "Animated visual elements that bring your brand to life across digital platforms",
+          "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Production Management",
+          "description": "End-to-end coordination of design projects from concept to final delivery",
+          "image": "https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "pricing": [
+        {
+          "id": 1,
+          "title": "Basic",
+          "price": 5000,
+          "duration": "project",
+          "features": [
+            "Logo design",
+            "Basic brand guidelines",
+            "Business card design",
+            "2 revisions",
+            "Standard delivery time"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Standard",
+          "price": 12000,
+          "duration": "project",
+          "features": [
+            "Complete brand identity",
+            "Comprehensive guidelines",
+            "Marketing materials",
+            "Social media templates",
+            "5 revisions",
+            "Expedited delivery"
+          ],
+          "isPopular": true
+        },
+        {
+          "id": 3,
+          "title": "Premium",
+          "price": 25000,
+          "duration": "project",
+          "features": [
+            "Enterprise branding package",
+            "Website design",
+            "Print & digital materials",
+            "Packaging design",
+            "Unlimited revisions",
+            "Priority delivery",
+            "Dedicated design team"
+          ]
+        }
+      ],
+      "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+    },
+    {
+      "id": 5,
+      "title": "Web Development",
+      "icon": "globe",
+      "description": "From Concept To Final Execution, Our Production Workflows Are Optimized For Efficiency, Ensuring Timely Delivery Without Compromising On Quality.",
+      "color": "bg-purple-100",
+      "isAvailable": false,
+      "detailedDescription": "Our web development services focus on creating responsive, user-friendly websites that not only look great but also perform exceptionally well. We use the latest technologies to ensure your website is fast, secure, and optimized for search engines.",
+      "offerings": [
+        {
+          "title": "Website Design & Development",
+          "description": "Custom websites tailored to your brand and business objectives",
+          "image": "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "E-commerce Solutions",
+          "description": "Online stores with secure payment gateways and inventory management",
+          "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Content Management Systems",
+          "description": "User-friendly platforms that allow you to update your website content easily",
+          "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Web Application Development",
+          "description": "Custom web applications that streamline business processes and enhance user experience",
+          "image": "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Website Maintenance",
+          "description": "Regular updates, security patches, and technical support to keep your website running smoothly",
+          "image": "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Performance Optimization",
+          "description": "Enhancing website speed, responsiveness, and overall user experience",
+          "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "pricing": [
+        {
+          "id": 1,
+          "title": "Basic",
+          "price": 15000,
+          "duration": "project",
+          "features": [
+            "5-page website",
+            "Responsive design",
+            "Basic SEO setup",
+            "Contact form",
+            "3 revisions"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Standard",
+          "price": 30000,
+          "duration": "project",
+          "features": [
+            "10-page website",
+            "Custom design",
+            "CMS integration",
+            "Advanced SEO",
+            "Blog setup",
+            "Social media integration",
+            "5 revisions"
+          ],
+          "isPopular": true
+        },
+        {
+          "id": 3,
+          "title": "Premium",
+          "price": 60000,
+          "duration": "project",
+          "features": [
+            "E-commerce website",
+            "Custom functionality",
+            "Payment gateway integration",
+            "Comprehensive SEO",
+            "Speed optimization",
+            "Security features",
+            "Unlimited revisions",
+            "Maintenance plan"
+          ]
+        }
+      ],
+      "image": "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+    },
+    {
+      "id": 6,
+      "title": "Content Marketing",
+      "icon": "book-open",
+      "description": "We Foster A Collaborative Workspace, Encouraging Partnerships With Industry Experts, Academic Researchers, And Students To Solve Real-World Problems Through Groundbreaking Research.",
+      "color": "bg-purple-100",
+      "isAvailable": true,
+      "detailedDescription": "Our content marketing services help businesses create valuable, relevant content that attracts and engages their target audience. We develop comprehensive content strategies that align with your business goals and drive measurable results.",
+      "offerings": [
+        {
+          "title": "Content Strategy",
+          "description": "Comprehensive planning that aligns content creation with business goals",
+          "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Blog Content Creation",
+          "description": "Engaging, SEO-optimized blog posts that establish thought leadership",
+          "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Premium Content Development",
+          "description": "Ebooks, whitepapers, and guides that generate leads and demonstrate expertise",
+          "image": "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Email Marketing",
+          "description": "Targeted email campaigns that nurture leads and drive conversions",
+          "image": "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Content Distribution",
+          "description": "Strategic promotion of content across various channels to maximize reach",
+          "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Content Performance Analysis",
+          "description": "Detailed reporting on content effectiveness and ROI",
+          "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "pricing": [
+        {
+          "id": 1,
+          "title": "Basic",
+          "price": 6000,
+          "duration": "monthly",
+          "features": [
+            "Content strategy",
+            "2 blog posts per month",
+            "Basic SEO optimization",
+            "Monthly performance report",
+            "Content distribution"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Standard",
+          "price": 10000,
+          "duration": "monthly",
+          "features": [
+            "Comprehensive content strategy",
+            "4 blog posts per month",
+            "2 premium content pieces",
+            "Advanced SEO optimization",
+            "Content promotion",
+            "Bi-weekly reporting",
+            "Content calendar"
+          ],
+          "isPopular": true
+        },
+        {
+          "id": 3,
+          "title": "Premium",
+          "price": 18000,
+          "duration": "monthly",
+          "features": [
+            "Enterprise content strategy",
+            "8 blog posts per month",
+            "4 premium content pieces",
+            "Comprehensive SEO",
+            "Content distribution",
+            "Guest posting",
+            "Weekly reporting",
+            "Dedicated content manager"
+          ]
+        }
+      ],
+      "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+    },
+    {
+      "id": 7,
+      "title": "Video Production",
+      "icon": "video",
+      "description": "From SEO And Social Media To Email Marketing And PPC, We Leverage The Latest Digital Tools And Platforms To Enhance Visibility And Drive Measurable Growth.",
+      "color": "bg-purple-100",
+      "isAvailable": false,
+      "detailedDescription": "Our video production services cover everything from concept development to final editing. We create high-quality videos that tell your brand story, showcase your products, and engage your audience across various platforms.",
+      "offerings": [
+        {
+          "title": "Corporate Videos",
+          "description": "Professional videos that showcase your company's values, culture, and services",
+          "image": "https://images.unsplash.com/photo-1536240478700-b869070f9279?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Product Demonstrations",
+          "description": "Engaging videos that highlight your product features and benefits",
+          "image": "https://images.unsplash.com/photo-1535016120720-40c646be5580?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Explainer Videos",
+          "description": "Animated or live-action videos that simplify complex concepts",
+          "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Social Media Videos",
+          "description": "Short, engaging videos optimized for various social media platforms",
+          "image": "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Event Coverage",
+          "description": "Professional filming and editing of corporate events, conferences, and product launches",
+          "image": "https://images.unsplash.com/photo-1540317580384-e5d43867caa6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Video Editing & Post-Production",
+          "description": "Professional editing, color grading, and special effects to enhance your video content",
+          "image": "https://images.unsplash.com/photo-1574717024453-354056afd6fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "pricing": [
+        {
+          "id": 1,
+          "title": "Basic",
+          "price": 10000,
+          "duration": "project",
+          "features": [
+            "30-second video",
+            "Basic script",
+            "Standard editing",
+            "2 revisions",
+            "1 platform optimization"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Standard",
+          "price": 25000,
+          "duration": "project",
+          "features": [
+            "60-second video",
+            "Professional script",
+            "Advanced editing",
+            "Motion graphics",
+            "4 revisions",
+            "Multi-platform optimization"
+          ],
+          "isPopular": true
+        },
+        {
+          "id": 3,
+          "title": "Premium",
+          "price": 50000,
+          "duration": "project",
+          "features": [
+            "Custom length video",
+            "Professional script & storyboard",
+            "Premium editing",
+            "Advanced motion graphics",
+            "Professional voiceover",
+            "Original music",
+            "Unlimited revisions",
+            "Comprehensive distribution strategy"
+          ]
+        }
+      ],
+      "image": "https://images.unsplash.com/photo-1536240478700-b869070f9279?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+    },
+    {
+      "id": 8,
+      "title": "Content Solution",
+      "icon": "lightbulb",
+      "description": "From Concept To Final Execution, Our Production Workflows Are Optimized For Efficiency, Ensuring Timely Delivery Without Compromising On Quality.",
+      "color": "bg-purple-100",
+      "isAvailable": false,
+      "detailedDescription": "Our content solutions provide end-to-end management of your content needs. From strategy development to creation and distribution, we ensure your content effectively communicates your brand message and drives engagement across all channels.",
+      "offerings": [
+        {
+          "title": "Content Audit & Strategy",
+          "description": "Comprehensive analysis of existing content and development of strategic roadmap",
+          "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Content Creation",
+          "description": "Development of various content types tailored to your audience and objectives",
+          "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Content Optimization",
+          "description": "Enhancing existing content for better performance and user engagement",
+          "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Content Management",
+          "description": "Organizing and maintaining content across various platforms and channels",
+          "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Content Distribution",
+          "description": "Strategic promotion of content to maximize reach and engagement",
+          "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "title": "Content Performance Analysis",
+          "description": "Measuring content effectiveness and providing actionable insights",
+          "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "pricing": [
+        {
+          "id": 1,
+          "title": "Basic",
+          "price": 8000,
+          "duration": "monthly",
+          "features": [
+            "Content audit",
+            "Basic content strategy",
+            "Monthly content calendar",
+            "2 content types",
+            "Basic distribution"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Standard",
+          "price": 15000,
+          "duration": "monthly",
+          "features": [
+            "Comprehensive content audit",
+            "Advanced content strategy",
+            "Content calendar",
+            "4 content types",
+            "Content optimization",
+            "Distribution strategy",
+            "Performance tracking"
+          ],
+          "isPopular": true
+        },
+        {
+          "id": 3,
+          "title": "Premium",
+          "price": 25000,
+          "duration": "monthly",
+          "features": [
+            "Enterprise content audit",
+            "Comprehensive content strategy",
+            "Dynamic content calendar",
+            "All content types",
+            "Advanced optimization",
+            "Multi-channel distribution",
+            "Detailed analytics",
+            "Dedicated content team"
+          ]
+        }
+      ],
+      "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+    }
+  ]

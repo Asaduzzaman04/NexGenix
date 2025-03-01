@@ -1,0 +1,28 @@
+{
+    "services": [
+      {
+        "id": "startups",
+        "title": "Startups",
+        "icon": "FaRocket",
+        "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        "imageAlt": "Sticky notes on a planning board",
+        "description": "Accelerating Startups With Innovative Tech Solutions. From Idea Validation To Product Launch. We Provide Full-Stack Development, Digital Marketing And Scalable Platforms Tailored To Fuel Your Growth And Secure Your Market Position."
+      },
+      {
+        "id": "ai",
+        "title": "AI",
+        "icon": "BsRobot",
+        "image": "https://images.unsplash.com/photo-1535378917042-10a22c95931a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        "imageAlt": "Person using VR headset",
+        "description": "Unlock The Power Of Artificial Intelligence With Our Custom AI Solutions. From Machine Learning Models To AI-Driven Automation, We Help Businesses Innovate, Optimize Workflows, And Deliver Personalized Customer Experiences Using The Latest In AI Technology."
+      },
+      {
+        "id": "enterprise",
+        "title": "Enterprise",
+        "icon": "FaBuilding",
+        "image": "https://images.unsplash.com/photo-1543286386-713bdd548da4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        "imageAlt": "Stack of business reports",
+        "description": "Empowering Enterprises With Robust, Scalable, And Secure Technology Solutions. We Offer End-To-End IT Services, Cloud Infrastructure, Data Analytics, And Enterprise Software That Drive Operational Efficiency And Business Transformation."
+      }
+    ]
+  }
