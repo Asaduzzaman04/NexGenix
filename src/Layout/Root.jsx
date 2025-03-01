@@ -6,6 +6,7 @@ import Footer from './../components/footer/Footer';
 import SmoothScroll from './../lib/SmoothScroll';
 
 const Root = () => {
+
   return (
     <main className='overflow-hidden'>
       <SmoothScroll>
