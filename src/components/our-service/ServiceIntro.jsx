@@ -62,19 +62,19 @@ const ServiceIntro = () => {
               Your Goals & Empower Your Business To Move Forward.
             </motion.p>
 
-            <motion.button
+            {/* <motion.button
               className="px-8 py-3 bg-white text-purple-900 font-semibold rounded-full hover:bg-opacity-90 transition-all"
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
             >
               Read More
-            </motion.button>
+            </motion.button> */}
           </motion.div>
 
           {/* Right Section - Image Card */}
           <motion.div
-            className="lg:w-1/2"
+            className=" w-full lg:w-1/2"
             initial={hasAnimated ? { opacity: 1, x: 0 } : { opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}

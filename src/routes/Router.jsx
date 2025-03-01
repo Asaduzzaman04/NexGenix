@@ -6,6 +6,7 @@ import About from '../pages/about-us/page';
 import Contact from '../pages/contact-us/page';
 import OurWorks from '../pages/our-works/page';
 import Service from '../pages/our-services/page';
+import ServiceDetail from '../components/our-service/ServiceDetail';
 
 const Router = () => {
   return (
@@ -18,6 +19,8 @@ const Router = () => {
           <Route path="/about-us" element={<About />} />
           {/* //about-us */}
           <Route path="/our-services" element={<Service />} />
+          {/* //details-services-routes */}
+          <Route path="/our-services/:title" element={<ServiceDetail />} />
           {/* //our works */}
           <Route path="/our-works" element={<OurWorks />} />
           {/* //contact-us */}

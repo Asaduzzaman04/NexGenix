@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
+import { Link } from 'react-router';
 import {
   FiPieChart,
   FiSend,
@@ -25,7 +26,6 @@ const iconMap = {
 };
 
 const ServiceCard = ({ service, index }) => {
-  // Retrieve the correct icon component or use FiLightbulb as the default
   const IconComponent = iconMap[service.icon];
 
   return (
@@ -35,12 +35,14 @@ const ServiceCard = ({ service, index }) => {
       transition={{ duration: 0.5, delay: index * 0.1 }}
       className="flex flex-col h-full border-2 border-purple-800 rounded-3xl overflow-hidden"
     >
-      <div className="p-8 flex flex-col h-full">
+      <div className="p-8 flex flex-col gap-4 h-full">
         {/* Service Icon */}
         <div
           className={`w-16 h-16 ${service.color} rounded-full flex items-center justify-center mb-4`}
         >
-          <IconComponent className="w-8 h-8 text-purple-800" />
+          {IconComponent && (
+            <IconComponent className="w-8 h-8 text-purple-800" />
+          )}
         </div>
 
         {/* Service Title */}
@@ -49,7 +51,27 @@ const ServiceCard = ({ service, index }) => {
         </h3>
 
         {/* Service Description */}
-        <p className="text-sm text-gray-700 flex-grow">{service.description}</p>
+        <p className="text-sm text-gray-800 flex-grow">{service.description}</p>
+
+        {/* Button or Link */}
+        {service.isAvailable ? (
+          <Link to={`/our-services/${service.title}`}>
+            <motion.button
+              className="bg-purple-800 text-white px-4 py-2 rounded-3xl hover:bg-purple-900 transition-colors w-full"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              See Details
+            </motion.button>
+          </Link>
+        ) : (
+          <button
+            className="bg-gray-400 text-white px-4 py-2 rounded-3xl cursor-not-allowed w-full"
+            disabled
+          >
+            Coming Soon
+          </button>
+        )}
       </div>
     </motion.div>
   );
@@ -62,7 +84,8 @@ ServiceCard.propTypes = {
     title: PropTypes.string.isRequired,
     icon: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    color: PropTypes.string.isRequired
+    color: PropTypes.string.isRequired,
+    isAvailable: PropTypes.bool.isRequired
   }).isRequired,
   index: PropTypes.number.isRequired
 };
