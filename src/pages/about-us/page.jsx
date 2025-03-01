@@ -4,6 +4,7 @@ import AboutTeams from './../../components/about-us/AboutTeams';
 import AwardTimeline from './../../components/about-us/AwardTimeline';
 
 const About = () => {
+  document.title = "NexGenix - about"
   return (
     <section className="mt-20 overflow-x-hidden flex flex-col justify-center items-center w-full">
       <AboutIntro />

@@ -5,23 +5,24 @@ import StatsGrid from './../../components/Home/StatsGrid';
 import IntroProject from './../../components/Home/IntroProject';
 import Review from './../../components/Home/Review';
 
-const  Home = () => {
+const Home = () => {
+  document.title = 'NexGenix';
   return (
     <>
-    <main className="mt-20">
-      {/* hero-component  */}
-      <Hero />
-      {/* server-component */}
-      <Service/>
-      {/* stats-grid */}
-      <StatsGrid/>
-      {/* intro-project */}
-      <IntroProject/>
-      {/* client-review-section */}
-      <Review/>
-    </main>
+      <main className="mt-20">
+        {/* hero-component  */}
+        <Hero />
+        {/* server-component */}
+        <Service />
+        {/* stats-grid */}
+        <StatsGrid />
+        {/* intro-project */}
+        <IntroProject />
+        {/* client-review-section */}
+        <Review />
+      </main>
     </>
   );
-}
+};
 
-export default Home
+export default Home;

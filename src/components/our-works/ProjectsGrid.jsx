@@ -1,12 +1,16 @@
 import React, { useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import ProjectCard from './ProjectCard';
 import { useProjects } from '../../hooks/useProjects';
 
-
-
 const ProjectsGrid = () => {
-  const { projects, activeCategory, handleCategoryChange, hasAnimated, setHasAnimated } = useProjects();
+  const {
+    projects,
+    activeCategory,
+    handleCategoryChange,
+    hasAnimated,
+    setHasAnimated
+  } = useProjects();
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -27,17 +31,20 @@ const ProjectsGrid = () => {
   }, [projects.length, setHasAnimated]);
 
   return (
-    <section className="py-16 px-4 bg-gray-50">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-16 px-4 bg-gray-50 ">
+      <div className="max-w-8xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-purple-900 mb-4">Projects</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-purple-900 mb-4">
+            Projects
+          </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Dynamic marketing solutions to drive conversions, engagement, and social purpose.
+            Innovative digital solutions crafted for brands that want to make an
+            impact. Explore our work across various industries.
           </p>
         </motion.div>
 
@@ -66,7 +73,12 @@ const ProjectsGrid = () => {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
         >
           {projects.map((project, index) => (
-            <ProjectCard key={project.id} project={project} index={index} hasAnimated={hasAnimated} />
+            <ProjectCard
+              key={project.id}
+              project={project}
+              index={index}
+              hasAnimated={hasAnimated}
+            />
           ))}
         </motion.div>
       </div>

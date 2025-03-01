@@ -3,6 +3,7 @@ import ServiceIntro from '../../components/our-service/ServiceIntro';
 import ServicesGrid from '../../components/our-service/ServiceGrid';
 
  const Service = () => {
+  document.title = "NexGenix - services"
   return (
     <section className='mt-20'>
       <ServiceIntro/>

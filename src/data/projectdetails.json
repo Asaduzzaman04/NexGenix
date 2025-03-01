@@ -1,66 +1,66 @@
 [
-    {
-      "id": "1",
-      "title": "Music Event",
-      "description": "A vibrant music festival featuring top artists, captivating lighting design, and an unforgettable atmosphere.",
-      "imageUrl": "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-      "category": "corporate",
-      "tags": ["music", "event", "festival"]
-    },
-    {
-      "id": "2",
-      "title": "Celebration",
-      "description": "An elegant celebration event with spectacular decor, captivating lighting design, and an unforgettable atmosphere.",
-      "imageUrl": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-      "category": "corporate",
-      "tags": ["celebration", "event", "corporate"]
-    },
-    {
-      "id": "3",
-      "title": "Carnival",
-      "description": "A colorful carnival celebration with vibrant masks, captivating lighting design, and an unforgettable atmosphere.",
-      "imageUrl": "https://images.unsplash.com/photo-1551843073-4a9a5b6fcd5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-      "category": "education",
-      "tags": ["carnival", "masks", "celebration"]
-    },
-    {
-      "id": "4",
-      "title": "Documentary",
-      "description": "A compelling documentary project capturing real stories, captivating editing design, and an unforgettable narrative.",
-      "imageUrl": "https://images.unsplash.com/photo-1581368135153-a506cf13531c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-      "category": "education",
-      "tags": ["documentary", "film", "storytelling"]
-    },
-    {
-      "id": "5",
-      "title": "Music Festival",
-      "description": "A vibrant music festival featuring top artists, captivating lighting design, and an unforgettable atmosphere.",
-      "imageUrl": "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-      "category": "corporate",
-      "tags": ["music", "event", "festival"]
-    },
-    {
-      "id": "6",
-      "title": "Corporate Event",
-      "description": "An elegant celebration event with spectacular decor, captivating lighting design, and an unforgettable atmosphere.",
-      "imageUrl": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-      "category": "corporate",
-      "tags": ["celebration", "event", "corporate"]
-    },
-    {
-      "id": "7",
-      "title": "Cultural Festival",
-      "description": "A colorful carnival celebration with vibrant masks, captivating lighting design, and an unforgettable atmosphere.",
-      "imageUrl": "https://images.unsplash.com/photo-1551843073-4a9a5b6fcd5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-      "category": "education",
-      "tags": ["carnival", "masks", "celebration"]
-    },
-    {
-      "id": "8",
-      "title": "Educational Series",
-      "description": "A compelling documentary project capturing real stories, captivating editing design, and an unforgettable narrative.",
-      "imageUrl": "https://images.unsplash.com/photo-1581368135153-a506cf13531c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-      "category": "education",
-      "tags": ["documentary", "film", "storytelling"]
-    }
-  ]
+  {
+    "id": "1",
+    "title": "Brand Transformation",
+    "description": "Complete brand overhaul for a leading tech company, including visual identity, messaging, and digital presence.",
+    "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+    "category": "corporate",
+    "tags": ["branding", "strategy", "digital"]
+  },
+  {
+    "id": "2",
+    "title": "Digital Campaign",
+    "description": "Multi-channel digital marketing campaign that increased client conversion rates by 150% and expanded market reach.",
+    "imageUrl": "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+    "category": "corporate",
+    "tags": ["marketing", "digital", "campaign"]
+  },
+  {
+    "id": "3",
+    "title": "E-Learning Platform",
+    "description": "Custom e-learning solution with interactive content, progress tracking, and personalized learning paths for students.",
+    "imageUrl": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+    "category": "education",
+    "tags": ["e-learning", "platform", "development"]
+  },
+  {
+    "id": "4",
+    "title": "Educational Content",
+    "description": "Series of educational videos and interactive materials for a national science education initiative.",
+    "imageUrl": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1722&q=80",
+    "category": "education",
+    "tags": ["content", "video", "education"]
+  },
+  {
+    "id": "5",
+    "title": "Product Launch",
+    "description": "End-to-end product launch strategy including market research, positioning, and go-to-market execution.",
+    "imageUrl": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+    "category": "corporate",
+    "tags": ["product", "launch", "strategy"]
+  },
+  {
+    "id": "6",
+    "title": "Corporate Event",
+    "description": "Design and execution of a major corporate event with digital integration, live streaming, and interactive elements.",
+    "imageUrl": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+    "category": "corporate",
+    "tags": ["event", "planning", "corporate"]
+  },
+  {
+    "id": "7",
+    "title": "School Engagement",
+    "description": "Interactive program designed to increase student engagement and participation in STEM subjects across multiple schools.",
+    "imageUrl": "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1744&q=80",
+    "category": "education",
+    "tags": ["education", "engagement", "program"]
+  },
+  {
+    "id": "8",
+    "title": "Digital Transformation",
+    "description": "Complete digital transformation strategy for an educational institution, including systems, processes, and training.",
+    "imageUrl": "https://images.unsplash.com/photo-1581089781785-603411fa81e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+    "category": "education",
+    "tags": ["digital", "transformation", "education"]
+  }
+]
