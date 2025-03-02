@@ -21,7 +21,7 @@ const TestimonialCard = ({ testimonial }) => {
           alt={`${author} profile`}
           className="w-16 h-16 rounded-full object-cover mb-2"
         />
-        <h3 className="text-lg font-semibold text-purple-800">{author}</h3>
+        <h3 className="text-lg font-semibold text-purple-950">{author}</h3>
       </div>
 
       {/* Right side: Text, Stars, and Company */}

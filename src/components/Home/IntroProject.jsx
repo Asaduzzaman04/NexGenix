@@ -41,9 +41,9 @@ const IntroProject = () => {
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         custom={0}
-        className="text-3xl md:text-4xl font-bold text-purple-800 mb-12"
+        className="text-3xl md:text-4xl font-bold text-purple-950 mb-12"
       >
-        Our Projects
+        Our Works
       </motion.h2>
 
       <motion.div

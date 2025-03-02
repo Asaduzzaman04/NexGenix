@@ -23,7 +23,7 @@ const Review = React.memo(() => {
     <section className="py-16 flex flex-col items-center justify-center gap-10 overflow-hidden">
       {/* Heading */}
       <div className="text-center mb-12">
-        <h2 className="text-2xl md:text-4xl font-bold text-purple-800">
+        <h2 className="text-2xl md:text-4xl font-bold text-purple-950">
           Our Valuable Clients and Reviews
         </h2>
       </div>

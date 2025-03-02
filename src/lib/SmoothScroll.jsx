@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 import PropTypes from 'prop-types';
-import { useEffect } from "react";
-import Lenis from "lenis";
+import { useEffect } from 'react';
+import Lenis from 'lenis';
 
 const SmoothScroll = ({ children }) => {
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2, // Animation duration in seconds
       easing: (t) => Math.min(1, 1.001 - Math.pow(1 - t, 4)), // Easing function
-      smooth: true,
+      smooth: true
     });
 
     function raf(time) {
@@ -27,7 +27,7 @@ const SmoothScroll = ({ children }) => {
 };
 
 SmoothScroll.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 };
 
 export default SmoothScroll;

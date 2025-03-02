@@ -37,7 +37,7 @@ const servicesDesc = [
 const Service = () => {
   return (
     <section className="py-12  bg-primary  text-center flex flex-col justify-center item-center gap-3 md:gap-5 lg:gap-8 ">
-      <h2 className="text-3xl md:text-4xl font-bold text-purple-800 mb-8">Our Services</h2>
+      <h2 className="text-3xl md:text-4xl font-bold text-purple-950 mb-8">Our Services</h2>
 
       {/* Service Cards with Responsive Layout */}
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-6  justify-center">
@@ -60,7 +60,7 @@ const Service = () => {
 
       {/* See More Button with Center Alignment */}
       <div className="flex justify-center mt-5">
-        <Link to="/our-service" className="group w-full max-w-[250px]">
+        <Link to="/our-services" className="group w-full max-w-[250px]">
           <RippleButton >
             See More
             <FaArrowRight className="ml-2 inline-block transform group-hover:translate-x-2 transition-all duration-300" />

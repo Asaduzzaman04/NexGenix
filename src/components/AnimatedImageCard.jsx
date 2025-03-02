@@ -11,9 +11,8 @@ const AnimatedImageCard = ({ imageSrc, altText = 'Image' }) => {
       ref={rightRef}
       initial={{ opacity: 0, x: 50 }}
       animate={rightInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
-      
       transition={{ duration: 0.8 }}
-      className="relative w-full p-10 md:p-0 md:w-[500px] h-[240px] md:h-[350px] mt-16 md:mb-0 order-1 md:order-2"
+      className="relative w-full p-10 md:p-0 md:w-[500px] lg:w-[590px] h-[280px] md:h-[390px] mt-16 md:mb-0 order-1 md:order-2"
     >
       {/* Animated Borders */}
       <motion.div
@@ -37,18 +36,13 @@ const AnimatedImageCard = ({ imageSrc, altText = 'Image' }) => {
         className="absolute inset-0 border-4 border-[#330B51] rounded-lg"
       />
       {/* Image */}
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={rightInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-        transition={{ duration: 0.6, delay: 0.8 }}
-        className="absolute inset-0 flex items-center justify-center bg-primary rounded-xl overflow-hidden"
-      >
+      <div className="absolute inset-0 flex items-center justify-center bg-primary rounded-xl overflow-hidden">
         <img
           src={imageSrc}
           alt={altText}
-          className="rounded-lg object-cover w-full h-full lg:w-[500px] lg:h-[450px]"
+          className="rounded-lg object-cover  h-full w-full"
         />
-      </motion.div>
+      </div>
     </motion.div>
   );
 };

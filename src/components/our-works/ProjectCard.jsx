@@ -1,91 +1,85 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { motion } from 'motion/react';
-import { useImageLoader } from './../../hooks/useImageLoader';
-import { FiExternalLink } from 'react-icons/fi';
+import { FaSearch, FaFacebook, FaInstagram } from 'react-icons/fa';
+import { MdEmail, MdDesignServices } from 'react-icons/md';
+import { BsGraphUp } from 'react-icons/bs';
 
-const ProjectCard = ({ project, index, hasAnimated }) => {
-  const { isLoaded, error } = useImageLoader(project.imageUrl);
 
-  const cardVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: (i) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        delay: i * 0.1,
-        duration: 0.5,
-        ease: 'easeOut'
-      }
-    })
+const ProjectCard = ({ project }) => {
+  const getTagIcon = (tag) => {
+    switch (tag) {
+      case 'Paid Search':
+        return <FaSearch className="mr-1" />;
+      case 'Paid Social':
+      case 'Social Media Advertising':
+        return <FaFacebook className="mr-1" />;
+      case 'Digital Marketing':
+        return <BsGraphUp className="mr-1" />;
+      case 'Organic Social Media':
+        return <FaInstagram className="mr-1" />;
+      case 'Email Campaigns':
+        return <MdEmail className="mr-1" />;
+      case 'Web Design':
+      case 'UX Optimization':
+        return <MdDesignServices className="mr-1" />;
+      default:
+        return null;
+    }
   };
+  console.log(project)
 
   return (
     <motion.div
-      className="rounded-xl overflow-hidden shadow-lg bg-white hover:shadow-xl transition-shadow duration-300"
-      variants={cardVariants}
-      initial={hasAnimated ? 'visible' : 'hidden'}
-      animate="visible"
-      custom={index}
+      className="bg-black rounded-lg overflow-hidden shadow-lg relative"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
       whileHover={{ scale: 1.03 }}
-      whileTap={{ scale: 0.98 }}
     >
-      <div className="relative h-48 overflow-hidden">
-        {error ? (
-          <div className="w-full h-full bg-gray-200 flex items-center justify-center">
-            <span className="text-gray-500">Image not available</span>
+      <div className="relative h-[400px] overflow-hidden">
+        <img
+          src={`${project?.imageUrl}`}
+          alt={project.title}
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-between p-8">
+          <h3 className="text-2xl font-bold text-white">{project.title}</h3>
+
+          <div className="space-y-6">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.2, duration: 0.5 }}
+            >
+              <div className="text-4xl font-bold text-white">
+                {project.percentage}
+              </div>
+              <div className="text-sm text-white uppercase tracking-wider">
+                {project.engagementType}
+              </div>
+            </motion.div>
+
+            <div className="border-t border-gray-500 pt-4 mt-2">
+              <div className="flex flex-wrap gap-2">
+                {project.tags.map((tag, index) => (
+                  <motion.span
+                    key={index}
+                    className="inline-flex items-center bg-white text-black text-xs px-3 py-1 rounded-full"
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: 0.1 * index, duration: 0.3 }}
+                  >
+                    {getTagIcon(tag)}
+                    {tag}
+                  </motion.span>
+                ))}
+              </div>
+            </div>
           </div>
-        ) : (
-          <img
-            src={project.imageUrl}
-            alt={project.title}
-            className={`w-full h-full object-cover transition-opacity duration-300 ${
-              isLoaded ? 'opacity-100' : 'opacity-0'
-            }`}
-          />
-        )}
-        {!isLoaded && !error && (
-          <div className="absolute inset-0 bg-gray-200 animate-pulse" />
-        )}
-      </div>
-      <div className="p-4">
-        <h3 className="text-xl font-bold text-purple-900 mb-2">
-          {project.title}
-        </h3>
-        <p className="text-gray-600 text-sm mb-4">{project.description}</p>
-        <div className="flex justify-between items-center">
-          <div className="flex flex-wrap gap-1">
-            {project.tags.map((tag, idx) => (
-              <span
-                key={idx}
-                className="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded-full"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-          <motion.button
-            className="text-purple-700 hover:text-purple-900"
-            whileHover={{ scale: 1.2, rotate: 5 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <FiExternalLink size={20} />
-          </motion.button>
         </div>
       </div>
     </motion.div>
   );
-};
-
-ProjectCard.propTypes = {
-  project: PropTypes.shape({
-    imageUrl: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    tags: PropTypes.arrayOf(PropTypes.string).isRequired
-  }).isRequired,
-  index: PropTypes.number.isRequired,
-  hasAnimated: PropTypes.bool.isRequired
 };
 
 export default ProjectCard;

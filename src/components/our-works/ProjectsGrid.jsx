@@ -1,88 +1,70 @@
-import React, { useEffect } from 'react';
-import { motion } from 'motion/react';
+import React, { useState } from 'react';
 import ProjectCard from './ProjectCard';
-import { useProjects } from '../../hooks/useProjects';
+import ProjectData from '../../data/ProjectDetails.json';
+import { motion } from 'framer-motion';
+import { RippleButton } from '../Button';
 
 const ProjectsGrid = () => {
-  const {
-    projects,
-    activeCategory,
-    handleCategoryChange,
-    hasAnimated,
-    setHasAnimated
-  } = useProjects();
+  const { projects, portfolioIntro } = ProjectData;
+  const [visibleProjects, setVisibleProjects] = useState(3);
 
-  const containerVariants = {
+  const loadMoreProjects = () => {
+    setVisibleProjects((prev) => Math.min(prev + 3, projects.length));
+  };
+
+  const container = {
     hidden: { opacity: 0 },
-    visible: {
+    show: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1
+        staggerChildren: 0.2
       }
     }
   };
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setHasAnimated(true);
-    }, projects.length * 100 + 500);
-
-    return () => clearTimeout(timer);
-  }, [projects.length, setHasAnimated]);
-
   return (
-    <section className="py-16 px-4 bg-gray-50 ">
-      <div className="max-w-8xl mx-auto">
+    <div className="py-16 bg-white">
+      <div className="container mx-auto px-4">
         <motion.div
+          className="max-w-3xl mx-auto text-center mb-12"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-12"
+          transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-purple-900 mb-4">
-            Projects
+          <h2 className="text-lg text-gray-900">
+            {portfolioIntro.description}
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Innovative digital solutions crafted for brands that want to make an
-            impact. Explore our work across various industries.
-          </p>
         </motion.div>
 
-        <div className="flex justify-center mb-10 space-x-2">
-          {['all', 'education', 'corporate'].map((category) => (
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-3 gap-16"
+          variants={container}
+          initial="hidden"
+          animate="show"
+        >
+          {projects.slice(0, visibleProjects).map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+        </motion.div>
+
+        {visibleProjects < projects.length && (
+          <motion.div
+            className="text-center mt-16"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+          >
             <motion.button
-              key={category}
-              onClick={() => handleCategoryChange(category)}
-              className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
-                activeCategory === category
-                  ? 'bg-purple-900 text-white'
-                  : 'bg-white text-purple-900 hover:bg-purple-100'
-              }`}
+              onClick={loadMoreProjects}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              {category.charAt(0).toUpperCase() + category.slice(1)}
+              <RippleButton>Load More Projects</RippleButton>
             </motion.button>
-          ))}
-        </div>
-
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
-        >
-          {projects.map((project, index) => (
-            <ProjectCard
-              key={project.id}
-              project={project}
-              index={index}
-              hasAnimated={hasAnimated}
-            />
-          ))}
-        </motion.div>
+          </motion.div>
+        )}
       </div>
-    </section>
+    </div>
   );
 };
 
