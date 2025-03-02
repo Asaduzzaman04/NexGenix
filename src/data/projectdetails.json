@@ -53,67 +53,47 @@
   "projects": [
     {
       "id": 1,
-      "title": "Khadi Ghar",
+      "title": "Shanti Medical Center",
       "imageUrl": "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
       "percentage": "+40%",
       "engagementType": "SOCIAL ENGAGEMENT",
-      "tags": [
-        "Paid Search",
-        "Paid Social",
-        "Social Media Advertising"
-      ]
+      "tags": ["Paid Search", "Paid Social", "Social Media Advertising"]
     },
     {
       "id": 2,
-      "title": "Microlife",
+      "title": "Bazaar",
       "imageUrl": "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
       "percentage": "+50%",
       "engagementType": "FACEBOOK ENGAGEMENT",
-      "tags": [
-        "Digital Marketing",
-        "Organic Social Media",
-        "Paid Social"
-      ]
+      "tags": ["Digital Marketing", "Organic Social Media", "Paid Social"]
     },
     {
       "id": 3,
-      "title": "Gravity Fitness",
+      "title": "Investmate",
       "imageUrl": "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
       "percentage": "+40%",
       "engagementType": "FACEBOOK ENGAGEMENT",
-      "tags": [
-        "Digital Marketing",
-        "Paid Search",
-        "Paid Social"
-      ]
+      "tags": ["Digital Marketing", "Paid Search", "Paid Social"]
     },
     {
       "id": 4,
-      "title": "Tech Solutions",
+      "title": "Shashir",
       "imageUrl": "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
       "percentage": "+65%",
       "engagementType": "WEBSITE TRAFFIC",
-      "tags": [
-        "SEO",
-        "Content Marketing",
-        "Email Campaigns"
-      ]
+      "tags": ["SEO", "Content Marketing", "Email Campaigns"]
     },
     {
       "id": 5,
-      "title": "Green Earth",
+      "title": "Istarn Pharma",
       "imageUrl": "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
       "percentage": "+35%",
       "engagementType": "CONVERSION RATE",
-      "tags": [
-        "Web Design",
-        "UX Optimization",
-        "Analytics"
-      ]
+      "tags": ["Web Design", "UX Optimization", "Analytics"]
     },
     {
       "id": 6,
-      "title": "Fashion Forward",
+      "title": "Lumineux",
       "imageUrl": "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
       "percentage": "+45%",
       "engagementType": "INSTAGRAM FOLLOWERS",
@@ -167,27 +147,23 @@
       {
         "id": 2,
         "title": "About Us",
-        "url": "/about"
+        "url": "/about-us"
       },
+
       {
         "id": 3,
-        "title": "Blog",
-        "url": "/blog"
+        "title": "Our Works",
+        "url": "/our-words"
       },
       {
         "id": 4,
-        "title": "Careers",
-        "url": "/careers"
+        "title": "Contact Us",
+        "url": "/contact-us"
       },
       {
-        "id": 5,
-        "title": "Our Works",
-        "url": "/works"
-      },
-      {
-        "id": 6,
-        "title": "Contact",
-        "url": "/contact"
+        "id": 4,
+        "title": "Our Services",
+        "url": "/our-service"
       }
     ],
     "legalLinks": [

@@ -1,6 +1,5 @@
 import React from 'react';
 import ProjectsGrid from '../../components/our-works/ProjectsGrid';
-import MarketingSection from '../../components/our-works/MarketingSection';
 import WorksProjectHero from '../../components/our-works/WorksProjectHero';
 
 const OurWorks = () => {
@@ -9,7 +8,7 @@ const OurWorks = () => {
     <section className="mt-20">
       <WorksProjectHero />
       <ProjectsGrid />
-      <MarketingSection />
+
     </section>
   );
 };

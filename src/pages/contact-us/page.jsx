@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
+
 import toast, { Toaster } from 'react-hot-toast';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
+import { Link } from 'react-router';
+import useWeb3Forms from './../../hooks/useWeb3Forms';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -12,50 +15,11 @@ const Contact = () => {
     termsAccepted: false
   });
 
-  const [errors, setErrors] = useState({});
+  const { handleSubmit, isSubmitting, errors } = useWeb3Forms();
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
-    setFormData({
-      ...formData,
-      [name]: type === 'checkbox' ? checked : value
-    });
-  };
-
-  const validateForm = () => {
-    let newErrors = {};
-    if (!formData.firstName.trim())
-      newErrors.firstName = 'First name is required';
-    if (!formData.email.trim()) newErrors.email = 'Email is required';
-    else if (!/\S+@\S+\.\S+/.test(formData.email))
-      newErrors.email = 'Enter a valid email';
-    if (!formData.phone.trim()) newErrors.phone = 'Phone number is required';
-    if (!formData.subject.trim()) newErrors.subject = 'Subject is required';
-    if (!formData.message.trim()) newErrors.message = 'Message is required';
-    if (!formData.termsAccepted)
-      newErrors.termsAccepted = 'Accept the terms & policy';
-
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (validateForm()) {
-      toast.success('Message sent successfully!');
-
-      setFormData({
-        firstName: '',
-        email: '',
-        phone: '',
-        subject: '',
-        message: '',
-        termsAccepted: false
-      });
-      setErrors({});
-    } else {
-      toast.error('Please fill in all required fields correctly!');
-    }
+    setFormData({ ...formData, [name]: type === 'checkbox' ? checked : value });
   };
 
   return (
@@ -63,12 +27,11 @@ const Contact = () => {
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
-      className="flex justify-center items-center min-h-screen px-4"
+      className="flex justify-center items-center min-h-screen px-4 mt-22"
     >
       <Toaster position="top-center" reverseOrder={false} />
 
-      <div className="w-full max-w-5xl bg-white shadow-lg rounded-lg grid md:grid-cols-2 overflow-hidden">
-        {/* Left Side (Form) */}
+      <div className="w-full max-w-2xl shadow-lg rounded-lg overflow-hidden">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -83,11 +46,29 @@ const Contact = () => {
             touch within 24 hours.
           </p>
 
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {/* First Name */}
-              <div>
-                <label className="block text-gray-700">First Name</label>
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              if (!formData.termsAccepted) {
+                toast.error('You must accept the Terms and Conditions');
+                return;
+              }
+              handleSubmit(formData, () => {
+                setFormData({
+                  firstName: '',
+                  email: '',
+                  phone: '',
+                  subject: '',
+                  message: '',
+                  termsAccepted: false
+                });
+              });
+            }}
+            className="space-y-4"
+          >
+            <div className="grid grid-cols-1 gap-4">
+              <div className="w-full">
+                <label className="block text-gray-700">Your Name</label>
                 <motion.input
                   whileFocus={{ scale: 1.02 }}
                   whileHover={{ scale: 1.01 }}
@@ -96,7 +77,7 @@ const Contact = () => {
                   value={formData.firstName}
                   onChange={handleChange}
                   className="w-full p-3 border rounded-md focus:ring-2 focus:ring-blue-500"
-                  placeholder="First name"
+                  placeholder="Your name"
                 />
                 {errors.firstName && (
                   <p className="text-red-500 text-sm">{errors.firstName}</p>
@@ -104,7 +85,6 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Email */}
             <motion.div
               whileFocus={{ scale: 1.02 }}
               whileHover={{ scale: 1.01 }}
@@ -123,7 +103,6 @@ const Contact = () => {
               )}
             </motion.div>
 
-            {/* Phone */}
             <motion.div
               whileFocus={{ scale: 1.02 }}
               whileHover={{ scale: 1.01 }}
@@ -135,14 +114,13 @@ const Contact = () => {
                 value={formData.phone}
                 onChange={handleChange}
                 className="w-full p-3 border rounded-md focus:ring-2 focus:ring-blue-500"
-                placeholder="+1 (555) 000-0000"
+                placeholder="+(880) 000-0000"
               />
               {errors.phone && (
                 <p className="text-red-500 text-sm">{errors.phone}</p>
               )}
             </motion.div>
 
-            {/* Subject */}
             <motion.div
               whileFocus={{ scale: 1.02 }}
               whileHover={{ scale: 1.01 }}
@@ -161,7 +139,6 @@ const Contact = () => {
               )}
             </motion.div>
 
-            {/* Message */}
             <motion.div
               whileFocus={{ scale: 1.02 }}
               whileHover={{ scale: 1.01 }}
@@ -180,13 +157,31 @@ const Contact = () => {
               )}
             </motion.div>
 
-            {/* Submit Button */}
+            <div className="flex items-center">
+              <input
+                type="checkbox"
+                name="termsAccepted"
+                checked={formData.termsAccepted}
+                onChange={handleChange}
+                className="mr-2"
+              />
+              <label className="text-gray-700">
+                I accept the{' '}
+                <Link to={'/tearmsandcondition'}>
+                  <span className="text-blue-600 cursor-pointer">
+                    Terms and Conditions
+                  </span>
+                </Link>
+              </label>
+            </div>
+
             <motion.button
               whileTap={{ scale: 0.95 }}
               type="submit"
-              className="w-full bg-black text-white p-3 rounded-md hover:bg-gray-800 transition"
+              disabled={isSubmitting || !formData.termsAccepted}
+              className="w-full bg-purple-800 text-white p-3 rounded-md hover:bg-purple-950 transition-all duration-200 ease-in-out disabled:opacity-50"
             >
-              Send Message
+              {isSubmitting ? 'Sending...' : 'Send Message'}
             </motion.button>
           </form>
         </motion.div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { motion } from 'motion/react';
+import { Link } from 'react-router';
 
 const PricingCard = ({ plan }) => {
   return (
@@ -64,13 +65,15 @@ const PricingCard = ({ plan }) => {
         ))}
       </ul>
 
-      <motion.button
-        className="px-4 py-2 rounded-3xl w-full bg-white text-purple-700 font-medium hover:bg-purple-50"
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-      >
-        Get Started
-      </motion.button>
+      <Link to={`/contact-us`}>
+        <motion.button
+          className="px-4 py-2 rounded-3xl w-full bg-white text-purple-700 font-medium hover:bg-purple-50"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          Get Started
+        </motion.button>
+      </Link>
     </motion.div>
   );
 };

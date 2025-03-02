@@ -7,6 +7,7 @@ import Contact from '../pages/contact-us/page';
 import OurWorks from '../pages/our-works/page';
 import Service from '../pages/our-services/page';
 import ServiceDetail from '../components/our-service/ServiceDetail';
+import PrivacyPolicy from '../pages/TearmsCondition/PrivacyPolicy';
 
 const Router = () => {
   return (
@@ -25,6 +26,9 @@ const Router = () => {
           <Route path="/our-works" element={<OurWorks />} />
           {/* //contact-us */}
           <Route path="/contact-us" element={<Contact />} />
+
+          {/* termsAnd conditon page */}
+          <Route path="/tearmsandcondition" element={<PrivacyPolicy />} />
         </Route>
       </Routes>
     </BrowserRouter>

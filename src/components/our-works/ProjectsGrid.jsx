@@ -26,12 +26,12 @@ const ProjectsGrid = () => {
     <div className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <motion.div
-          className="max-w-3xl mx-auto text-center mb-12"
+          className="max-w-4xl mx-auto text-center mb-12 md:mt-6"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-lg text-gray-900">
+          <h2 className="text-lg md:text-3xl  border-2 border-black  text-gray-900">
             {portfolioIntro.description}
           </h2>
         </motion.div>

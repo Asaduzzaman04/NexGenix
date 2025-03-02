@@ -1,6 +1,6 @@
 import React from 'react';
 import AwardTimelineCard from './AwardTimelineCard';
-import awardData from '../../data/awarddata.json';
+import awardData from '../../data/missionVison.json';
 
 const AwardTimeline = () => {
   return (
