@@ -15,7 +15,6 @@ const Hero = () => {
           </h1>
           {/* SVG Background - Moved up */}
           <svg
-            transition={{ duration: 0.8, delay: 0.4 }}
             viewBox="0 0 200 200"
             xmlns="http://www.w3.org/2000/svg"
             className="absolute -top-24 -left-20 w-64 h-64 -z-10 md:w-72 md:h-72"

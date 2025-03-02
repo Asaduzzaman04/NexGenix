@@ -18,7 +18,7 @@ const WorksProjectHero = () => {
             <div className="text-sm uppercase font-semibold text-gray-700 mb-2">
               SUCCESS STORIES
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl  font-bold text-gray-900 mb-4">
               {heroData.title}
             </h1>
             <p className="text-lg text-gray-700 mb-6">{heroData.description}</p>

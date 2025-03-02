@@ -102,25 +102,12 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <h3 className="text-xl font-bold mb-4">
-                Pizza Pizza Design Services GmbH
+                IT Business Incubator,CUET
               </h3>
               <div className="flex items-start">
                 <FaMapPin size={18} className="mr-2 mt-1 flex-shrink-0" />
                 <div>
-                  <p>Dresdener Str. 22</p>
-                  <p>10999 Berlin, Germany</p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-4">
-                Pizza Pizza Ventures GmbH
-              </h3>
-              <div className="flex items-start">
-                <FaMapPin size={18} className="mr-2 mt-1 flex-shrink-0" />
-                <div>
-                  <p>Dresdener Str. 22</p>
-                  <p>10999 Berlin, Germany</p>
+                  <p>Raozan, Bangladesh</p>
                 </div>
               </div>
             </div>
@@ -131,16 +118,14 @@ const Footer = () => {
         <div className="mt-12 pt-6 border-t border-gray-600 flex flex-col md:flex-row justify-between items-center">
           <div className="flex   justify-center items-center space-x-4 text-sm">
             <p>Copyright © NexGenix . All rights reserved.</p>
-              <Link to={'/tearmsandcondition'}>
-            <p className="hover:underline flex items-center">
-              <FaArrowRight size={14} className="mr-1" />
-              Tearms And Condition
-            </p>
-              </Link>
+            <Link to={'/tearmsandcondition'}>
+              <p className="hover:underline flex items-center">
+                <FaArrowRight size={14} className="mr-1" />
+                Tearms And Condition
+              </p>
+            </Link>
           </div>
         </div>
-
-
       </div>
     </footer>
   );

@@ -1,72 +1,72 @@
-import React from "react";;
-import { Link } from "react-router";
-import { BiBook, BiSend, BiBrush } from "react-icons/bi";
-import { MdOutlineScience } from "react-icons/md";
-import { FaArrowRight } from "react-icons/fa"; 
-import { RippleButton } from './../Button';
+import React from 'react';
+import { Link } from 'react-router';
 
-const icons = { MdOutlineScience, BiBook, BiSend, BiBrush };
+import { FaArrowRight } from 'react-icons/fa';
+import { RippleButton } from './../Button';
+import ServiceCard from './ServiceCard';
 
 const servicesDesc = [
   {
-    title: "Strategic Planning",
+    id: 1,
+    title: 'Google Ads',
     description:
-      "We leverage analytics and research to craft strategies that are grounded in fundamentals, helping us make informed decisions and stay ahead in the competitive tech landscape.",
-    icon: "MdOutlineScience",
+      'Skyrocket Your Online Visibility And Conversions With Our Google Ads Services. We Create And Manage High-Performing Campaigns Tailored To Your Business Goals.',
+    icon: 'flask',
+    color: 'bg-purple-100',
+    isAvailable: true
   },
   {
-    title: "Research & Training",
+    id: 2,
+    title: 'Social Media Marketing',
     description:
-      "We foster a collaborative workspace, encouraging partnerships with industry experts, academic researchers, and students to solve real-world problems through groundbreaking research.",
-    icon: "BiBook",
+      'Elevate Your Brand With Our SMM Services! We Help You Create, Schedule, And Manage Content And Boost Engagement Through Expert Content And Targeted Campaigns.',
+    icon: 'book-open',
+    color: 'bg-purple-100',
+    isAvailable: true
   },
   {
-    title: "Marketing & SEO",
+    id: 3,
+    title: 'Search Engine Optimization',
     description:
-      "From SEO and social media to email marketing and PPC, we leverage the latest digital tools and platforms to enhance visibility and drive measurable growth.",
-    icon: "BiSend",
+      'From SEO And Social Media To Email Marketing And PPC, We Leverage The Latest Digital Tools And Platforms To Enhance Visibility And Drive Measurable Growth.',
+    icon: 'send',
+    color: 'bg-purple-100',
+    isAvailable: true
   },
   {
-    title: "Design & Production",
+    id: 4,
+    title: 'Design & Production',
     description:
-      "From concept to final execution, our production workflows are optimized for efficiency, ensuring timely delivery without compromising on quality.",
-    icon: "BiBrush",
-  },
+      'From concept to final execution, our production workflows are optimized for efficiency, ensuring timely delivery without compromising on quality.',
+    icon: 'pen-tool',
+    color: 'bg-purple-100',
+    isAvailable: false
+  }
 ];
 
 const Service = () => {
   return (
-    <section className="py-12  bg-primary  text-center flex flex-col justify-center item-center gap-3 md:gap-5 lg:gap-8 ">
-      <h2 className="text-3xl md:text-4xl font-bold text-purple-950 mb-8">Our Services</h2>
+    <section className="py-12 bg-primary text-center flex flex-col justify-center items-center gap-3 md:gap-5 lg:gap-8">
+      <h2 className="text-3xl md:text-4xl   font-bold text-purple-950 mb-8">
+        Our Services
+      </h2>
 
       {/* Service Cards with Responsive Layout */}
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-6  justify-center">
-  {servicesDesc?.map((service, index) => {
-    const IconComponent = icons[service.icon];
-    return (
-      <div
-        key={index}
-        className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 relative border-2 border-[#330B51]"
-      >
-        <div className="text-4xl text-purple-600 mb-4 flex justify-center">
-          {IconComponent && <IconComponent />}
-        </div>
-        <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-        <p className="text-gray-600 mb-4">{service.description}</p>
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-6 justify-center">
+        {servicesDesc?.map((service, index) => (
+          <ServiceCard key={service.id} service={service} index={index} />
+        ))}
       </div>
-    );
-  })}
-</div>
 
       {/* See More Button with Center Alignment */}
       <div className="flex justify-center mt-5">
         <Link to="/our-services" className="group w-full max-w-[250px]">
-          <RippleButton >
+          <RippleButton>
             See More
             <FaArrowRight className="ml-2 inline-block transform group-hover:translate-x-2 transition-all duration-300" />
           </RippleButton>
         </Link>
-      </div>    
+      </div>
     </section>
   );
 };

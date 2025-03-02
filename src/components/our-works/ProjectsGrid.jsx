@@ -31,7 +31,7 @@ const ProjectsGrid = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-lg md:text-3xl  border-2 border-black  text-gray-900">
+          <h2 className="text-lg md:text-3xl  text-start mb-20   text-gray-900">
             {portfolioIntro.description}
           </h2>
         </motion.div>

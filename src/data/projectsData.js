@@ -23,6 +23,16 @@ const projectsData = [
     id: 4,
     title: 'Religious Banner',
     image:bijya
+  },
+  {
+    id: 5,
+    title: 'Religious Banner',
+    image:bijya
+  },
+  {
+    id: 6,
+    title: 'Religious Banner',
+    image:bijya
   }
 ];
 
