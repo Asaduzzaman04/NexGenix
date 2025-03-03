@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import AnimatedImageCard from '../AnimatedImageCard';
 
-const heroImage =
-  'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80';
+import heroImage from '../../assets/images/Service_intro_image-nexGenix.png';
 
 const ServiceIntro = () => {
   const [hasAnimated, setHasAnimated] = useState(false);
@@ -32,7 +31,7 @@ const ServiceIntro = () => {
     <div
       className="w-full  py-16 px-4 md:px-8 lg:px-16 flex items-center"
       style={{
-        background: 'linear-gradient(155deg, #330B51 18.41%, #5F1D91 139.88%)'
+        background: 'linear-gradient(155deg, #360955 18.41%, #5F1D91 139.88%)'
       }}
     >
       <div className="container mx-auto">
@@ -57,7 +56,7 @@ const ServiceIntro = () => {
               variants={itemVariants}
             >
               A Reliable Technical Partner That Provides Bespoke IT Solutions.
-              To Fulfill Our Client`&apos`s Goal, We Employ Technologies Up To
+              To Fulfill Our Client's Goal, We Employ Technologies Up To
               Date With The Latest Industry Standards. Team Ascii Understand
               Your Goals & Empower Your Business To Move Forward.
             </motion.p>
@@ -79,7 +78,12 @@ const ServiceIntro = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <AnimatedImageCard imageSrc={heroImage} />
+            <AnimatedImageCard
+              imageSrc={
+                heroImage ||
+                'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+              }
+            />
           </motion.div>
         </div>
       </div>

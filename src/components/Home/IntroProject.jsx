@@ -39,10 +39,10 @@ const IntroProject = () => {
         custom={0.2}
         className="w-full max-w-7xl  mx-auto"
       >
-        <ProjectCarousel 
-          projects={projectsData} 
-          itemsPerView={2} 
-          autoSlideInterval={5000} 
+        <ProjectCarousel
+          projects={projectsData}
+          itemsPerView={2}
+          autoSlideInterval={5000}
         />
       </motion.div>
 

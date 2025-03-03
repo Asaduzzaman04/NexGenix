@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Marquee from 'react-fast-marquee';
-import TestimonialSlider from '../TestimonialSlider';
+// import TestimonialSlider from '../TestimonialSlider';
 import { images } from '../../data/Images.js';
 
 // Memoize the Review component to prevent unnecessary re-renders
@@ -52,9 +52,9 @@ const Review = React.memo(() => {
       </div>
 
       {/* Client-review slider */}
-      <div className="w-full">
+      {/* <div className="w-full">
         <TestimonialSlider />
-      </div>
+      </div> */}
     </section>
   );
 });

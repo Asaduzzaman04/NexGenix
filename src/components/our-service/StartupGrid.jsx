@@ -7,7 +7,13 @@ const StartupGrid = () => {
     <>
       <div className="min-h-screen bg-gray-100">
         {/* text Section */}
-        <section className="bg-purple-900 text-white py-16 px-4">
+        <section
+          className=" text-white py-16 px-4"
+          style={{
+            background:
+              'linear-gradient(155deg, #360955 18.41%, #5F1D91 139.88%)'
+          }}
+        >
           <div className="container mx-auto max-w-6xl">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center leading-tight">
               We Help Companies From Early-Stage Startups To Fortune 500

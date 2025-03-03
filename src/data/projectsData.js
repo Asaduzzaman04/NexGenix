@@ -1,7 +1,9 @@
 import shampan from '../assets/images/Projects/burger_shampan.png';
 import FatherDay from '../assets/images/Projects/FatherDay.png';
-import Ambrosia from '../assets/images/Projects/Ambrosia.png';
+import menu from '../assets/images/Projects/menu.png';
 import bijya from  '../assets/images/Projects/shubo_bijya.png'
+import cheicken from  '../assets/images/Projects/Spicy_pizza_shampan.png'
+import checken_wings from  '../assets/images/Projects/checken_wings.png'
 
 const projectsData = [
   {
@@ -17,7 +19,7 @@ const projectsData = [
   {
     id: 3,
     title: 'Resturent Menu Design',
-    image: Ambrosia
+    image: menu
   },
   {
     id: 4,
@@ -26,13 +28,13 @@ const projectsData = [
   },
   {
     id: 5,
-    title: 'Religious Banner',
-    image:bijya
+    title: 'Restuent  Banner',
+    image:cheicken
   },
   {
     id: 6,
-    title: 'Religious Banner',
-    image:bijya
+    title: 'Banner',
+    image:checken_wings
   }
 ];
 

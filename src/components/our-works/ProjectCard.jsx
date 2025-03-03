@@ -30,7 +30,7 @@ const ProjectCard = ({ project }) => {
 
   return (
     <motion.div
-      className="bg-black rounded-lg overflow-hidden shadow-lg relative"
+      className=" rounded-lg overflow-hidden shadow-lg relative"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -42,7 +42,7 @@ const ProjectCard = ({ project }) => {
           alt={project.title}
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-between p-8">
+        <div className="absolute inset-0  bg-opacity-70 flex flex-col justify-between p-8">
           <h3 className="text-2xl font-bold text-white">{project.title}</h3>
 
           <div className="space-y-6">

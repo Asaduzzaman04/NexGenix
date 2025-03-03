@@ -5,7 +5,7 @@ import { FaEnvelope, FaLinkedin, FaTwitter } from 'react-icons/fa';
 const CEOSection = ({ ceo }) => {
   return (
     <motion.div
-      className="relative z-10 mx-10 mt-10 px-1 md:px-20 lg:px-32 "
+      className="relative z-10 mx-3 md:mx-10 mt-10 px-1 md:px-20 lg:px-32 "
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.2 }}
@@ -14,14 +14,14 @@ const CEOSection = ({ ceo }) => {
         <div className="flex flex-col md:flex-row gap-8 items-center">
           {/* CEO Image */}
           <motion.div
-            className="w-64 h-64 rounded-full overflow-hidden border-4 border-[#5F1D91] shadow-lg"
+            className="w-64 h-64 rounded-tr-[50%]  rounded-br-[30%]  rounded-bl-[30%]   overflow-hidden border-4 border-[#5F1D91] shadow-lg"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
           >
             <img
               src={ceo.image}
               alt={`${ceo.name} - ${ceo.position}`}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover "
             />
           </motion.div>
 

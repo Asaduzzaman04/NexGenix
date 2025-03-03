@@ -1,10 +1,10 @@
 import React from 'react';
-import websiteData from '../../data/ProjectDetails.json';
-import { motion } from 'framer-motion';
+import { heroData } from '../../data/projectdetails';
+
+import { motion } from 'motion/react';
+import workHeroImage from '../../assets/images/Our_works_nexgenix.png';
 
 const WorksProjectHero = () => {
-  const { heroData } = websiteData;
-
   return (
     <div className=" py-12 md:py-16">
       <div className="container mx-auto px-4 md:px-6">
@@ -15,13 +15,13 @@ const WorksProjectHero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="text-sm uppercase font-semibold text-gray-700 mb-2">
+            <div className="text-sm uppercase font-semibold text-purple-950 mb-2">
               SUCCESS STORIES
             </div>
-            <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl  font-bold text-gray-900 mb-4">
+            <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl  font-bold text-purple-950 mb-4">
               {heroData.title}
             </h1>
-            <p className="text-lg text-gray-700 mb-6">{heroData.description}</p>
+            <p className="text-lg text-gray-900 mb-6">{heroData.description}</p>
           </motion.div>
           <motion.div
             className="w-full md:w-1/2"
@@ -30,7 +30,7 @@ const WorksProjectHero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <img
-              src={heroData.imageUrl}
+              src={workHeroImage || heroData.imageUrl}
               alt="Digital Marketing Success"
               className="w-full h-auto rounded-lg shadow-lg"
             />

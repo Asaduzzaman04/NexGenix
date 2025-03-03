@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router';
+import { useParams, useNavigate, Link } from 'react-router';
 import { motion } from 'motion/react';
 import PricingCard from './PricingCard';
 import { useServices } from '../../hooks/useServices';
-import { Link } from 'react-router';
 
 const ServiceDetail = () => {
   const { title } = useParams();
@@ -20,8 +19,8 @@ const ServiceDetail = () => {
 
   if (loading) {
     return (
-      <div className="flex justify-center items-center h-64">
-        <div className="animate-spin rounded-full h-18 w-18 border-t-2 border-b-2 border-purple-500"></div>
+      <div className="flex justify-center items-center h-96">
+        <div className="animate-spin rounded-full h-18 w-18 border-t-2 border-b-2 border-purple-900"></div>
       </div>
     );
   }
@@ -35,7 +34,7 @@ const ServiceDetail = () => {
       {/* Back button */}
       <button
         onClick={() => navigate('/our-services')}
-        className="flex items-center bg-purple-800 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-purple-700 transition duration-300 mt-6"
+        className="flex items-center  text-purple-950 font-semibold py-2 px-4 rounded-lg cursor-pointer transition duration-300 mt-6"
       >
         <svg
           className="w-5 h-5 mr-2"
@@ -160,7 +159,8 @@ const ServiceDetail = () => {
           your specific needs and goals.
         </p>
         <motion.button
-          className="bg-purple-800 text-white px-8 py-3 rounded-md text-lg font-medium hover:bg-purple-900 transition-colors"
+          className="bg-purple-900 hover:bg-purple-950 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2  
+ text-white px-8 py-3 rounded-md text-lg font-medium  transition-colors"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >

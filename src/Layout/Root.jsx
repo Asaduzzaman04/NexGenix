@@ -5,15 +5,16 @@ import Footer from './../components/footer/Footer';
 import SmoothScroll from './../lib/SmoothScroll';
 import MarketingSection from '../components/footer/MarketingSection';
 
-const Root = () => {
 
+const Root = () => {
   return (
-    <main className='overflow-hidden font-Poppins'>
+    <main className="overflow-hidden font-Poppins">
       <SmoothScroll>
         {/* //navbar */}
         <Navbar />
+    
         <Outlet />
-        <MarketingSection/>
+        <MarketingSection />
         {/* //footer */}
         <Footer />
       </SmoothScroll>

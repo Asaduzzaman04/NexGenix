@@ -25,7 +25,10 @@ const PricingCard = ({ plan }) => {
       }}
     >
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-900 to-purple-700 group-hover:from-purple-700 group-hover:to-purple-900 opacity-90 -z-10 "></div>
+      <div
+        className="absolute inset-0 bg-gradient-to-br from-[#360955] to-[#5F1D91] hover:from-[#5F1D91] hover:to-[#360955]
+ opacity-90 -z-10 "
+      ></div>
 
       {plan.isPopular && (
         <div className="absolute top-0 right-0 bg-white  text-purple-700 text-xs font-bold px-3 py-1 rounded-bl-lg">
@@ -67,7 +70,7 @@ const PricingCard = ({ plan }) => {
 
       <Link to={`/contact-us`}>
         <motion.button
-          className="px-4 py-2 rounded-3xl w-full bg-white text-purple-700 font-medium hover:bg-purple-50"
+          className="px-4 py-2 rounded-lg w-full bg-white text-purple-700 font-medium hover:bg-purple-50"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >

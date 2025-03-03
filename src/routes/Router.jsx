@@ -8,11 +8,13 @@ import OurWorks from '../pages/our-works/page';
 import Service from '../pages/our-services/page';
 import ServiceDetail from '../components/our-service/ServiceDetail';
 import PrivacyPolicy from '../pages/TearmsCondition/PrivacyPolicy';
+import { ScrollToTop } from '../lib/ScrollToTop';
 
 const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
+        <ScrollToTop />
         <Route path="/" element={<Root />}>
           {/* //home-routes */}
           <Route index element={<Home />} />

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import ProjectCard from './ProjectCard';
-import ProjectData from '../../data/ProjectDetails.json';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { RippleButton } from '../Button';
+import { projects } from '../../data/projectdetails';
+import { ctaSection } from './../../data/websiteData';
 
 const ProjectsGrid = () => {
-  const { projects, portfolioIntro } = ProjectData;
   const [visibleProjects, setVisibleProjects] = useState(3);
 
   const loadMoreProjects = () => {
@@ -31,8 +31,8 @@ const ProjectsGrid = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-lg md:text-3xl  text-start mb-20   text-gray-900">
-            {portfolioIntro.description}
+          <h2 className="text-lg md:text-3xl lg:text-4xl mb-20 text-purple-950 text-center">
+            {ctaSection.title}
           </h2>
         </motion.div>
 

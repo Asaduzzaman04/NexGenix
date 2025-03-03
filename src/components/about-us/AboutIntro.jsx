@@ -24,9 +24,9 @@ const AboutIntro = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={leftInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-2xl  md:text-4xl lg:text-6xl font-bold text-text-color w-full"
+            className="text-2xl  md:text-4xl lg:text-6xl font-bold text-purple-950 w-full"
           >
-            About Our Community
+            To drive community engagement
           </motion.h1>
           <div className="relative">
             <motion.p
@@ -63,18 +63,18 @@ const AboutIntro = () => {
         </motion.div>
 
         {/* Right Content (Image) */}
-        <motion.div
-          ref={rightRef}
-          initial={{ opacity: 0, x: 50 }}
-          animate={rightInView ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 0.8 }}
+        <div
+          // ref={rightRef}
+          // initial={{ opacity: 0, x: 50 }}
+          // animate={rightInView ? { opacity: 1, x: 0 } : {}}
+          // transition={{ duration: 0.8 }}
           className="w-full md:w-1/2 flex justify-center md:justify-end"
         >
           <AnimatedImageCard
             imageSrc={aboutImage}
             altText="About Our Community"
           />
-        </motion.div>
+        </div>
 
         {/* SVG Dashed Line */}
         <svg

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { motion, useInView, useAnimation } from 'framer-motion';
+import { motion, useInView, useAnimation } from 'motion/react';
 
 const AwardTimelineVertical = ({ data }) => {
   const { title: timelineTitle, statements } = data;
@@ -59,7 +59,13 @@ const AwardTimelineVertical = ({ data }) => {
               >
                 <div className="absolute left-5 top-1/2 transform -translate-y-1/2 w-4 h-4 bg-[#7209b7] rounded-full border-4 border-[#1a1a2e]"></div>
                 <div className="absolute left-12 w-[2px] h-full bg-[#7209b7] top-0"></div>
-                <div className="ml-20 p-6 bg-[#16213e] rounded-lg shadow-md border border-[#16213e]">
+                <div
+                  className="ml-20 p-6  rounded-lg shadow-md border border-[#16213e]"
+                  style={{
+                    background:
+                      'linear-gradient(155deg, #2E004F 18.41%, #4B0082 139.88%)'
+                  }}
+                >
                   <h3 className="text-xl font-semibold text-white mb-2">
                     {award.title}
                   </h3>

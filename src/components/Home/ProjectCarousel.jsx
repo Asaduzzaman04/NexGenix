@@ -4,19 +4,19 @@ import { motion, AnimatePresence } from 'framer-motion';
 const ProjectCarousel = ({
   projects,
   itemsPerView = 2,
-  autoSlideInterval = 5000,
+  autoSlideInterval = 5000
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoSliding, setIsAutoSliding] = useState(true);
   const autoSlideTimerRef = useRef(null);
 
   const totalSlides = Math.ceil(projects.length / itemsPerView);
-  
+
   const resetAutoSlideTimer = () => {
     if (autoSlideTimerRef.current) {
       clearInterval(autoSlideTimerRef.current);
     }
-    
+
     if (isAutoSliding) {
       autoSlideTimerRef.current = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
@@ -26,7 +26,7 @@ const ProjectCarousel = ({
 
   useEffect(() => {
     resetAutoSlideTimer();
-    
+
     return () => {
       if (autoSlideTimerRef.current) {
         clearInterval(autoSlideTimerRef.current);
@@ -113,12 +113,22 @@ const ProjectCarousel = ({
       </div>
 
       {/* Navigation buttons */}
-      <button
+      {/* <button
         onClick={handlePrev}
         className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 bg-white/80 hover:bg-white text-purple-800 p-2 rounded-full shadow-md z-10"
         aria-label="Previous slide"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
           <path d="M15 18l-6-6 6-6" />
         </svg>
       </button>
@@ -127,19 +137,29 @@ const ProjectCarousel = ({
         className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 bg-white/80 hover:bg-white text-purple-800 p-2 rounded-full shadow-md z-10"
         aria-label="Next slide"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
           <path d="M9 18l6-6-6-6" />
         </svg>
-      </button>
+      </button> */}
 
       {/* Dots indicator */}
-      <div className="flex justify-center mt-6 space-x-2">
+      <div className="flex justify-center mt-6 space-x-2 ">
         {Array.from({ length: totalSlides }).map((_, index) => (
           <button
             key={index}
             onClick={() => handleDotClick(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              currentIndex === index ? 'bg-white scale-125' : 'bg-white/50'
+            className={`w-3 h-3 rounded-full transition-all duration-300  ${
+              currentIndex === index ? 'bg-purple-900 scale-125' : 'bg-gray-500'
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />

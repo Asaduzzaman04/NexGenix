@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'motion/react';
 import React, { useState } from 'react';
 import { IoMdContact } from 'react-icons/io';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
@@ -38,7 +38,7 @@ export const Navbar = () => {
                 <li key={link.id}>
                   <Link
                     to={link.link}
-                    className={`relative text-gray-800 font-medium transition-all duration-300 ease-in-out
+                    className={`relative text-[#330B51] font-semibold transition-all duration-300 ease-in-out
           ${activeLink === link.link ? 'scale-100' : 'scale-105'}
           after:content-[''] after:absolute after:left-0 after:bottom-[-4px]
           after:w-0 after:h-[2px] after:bg-hover-button

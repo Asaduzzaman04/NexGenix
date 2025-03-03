@@ -6,9 +6,9 @@ import { FaBuilding } from 'react-icons/fa';
 
 const StatrupsCards = ({ service }) => {
   const iconMap = {
-    FaRocket: <FaRocket size={28} className="text-purple-700" />,
-    BsRobot: <BsRobot size={28} className="text-purple-700" />,
-    FaBuilding: <FaBuilding size={28} className="text-purple-700" />
+    FaRocket: <FaRocket size={28} className="text-purple-900" />,
+    BsRobot: <BsRobot size={28} className="text-purple-900" />,
+    FaBuilding: <FaBuilding size={28} className="text-purple-900" />
   };
 
   return (

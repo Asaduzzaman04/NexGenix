@@ -57,7 +57,7 @@ const ServiceCard = ({ service, index }) => {
         {service.isAvailable ? (
           <Link to={`/our-services/${service.title}`}>
             <motion.button
-              className="bg-purple-800 text-white px-4 py-2 rounded-3xl hover:bg-purple-900 transition-colors w-full"
+              className="bg-purple-900 text-white px-4 py-2 rounded-lg hover:bg-purple-950 transition-colors w-full"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

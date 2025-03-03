@@ -36,8 +36,9 @@ export const StatsCard = ({ start, end, label, duration = 2, isPlus }) => {
   return (
     <motion.div
     style={{
-      background: 'linear-gradient(155deg, #330B51 18.41%, #5F1D91 139.88%)'
+     background: 'linear-gradient(155deg, #360955 18.41%, #5F1D91 139.88%)'
     }}
+    
       ref={ref}
       initial={{ opacity: 0, y: 50 }}
       animate={controls}
