@@ -50,14 +50,16 @@ const CEOSection = ({ ceo }) => {
                 <span>{ceo.email}</span>
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/prashantadeypda"
+                target="_blank"
                 className="flex items-center gap-2 bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-full transition-all"
               >
                 <FaLinkedin size={18} />
                 <span>LinkedIn</span>
               </a>
               <a
-                href="#"
+                href="https://x.com/prashanta_pda"
+                target="_blank"
                 className="flex items-center gap-2 bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-full transition-all"
               >
                 <FaTwitter size={18} />
