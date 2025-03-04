@@ -3,14 +3,15 @@ import { AnimatePresence, motion } from 'motion/react';
 import TeamsCard from './TeamsCard';
 import CEOSection from './CEOSection';
 import CEOImage from '../../assets/images/Teams/Prasanta_day_CEO.png';
-import Walid from '../../assets/images/Teams/Walid_ahmend_nexgenix.jpg';
-import Sohel from '../../assets/images/Teams/Mohammed_shohel_nexgenix.jpg';
+import Walid from '../../assets/images/Teams/Walid_ahmend_nexgenix.png';
+import Sohel from '../../assets/images/Teams/Mohammed_shohel_nexgenix.png';
 import Supta from '../../assets/images/Teams/Supta_nexgenix.png';
-import Pinki from '../../assets/images/Teams/Pinki_nexgenix.jpg';
-import Tonmoy from '../../assets/images/Teams/Tonmoy_mitra_nexgenix.jpg';
-import Sanchari from '../../assets/images/Teams/Shakti_Karmakar_nexGenix.jpg';
+import Pinki from '../../assets/images/Teams/Pinki_nexgenix.png';
+import Tonmoy from '../../assets/images/Teams/Tonmoy_mitra_nexgenix.png';
+import Sanchari from '../../assets/images/Teams/Shakti_Karmakar_nexGenix.png';
 import Tibra from '../../assets/images/Teams/Tibra_paul_nexgenix.png';
 import asad from '../../assets/images/Teams/Asaduzzaman_nexgenix.png';
+import Riaz from '../../assets/images/Teams/Riaz_uddin_ngenix.png';
 
 const AboutTeams = () => {
   const [selectedMember, setSelectedMember] = useState(null);
@@ -29,7 +30,7 @@ const AboutTeams = () => {
     },
     {
       id: 2,
-      name: 'Walid',
+      name: 'Walid Ahmed',
       image: Walid,
       position: 'Operational and Innovation Strategy (Intern)',
       department: 'Strategy & Innovation',
@@ -38,7 +39,7 @@ const AboutTeams = () => {
     },
     {
       id: 3,
-      name: 'Sohel',
+      name: 'Mohammed Sohel',
       image: Sohel,
       position: 'Front-end Developer and Quality Assurance (Intern)',
       department: 'Development & QA',
@@ -65,7 +66,16 @@ const AboutTeams = () => {
     },
     {
       id: 6,
-      name: 'Tibra',
+      name: 'Riaz Uddin',
+      image: Riaz,
+      position: 'Junior Marketing Executive',
+      department: 'Marketing & Strategy',
+      company: 'NexGenix',
+      bio: 'Riaz Uddin is a results-driven marketing executive focused on brand growth, campaign strategy, and audience engagement at NexGenix.'
+    },
+    {
+      id: 7,
+      name: 'Tibra Paul',
       image: Tibra,
       position: 'Back-end Developer (Intern)',
       department: 'Development',
@@ -73,8 +83,8 @@ const AboutTeams = () => {
       bio: 'Tibra is a back-end development intern at NexGenix, specializing in server-side logic, databases, and API development. He plays a key role in building scalable and efficient back-end solutions for our digital products.'
     },
     {
-      id: 7,
-      name: 'Tonmoy',
+      id: 8,
+      name: 'Tonmoy Mitra',
       image: Tonmoy,
       position: 'Graphic Designer (Intern)',
       department: 'Design',
@@ -82,7 +92,7 @@ const AboutTeams = () => {
       bio: 'Tonmoy is a creative graphic design intern at NexGenix, specializing in branding, visual storytelling, and digital graphics. His innovative designs help strengthen our brand identity and marketing campaigns.'
     },
     {
-      id: 8,
+      id: 9,
       name: 'Sanchari Sakti',
       image: Sanchari,
       position: 'Copywriting & Client Strategy Execution (Intern)',
@@ -91,7 +101,7 @@ const AboutTeams = () => {
       bio: 'Sanchari is a talented copywriter and strategist at NexGenix, crafting compelling content that enhances brand messaging. Her expertise in content strategy and storytelling ensures effective engagement with target audiences.'
     },
     {
-      id: 9,
+      id: 10,
       name: 'Asaduzzaman',
       image: asad,
       position: 'Full Stack Developer (Intern)',
