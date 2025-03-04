@@ -1,13 +1,11 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import AnimatedImageCard from '../AnimatedImageCard';
-import aboutImage from '../../assets/images/hero-home.jpeg';
+import aboutUsVideo from '../../assets/images/About.mp4';
+import VideoPlayer from './VedioPlayer';
 
 const AboutIntro = () => {
   const leftRef = useRef(null);
-  const rightRef = useRef(null);
   const leftInView = useInView(leftRef, { once: true });
-  const rightInView = useInView(rightRef, { once: true });
 
   return (
     <>
@@ -70,10 +68,7 @@ const AboutIntro = () => {
           // transition={{ duration: 0.8 }}
           className="w-full md:w-1/2 flex justify-center md:justify-end"
         >
-          <AnimatedImageCard
-            imageSrc={aboutImage}
-            altText="About Our Community"
-          />
+          <VideoPlayer videoSrc={aboutUsVideo} altText="About Our Community" />
         </div>
 
         {/* SVG Dashed Line */}
