@@ -1,8 +1,9 @@
 import React, { useRef } from 'react';
-import {  useInView } from 'motion/react';
+import { useInView } from 'motion/react';
 import { RippleButton } from '../Button';
 import heroImage from '../../assets/images/hero-home.jpeg';
 import AnimatedImageCard from '../AnimatedImageCard';
+import { Link } from 'react-router';
 
 const Hero = () => {
   return (
@@ -26,16 +27,12 @@ const Hero = () => {
             />
           </svg>
         </div>
-        <p
-          className="text-purple-900"
-        >
-          Magic Where Creativity Meets Results
-        </p>
-        <div
-         
-          className="flex justify-start gap-4 items-center"
-        >
-          <RippleButton>Projects</RippleButton>
+        <p className="text-purple-900">Magic Where Creativity Meets Results</p>
+        <div className="flex justify-start gap-4 items-center">
+          <RippleButton>
+            {' '}
+            <Link to={`/our-works`}>Projects</Link>
+          </RippleButton>
           <RippleButton>Watch video</RippleButton>
         </div>
       </div>

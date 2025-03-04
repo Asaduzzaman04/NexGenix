@@ -6,6 +6,7 @@ import { useServices } from '../../hooks/useServices';
 
 const ServiceDetail = () => {
   const { title } = useParams();
+  document.title = `NexGenix - service - ${title}`;
   const navigate = useNavigate();
   const { getServiceByTitle, loading } = useServices();
 
@@ -50,7 +51,7 @@ const ServiceDetail = () => {
             d="M15 19l-7-7 7-7"
           ></path>
         </svg>
-        Back to Services
+        Back 
       </button>
 
       {/* Hero Section */}
