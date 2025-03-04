@@ -4,9 +4,9 @@ import { RippleButton } from '../Button';
 
 const MarketingSection = () => {
   return (
-    <div className="bg-pink-200 rounded-tl-2xl rounded-tr-2xl    p-8 gap-10 flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto shadow-lg ">
+    <div className="bg-pink-200 rounded-tl-2xl rounded-tr-2xl p-8 gap-10 flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto shadow-lg py-20  ">
       <div className="flex-1">
-        <h2 className="text-2xl  md:text-4xl font-bold text-purple-900">
+        <h2 className="text-2xl  md:text-4xl  lg:text-5xl font-bold text-purple-900">
           Grow Your Brand Fast with Our Digital Marketing Expertise
         </h2>
       </div>

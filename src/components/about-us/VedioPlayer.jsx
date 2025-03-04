@@ -1,6 +1,13 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaPlay, FaPause, FaTimes, FaVolumeUp, FaVolumeMute, FaExpand } from 'react-icons/fa';
+import {
+  FaPlay,
+  FaPause,
+  FaTimes,
+  FaVolumeUp,
+  FaVolumeMute,
+  FaExpand
+} from 'react-icons/fa';
 
 const VideoPlayer = ({ videoSrc, altText }) => {
   const [isFullscreen, setIsFullscreen] = useState(false);
@@ -106,7 +113,7 @@ const VideoPlayer = ({ videoSrc, altText }) => {
     transition: {
       duration: 2,
       repeat: Infinity,
-      ease: "easeInOut"
+      ease: 'easeInOut'
     }
   };
 
@@ -132,7 +139,7 @@ const VideoPlayer = ({ videoSrc, altText }) => {
 
   return (
     <>
-      <div 
+      <div
         className="relative w-full h-full rounded-xl overflow-hidden cursor-pointer group"
         onClick={toggleFullscreen}
       >
@@ -148,8 +155,8 @@ const VideoPlayer = ({ videoSrc, altText }) => {
           onLoadedMetadata={handleMetadataLoaded}
           onTimeUpdate={handleTimeUpdate}
         />
-        
-        <motion.div 
+
+        <motion.div
           className="absolute inset-0 flex items-center justify-center"
           initial={{ opacity: 0.7 }}
           whileHover={{ opacity: 1 }}
@@ -196,38 +203,41 @@ const VideoPlayer = ({ videoSrc, altText }) => {
                 onTimeUpdate={handleTimeUpdate}
                 muted={isMuted}
               />
-              
+
               <motion.button
                 className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm p-2 rounded-full text-white z-10"
-                whileHover={{ scale: 1.1, backgroundColor: "rgba(255,255,255,0.3)" }}
+                whileHover={{
+                  scale: 1.1,
+                  backgroundColor: 'rgba(255,255,255,0.3)'
+                }}
                 whileTap={{ scale: 0.95 }}
                 onClick={closeFullscreen}
               >
                 <FaTimes className="text-xl" />
               </motion.button>
-              
+
               <AnimatePresence>
                 {(showControls || !isPlaying) && (
-                  <motion.div 
+                  <motion.div
                     className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 rounded-b-xl"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 20 }}
                     transition={{ duration: 0.2 }}
                   >
-                    <div 
+                    <div
                       ref={progressRef}
                       className="w-full h-2 bg-gray-600 rounded-full mb-4 cursor-pointer"
                       onClick={handleSeek}
                     >
-                      <div 
+                      <div
                         className="h-full bg-purple-600 rounded-full relative"
                         style={{ width: `${(currentTime / duration) * 100}%` }}
                       >
                         <div className="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-white rounded-full transform translate-x-1/2"></div>
                       </div>
                     </div>
-                    
+
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-4">
                         <motion.button
@@ -236,9 +246,13 @@ const VideoPlayer = ({ videoSrc, altText }) => {
                           whileTap={{ scale: 0.95 }}
                           onClick={togglePlayPause}
                         >
-                          {isPlaying ? <FaPause className="text-xl" /> : <FaPlay className="text-xl" />}
+                          {isPlaying ? (
+                            <FaPause className="text-xl" />
+                          ) : (
+                            <FaPlay className="text-xl" />
+                          )}
                         </motion.button>
-                        
+
                         <div className="flex items-center space-x-2">
                           <motion.button
                             className="text-white"
@@ -246,9 +260,13 @@ const VideoPlayer = ({ videoSrc, altText }) => {
                             whileTap={{ scale: 0.95 }}
                             onClick={toggleMute}
                           >
-                            {isMuted ? <FaVolumeMute className="text-xl" /> : <FaVolumeUp className="text-xl" />}
+                            {isMuted ? (
+                              <FaVolumeMute className="text-xl" />
+                            ) : (
+                              <FaVolumeUp className="text-xl" />
+                            )}
                           </motion.button>
-                          
+
                           <input
                             type="range"
                             min="0"
@@ -260,19 +278,19 @@ const VideoPlayer = ({ videoSrc, altText }) => {
                             onClick={(e) => e.stopPropagation()}
                           />
                         </div>
-                        
+
                         <div className="text-white text-sm">
                           {formatTime(currentTime)} / {formatTime(duration)}
                         </div>
                       </div>
-                      
+
                       <motion.button
-                        className="text-white"
+                        className=""
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.95 }}
                         onClick={enterBrowserFullscreen}
                       >
-                        <FaExpand className="text-xl" />
+                        <FaExpand className="text-xl text-purple-900" />
                       </motion.button>
                     </div>
                   </motion.div>

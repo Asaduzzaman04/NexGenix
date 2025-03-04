@@ -21,7 +21,7 @@ const CEOSection = ({ ceo }) => {
             <img
               src={ceo.image}
               alt={`${ceo.name} - ${ceo.position}`}
-              className="w-full h-full object-cover "
+              className="w-full h-full object-cover scale-125 "
             />
           </motion.div>
 
@@ -51,7 +51,7 @@ const CEOSection = ({ ceo }) => {
               </a>
               <a
                 href="https://www.linkedin.com/in/prashantadeypda"
-                target="_blank"
+                target=" _blank"
                 className="flex items-center gap-2 bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-full transition-all"
               >
                 <FaLinkedin size={18} />
@@ -59,7 +59,7 @@ const CEOSection = ({ ceo }) => {
               </a>
               <a
                 href="https://x.com/prashanta_pda"
-                target="_blank"
+                target=" _blank"
                 className="flex items-center gap-2 bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-full transition-all"
               >
                 <FaTwitter size={18} />
