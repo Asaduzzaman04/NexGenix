@@ -22,6 +22,25 @@ const Contact = () => {
     setFormData({ ...formData, [name]: type === 'checkbox' ? checked : value });
   };
 
+  // handle form data and post in the gmail
+  const handeFomrData = (e) => {
+    e.preventDefault();
+    //check tearms and condition
+    if (!formData.termsAccepted) {
+      toast.error('You must accept the Terms and Conditions');
+      return;
+    }
+    handleSubmit(formData, () => {
+      setFormData({
+        firstName: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: '',
+        termsAccepted: false
+      });
+    });
+  };
   return (
     <motion.section
       initial={{ opacity: 0, y: 30 }}
@@ -46,26 +65,7 @@ const Contact = () => {
             touch within 24 hours.
           </p>
 
-          <form
-            onSubmit={(e) => {
-              e.preventDefault();
-              if (!formData.termsAccepted) {
-                toast.error('You must accept the Terms and Conditions');
-                return;
-              }
-              handleSubmit(formData, () => {
-                setFormData({
-                  firstName: '',
-                  email: '',
-                  phone: '',
-                  subject: '',
-                  message: '',
-                  termsAccepted: false
-                });
-              });
-            }}
-            className="space-y-4"
-          >
+          <form onSubmit={handeFomrData} className="space-y-4">
             <div className="grid grid-cols-1 gap-4">
               <div className="w-full">
                 <label className="block text-gray-700">Your Name</label>

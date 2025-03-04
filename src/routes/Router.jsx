@@ -13,8 +13,8 @@ import { ScrollToTop } from '../lib/ScrollToTop';
 const Router = () => {
   return (
     <BrowserRouter>
+    <ScrollToTop />
       <Routes>
-        <ScrollToTop />
         <Route path="/" element={<Root />}>
           {/* //home-routes */}
           <Route index element={<Home />} />
