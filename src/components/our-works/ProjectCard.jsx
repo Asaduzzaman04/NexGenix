@@ -4,7 +4,6 @@ import { FaSearch, FaFacebook, FaInstagram } from 'react-icons/fa';
 import { MdEmail, MdDesignServices } from 'react-icons/md';
 import { BsGraphUp } from 'react-icons/bs';
 
-
 const ProjectCard = ({ project }) => {
   const getTagIcon = (tag) => {
     switch (tag) {
@@ -26,7 +25,6 @@ const ProjectCard = ({ project }) => {
         return null;
     }
   };
-  console.log(project)
 
   return (
     <motion.div

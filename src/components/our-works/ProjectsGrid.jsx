@@ -8,9 +8,9 @@ import { ctaSection } from './../../data/websiteData';
 const ProjectsGrid = () => {
   const [visibleProjects, setVisibleProjects] = useState(3);
 
-  const loadMoreProjects = () => {
-    setVisibleProjects((prev) => Math.min(prev + 3, projects.length));
-  };
+  // const loadMoreProjects = () => {
+  //   setVisibleProjects((prev) => Math.min(prev + 3, projects.length));
+  // };
 
   const container = {
     hidden: { opacity: 0 },
@@ -54,13 +54,14 @@ const ProjectsGrid = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.5 }}
           >
-            <motion.button
-              onClick={loadMoreProjects}
+            <motion.div
+              className="w-fit mx-auto disabled:true"
+              // onClick={loadMoreProjects}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               <RippleButton>Load More Projects</RippleButton>
-            </motion.button>
+            </motion.div>
           </motion.div>
         )}
       </div>

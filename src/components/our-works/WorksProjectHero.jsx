@@ -2,7 +2,7 @@ import React from 'react';
 import { heroData } from '../../data/projectdetails';
 
 import { motion } from 'motion/react';
-import workHeroImage from '../../assets/images/Our_works_nexgenix.png';
+import workHeroImage from '../../assets/images/our_works_nexgenix.jpg';
 
 const WorksProjectHero = () => {
   return (

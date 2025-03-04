@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import AnimatedImageCard from '../AnimatedImageCard';
 
-import heroImage from '../../assets/images/Service_intro_image-nexGenix.png';
+import heroImage from '../../assets/images/our_service_nexgenix.jpg';
 
 const ServiceIntro = () => {
   const [hasAnimated, setHasAnimated] = useState(false);

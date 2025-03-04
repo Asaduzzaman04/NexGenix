@@ -1,6 +1,34 @@
+import ambrosia from '../assets/images/Projects/Ambrosia.jpg';
+import Lumineux from '../assets/images/Projects/Lumineux.jpg';
+import shampanRes from '../assets/images/Projects/Sampan Restaurant.jpg';
+
 export const projects = [
   {
     id: 1,
+    title: 'Ambrosia',
+    imageUrl: ambrosia,
+    percentage: '+65%',
+    engagementType: 'SOCIAL ENGAGEMENT',
+    tags: ['Paid Search', 'Paid Social', 'Social Media Advertising']
+  },
+  {
+    id: 2,
+    title: 'Lumineux',
+    imageUrl: Lumineux,
+    percentage: '+45%',
+    engagementType: 'SOCIAL ENGAGEMENT',
+    tags: ['Paid Search', 'Paid Social', 'Social Media Advertising']
+  },
+  {
+    id: 3,
+    title: 'Shampan Restaurant',
+    imageUrl: shampanRes,
+    percentage: '+57%',
+    engagementType: 'FACEBOOK ENGAGEMENT',
+    tags: ['Paid Search', 'Paid Social', 'Social Media Advertising']
+  },
+  {
+    id: 4,
     title: 'Shanti Medical Center',
     imageUrl:
       'https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
@@ -8,51 +36,42 @@ export const projects = [
     engagementType: 'SOCIAL ENGAGEMENT',
     tags: ['Paid Search', 'Paid Social', 'Social Media Advertising']
   },
-  {
-    id: 2,
-    title: 'Bazaar',
-    imageUrl:
-      'https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
-    percentage: '+50%',
-    engagementType: 'FACEBOOK ENGAGEMENT',
-    tags: ['Digital Marketing', 'Organic Social Media', 'Paid Social']
-  },
-  {
-    id: 3,
-    title: 'Investmate',
-    imageUrl:
-      'https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
-    percentage: '+40%',
-    engagementType: 'FACEBOOK ENGAGEMENT',
-    tags: ['Digital Marketing', 'Paid Search', 'Paid Social']
-  },
-  {
-    id: 4,
-    title: 'Shashir',
-    imageUrl:
-      'https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
-    percentage: '+65%',
-    engagementType: 'WEBSITE TRAFFIC',
-    tags: ['SEO', 'Content Marketing', 'Email Campaigns']
-  },
-  {
-    id: 5,
-    title: 'Istarn Pharma',
-    imageUrl:
-      'https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
-    percentage: '+35%',
-    engagementType: 'CONVERSION RATE',
-    tags: ['Web Design', 'UX Optimization', 'Analytics']
-  },
-  {
-    id: 6,
-    title: 'Lumineux',
-    imageUrl:
-      'https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
-    percentage: '+45%',
-    engagementType: 'INSTAGRAM FOLLOWERS',
-    tags: ['Social Media Strategy', 'Influencer Marketing', 'Content Creation']
-  }
+  // {
+  //   id: 2,
+  //   title: 'Bazaar',
+  //   imageUrl:
+  //     'https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+  //   percentage: '+50%',
+  //   engagementType: 'FACEBOOK ENGAGEMENT',
+  //   tags: ['Digital Marketing', 'Organic Social Media', 'Paid Social']
+  // },
+  // {
+  //   id: 3,
+  //   title: 'Investmate',
+  //   imageUrl:
+  //     'https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+  //   percentage: '+40%',
+  //   engagementType: 'FACEBOOK ENGAGEMENT',
+  //   tags: ['Digital Marketing', 'Paid Search', 'Paid Social']
+  // },
+  // {
+  //   id: 4,
+  //   title: 'Shashir',
+  //   imageUrl:
+  //     'https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+  //   percentage: '+65%',
+  //   engagementType: 'WEBSITE TRAFFIC',
+  //   tags: ['SEO', 'Content Marketing', 'Email Campaigns']
+  // },
+  // {
+  //   id: 5,
+  //   title: 'Istarn Pharma',
+  //   imageUrl:
+  //     'https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+  //   percentage: '+35%',
+  //   engagementType: 'CONVERSION RATE',
+  //   tags: ['Web Design', 'UX Optimization', 'Analytics']
+  // },
 ];
 
 export const heroData = {
