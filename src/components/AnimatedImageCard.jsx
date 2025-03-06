@@ -47,7 +47,7 @@ const AnimatedImageCard = ({ imageSrc, altText = 'Image' }) => {
   );
 };
 
-export default AnimatedImageCard;
+export default AnimatedImageCard; 
 AnimatedImageCard.propTypes = {
   imageSrc: PropTypes.string.isRequired,
   altText: PropTypes.string

@@ -51,18 +51,20 @@ const ServiceDetail = () => {
             d="M15 19l-7-7 7-7"
           ></path>
         </svg>
-        Back 
+        Back
       </button>
 
       {/* Hero Section */}
-      <div className="py-12 flex flex-col md:grid md:grid-cols-2 gap-8 items-stretch">
+      <div className="py-12 flex flex-col md:grid md:grid-cols-2 gap-8  items-stretch">
         {/* Left Section */}
-        <div className="flex flex-col justify-center bg-white rounded-lg p-8 flex-1 min-h-[400px] md:min-h-[500px]">
-          <h1 className="text-4xl md:text-5xl font-bold text-purple-900 mb-4 capitalize">
+        <div className=" border-2 border-black flex flex-col gap-6 justify-center bg-white rounded-lg p-8 flex-1 min-h-[400px] md:min-h-[500px]">
+          <h1 className="text-4xl md:text-5xl  font-bold text-purple-900 mb-4 capitalize">
             {service.title.toLowerCase()}
           </h1>
-          <p className="text-gray-600 text-lg mb-6">{service.description}</p>
-          <p className="text-gray-700 mb-6">{service.detailedDescription}</p>
+          <div>
+            <p className="text-gray-600 text-lg mb-6">{service.description}</p>
+            <p className="text-gray-700 mb-6">{service.detailedDescription}</p>
+          </div>
         </div>
 
         {/* Right Section */}

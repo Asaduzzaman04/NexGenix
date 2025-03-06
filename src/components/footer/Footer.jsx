@@ -18,7 +18,6 @@ const Footer = () => {
     <footer
       style={{
         background: 'linear-gradient(155deg, #360955 18.41%, #5F1D91 139.88%)'
-
       }}
       className="text-white  mx-auto  py-12 px-4 md:px-8"
     >

@@ -28,7 +28,7 @@ const Hero = () => {
           </svg>
         </div>
         <p className="text-purple-900">Magic Where Creativity Meets Results</p>
-        <div className="flex justify-start gap-4 items-center">
+        <div className="flex justify-start gap-4 items-center ">
           <RippleButton>
             {' '}
             <Link to={`/our-works`}>Projects</Link>
