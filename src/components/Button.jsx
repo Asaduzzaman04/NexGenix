@@ -1,9 +1,7 @@
-
-
 import React from 'react';
 import PropTypes from 'prop-types';
-import { motion, useMotionValue } from "framer-motion";
-import { useState } from "react"; 
+import { motion, useMotionValue } from 'framer-motion';
+import { useState } from 'react';
 
 // RippleButton component creates a button with a ripple animation effect
 export const RippleButton = ({ children, ...props }) => {
@@ -26,7 +24,7 @@ export const RippleButton = ({ children, ...props }) => {
   return (
     // Button with motion capabilities and ripple effect
     <motion.button
-      className={` hover:text-white relative w-full px-6 py-2 rounded-lg overflow-hidden border-2 border-[#330B51]  text-text-color transition-colors duration-300`}
+      className={` hover:text-white relative w-full px-3 py-2 rounded-lg overflow-hidden border-2 border-[#330B51]  text-text-color transition-colors duration-300`}
       onMouseEnter={handleMouseEnter} // Start ripple on mouse enter
       onMouseLeave={() => setIsHovered(false)} // Reset ripple on mouse leave
       {...props} // Spread additional props (e.g., onClick, disabled)
@@ -34,18 +32,18 @@ export const RippleButton = ({ children, ...props }) => {
       {/* Ripple effect layer */}
       <motion.div
         className="absolute inset-0 bg-hover-button" // Covers entire button, styled with background color
-        initial={{ clipPath: "circle(0% at 0% 0%)" }} // Starts as an invisible circle at top-left
+        initial={{ clipPath: 'circle(0% at 0% 0%)' }} // Starts as an invisible circle at top-left
         animate={{
           // Animate clipPath based on hover state
           clipPath: isHovered
-            ? "circle(150% at var(--mouse-x) var(--mouse-y))" // Expand to oversize circle from mouse position
-            : "circle(0% at var(--mouse-x) var(--mouse-y))", // Shrink back to nothing at last mouse position
+            ? 'circle(150% at var(--mouse-x) var(--mouse-y))' // Expand to oversize circle from mouse position
+            : 'circle(0% at var(--mouse-x) var(--mouse-y))' // Shrink back to nothing at last mouse position
         }}
-        transition={{ duration: 0.4, ease: "easeOut" }} // Smooth animation timing
+        transition={{ duration: 0.4, ease: 'easeOut' }} // Smooth animation timing
         style={{
           // Dynamically set CSS variables for ripple position
-          "--mouse-x": mouseX.get() + "px", // X position from motion value
-          "--mouse-y": mouseY.get() + "px", // Y position from motion value
+          '--mouse-x': mouseX.get() + 'px', // X position from motion value
+          '--mouse-y': mouseY.get() + 'px' // Y position from motion value
         }}
       />
       {/* Button content - stays above ripple */}
@@ -56,7 +54,7 @@ export const RippleButton = ({ children, ...props }) => {
   );
 };
 
-// PropTypes for RippleButton
+// PropTypes for RippleButton 
 RippleButton.propTypes = {
-  children: PropTypes.node.isRequired, // Validate that children is required
+  children: PropTypes.node.isRequired // Validate that children is required
 };
