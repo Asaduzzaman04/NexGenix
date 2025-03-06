@@ -57,7 +57,7 @@ const ServiceDetail = () => {
       {/* Hero Section */}
       <div className="py-12 flex flex-col md:grid md:grid-cols-2 gap-8  items-stretch">
         {/* Left Section */}
-        <div className=" border-2 border-black flex flex-col gap-6 justify-center bg-white rounded-lg p-8 flex-1 min-h-[400px] md:min-h-[500px]">
+        <div className=" flex flex-col gap-6 justify-center bg-white rounded-lg p-8 flex-1 min-h-[400px] md:min-h-[500px]">
           <h1 className="text-4xl md:text-5xl  font-bold text-purple-900 mb-4 capitalize">
             {service.title.toLowerCase()}
           </h1>
@@ -68,7 +68,7 @@ const ServiceDetail = () => {
         </div>
 
         {/* Right Section */}
-        <div className="bg-purple-100 rounded-lg p-8 relative overflow-hidden flex items-center justify-center flex-1 min-h-[400px] md:min-h-[500px]">
+        <div className="bg-purple-100 rounded-lg p-8 relative overflow-hidden flex items-center justify-center flex-1 min-h-[400px] md:min-h-[200px]: lg:min-h-[450px]">
           {/* Background Text */}
           <div className="absolute top-0 right-0 w-full h-full opacity-10 flex items-center justify-center">
             <div className="text-9xl font-bold text-purple-900 opacity-20">
@@ -78,7 +78,7 @@ const ServiceDetail = () => {
 
           {/* Image */}
           {service.image && (
-            <div className="rounded-lg overflow-hidden w-full h-full">
+            <div className="rounded-lg overflow-hidden w-full h-full lg:h-[300px]">
               <img
                 src={service.image}
                 alt={service.title}
