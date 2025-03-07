@@ -272,7 +272,7 @@
       "icon": "pen-tool",
       "description": "From Concept To Final Execution, Our Production Workflows Are Optimized For Efficiency, Ensuring Timely Delivery Without Compromising On Quality.",
       "color": "bg-purple-100",
-      "isAvailable": false,
+      "isAvailable": true,
       "detailedDescription": "Our design and production services cover everything from brand identity to marketing materials. We focus on creating visually appealing designs that communicate your brand message effectively and help you stand out in a competitive market.",
       "offerings": [
         {

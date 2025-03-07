@@ -9,14 +9,14 @@ const AboutIntro = () => {
 
   return (
     <>
-      <section className="relative flex flex-col-reverse md:flex-row items-center justify-around  px-6 md:px-30  lg:px-44 md:py-24 overflow-hidden w-full  mx-auto gap-16 md:gap-0 ">
+      <section className="relative  flex flex-col-reverse md:flex-row items-center justify-around  px-6 md:px-30  lg:px-44 md:py-24 overflow-hidden w-full  mx-auto gap-16 md:gap-0 ">
         {/* Left Content (Text) */}
         <motion.div
           ref={leftRef}
-          initial={{ opacity: 0, x: -50 }}
-          animate={leftInView ? { opacity: 1, x: 0 } : {}}
+          initial={{ opacity: 0, y: 50 }}
+          animate={leftInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="max-w-3xl space-y-6 text-left   flex flex-col justify-between gap-5"
+          className="max-w-3xl space-y-6 text-left flex flex-col justify-between gap-5"
         >
           <motion.h1
             initial={{ opacity: 0, y: 30 }}

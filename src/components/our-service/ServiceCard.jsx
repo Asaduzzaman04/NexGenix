@@ -13,7 +13,6 @@ import {
 import { FaFlask } from 'react-icons/fa';
 import { TfiLightBulb } from 'react-icons/tfi';
 
-// Mapping service icons to their corresponding React Icons
 const iconMap = {
   flask: FaFlask,
   'pie-chart': FiPieChart,
@@ -66,7 +65,7 @@ const ServiceCard = ({ service, index }) => {
           </Link>
         ) : (
           <button
-            className="bg-gray-400 text-white px-4 py-2 rounded-3xl cursor-not-allowed w-full"
+            className="bg-gray-400 text-white px-4 py-2 rounded-lg cursor-not-allowed w-full"
             disabled
           >
             Coming Soon
