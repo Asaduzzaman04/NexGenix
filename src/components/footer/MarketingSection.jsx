@@ -20,7 +20,7 @@ const MarketingSection = () => {
           </a>
         </div>
         {/* link to contact form */}
-        <Link to={`/contact-us`}>
+        <Link to={`/contact-us`} className='md:ml-32 lg:ml-52'>
           <RippleButton>Get Free Consultation</RippleButton>
         </Link>
       </div>

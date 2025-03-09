@@ -79,7 +79,8 @@ export const Navbar = () => {
             <div className="hidden md:flex flex-shrink-0 min-w-[160px]">
               <Link to="/contact-us" className="w-full">
                 <RippleButton>
-                  <IoMdContact className="text-xl" /> Contact Us
+                  <IoMdContact className="text-xl scale-105 group-hover:scale-125 transition-all duration-200 ease-linear" />{' '}
+                  Contact Us
                 </RippleButton>
               </Link>
             </div>

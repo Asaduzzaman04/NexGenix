@@ -30,11 +30,11 @@ const Hero = () => {
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="65"
-            height="65"
+            width="80"
+            height="80"
             viewBox="0 0 65 65"
             fill="none"
-            className="absolute top-29 left-20"
+            className="absolute top-8 left-6"
           >
             <circle
               opacity="0.1"
@@ -52,8 +52,8 @@ const Hero = () => {
                 y2="67.0223"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop offset="0.0425935" stop-color="#330B51" />
-                <stop offset="1" stop-color="#5F1D91" />
+                <stop offset="0.0425935" stopColor="#330B51" />
+                <stop offset="1" stopColor="#5F1D91" />
               </linearGradient>
             </defs>
           </svg>
@@ -61,12 +61,17 @@ const Hero = () => {
         <p className="text-purple-900">Magic Where Creativity Meets Results</p>
         <div className="flex justify-start gap-4 items-center lg:pr-20">
           <RippleButton>
-            <Link to={`/our-works`} className='flex gap-2 justify-center items-center'>
-              Projects <GoProjectSymlink className="text-[28px] " />
+            <Link
+              to={`/our-works`}
+              className="flex gap-2 justify-center items-center"
+            >
+              Projects{' '}
+              <GoProjectSymlink className="text-[28px] group-hover:translate-x-2.5 transition-all duration-300 ease-linear" />
             </Link>
           </RippleButton>
           <RippleButton>
-            Watch video <CiYoutube className="text-3xl font-black" />
+            Watch video{' '}
+            <CiYoutube className="text-3xl font-black group-hover:translate-x-2.5 transition-all duration-300 ease-linear" />
           </RippleButton>
         </div>
       </div>

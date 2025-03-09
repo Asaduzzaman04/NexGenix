@@ -116,40 +116,41 @@ const AboutTeams = () => {
       id: 10,
       name: 'Urmi Karmaker',
       image: urmi,
-      position: 'AI Research & Backend Development',
+      position: 'Head of Operations',
       department: 'Operations',
       company: 'NexGenix',
-      bio: 'Urmi Karmaker is an AI researcher and backend developer at NexGenix. She specializes in developing intelligent systems and optimizing backend architectures to enhance performance and scalability. With a deep understanding of AI technologies, she focuses on building innovative solutions that drive efficiency and automation in business operations.',
+      bio: 'Urmi Karmaker is an operations expert at NexGenix, managing day-to-day operations and ensuring efficiency in all aspects of the business. Her focus is on process improvement and operational excellence.',
       category: 'Team Leader'
     },
+
     {
       id: 11,
       name: 'Afsana Tasnim Laboni',
       image: Afsana,
-      position: 'UI/UX Designer',
+      position: 'Project Manager',
       department: 'Project Management',
       company: 'NexGenix',
-      bio: 'Afsana Tasnim Laboni is a creative UI/UX Designer at NexGenix, specializing in crafting user-friendly and visually appealing interfaces. She focuses on enhancing user experiences through research, wireframing, and prototyping, ensuring that digital products meet both user needs and business goals.',
+      bio: 'Afsana Tasnim Laboni is a dynamic project manager who leads cross-functional teams to deliver successful projects at NexGenix. She excels in communication, planning, and ensuring projects are executed on time.',
       category: 'Team Leader'
     },
     {
       id: 12,
-      name: 'Anayet Hossen Masud',
+      name: 'Anyat Hossain',
       image: Anyat,
-      position: 'Graphics Designer',
+      position: 'Head of Marketing',
       department: 'Marketing',
       company: 'NexGenix',
-      bio: 'Anayet Hossen Masud is a skilled Graphics Designer at NexGenix, specializing in creating visually engaging marketing materials that enhance brand presence. With expertise in digital design, branding, and visual storytelling, he collaborates with the marketing team to craft compelling graphics for campaigns, advertisements, and promotions.',
+      bio: 'Anyat Hossain is a strategic marketing expert with a strong focus on digital campaigns, brand building, and market growth. He leads the marketing team at NexGenix, driving impactful campaigns and results.',
       category: 'Team Leader'
     },
     {
       id: 13,
       name: 'Mohammed Jamshadul Islam',
       image: Jamshadul,
-      position: 'Graphics Designer',
-      department: 'Design',
+      position: 'Lead Developer',
+      department: 'Development',
       company: 'NexGenix',
-      bio: 'Mohammed Jamshadul Islam is a talented Graphics Designer at NexGenix, specializing in creating visually compelling designs that enhance brand identity. With expertise in digital illustration, typography, and branding, he ensures that all visual content aligns with the company’s vision and engages the target audience effectively.',
+      bio: 'Mohammed Jamshadul Islam is a highly skilled lead developer at NexGenix, specializing in software architecture and development practices. He guides the development team to ensure high-quality code and scalable solutions.',
       category: 'Team Leader'
     },
     {
@@ -216,7 +217,7 @@ const AboutTeams = () => {
 
       {/* Employee Card Section -  members one by one */}
       <div className="px-10 mt-16">
-        <h2 className="text-2xl font-bold text-white mb-8 relative z-10 border-l-4 border-white pl-4">
+        <h2 className="text-2xl md:text-4xl  font-bold text-white mb-8 md:mb-11 relative z-10 text-center pl-4">
           Team Leaders
         </h2>
 
@@ -238,7 +239,7 @@ const AboutTeams = () => {
 
       {/* Employee Card Section -  members one by one */}
       <div className="px-10 mt-16">
-        <h2 className="text-2xl font-bold text-white mb-8 relative z-10 border-l-4 border-white pl-4">
+        <h2 className="text-2xl md:text-4xl font-bold text-white  mb-8 md:mb-12 relative z-10 text-center pl-4">
           Team Members
         </h2>
 
