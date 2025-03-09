@@ -116,41 +116,40 @@ const AboutTeams = () => {
       id: 10,
       name: 'Urmi Karmaker',
       image: urmi,
-      position: 'Head of Operations',
+      position: 'AI Research & Backend Development',
       department: 'Operations',
       company: 'NexGenix',
-      bio: 'Urmi Karmaker is an operations expert at NexGenix, managing day-to-day operations and ensuring efficiency in all aspects of the business. Her focus is on process improvement and operational excellence.',
+      bio: 'Urmi Karmaker is an AI researcher and backend developer at NexGenix. She specializes in developing intelligent systems and optimizing backend architectures to enhance performance and scalability. With a deep understanding of AI technologies, she focuses on building innovative solutions that drive efficiency and automation in business operations.',
       category: 'Team Leader'
     },
-
     {
       id: 11,
       name: 'Afsana Tasnim Laboni',
       image: Afsana,
-      position: 'Project Manager',
+      position: 'UI/UX Designer',
       department: 'Project Management',
       company: 'NexGenix',
-      bio: 'Afsana Tasnim Laboni is a dynamic project manager who leads cross-functional teams to deliver successful projects at NexGenix. She excels in communication, planning, and ensuring projects are executed on time.',
+      bio: 'Afsana Tasnim Laboni is a creative UI/UX Designer at NexGenix, specializing in crafting user-friendly and visually appealing interfaces. She focuses on enhancing user experiences through research, wireframing, and prototyping, ensuring that digital products meet both user needs and business goals.',
       category: 'Team Leader'
     },
     {
       id: 12,
-      name: 'Anyat Hossain',
+      name: 'Anayet Hossen Masud',
       image: Anyat,
-      position: 'Head of Marketing',
+      position: 'Graphics Designer',
       department: 'Marketing',
       company: 'NexGenix',
-      bio: 'Anyat Hossain is a strategic marketing expert with a strong focus on digital campaigns, brand building, and market growth. He leads the marketing team at NexGenix, driving impactful campaigns and results.',
+      bio: 'Anayet Hossen Masud is a skilled Graphics Designer at NexGenix, specializing in creating visually engaging marketing materials that enhance brand presence. With expertise in digital design, branding, and visual storytelling, he collaborates with the marketing team to craft compelling graphics for campaigns, advertisements, and promotions.',
       category: 'Team Leader'
     },
     {
       id: 13,
       name: 'Mohammed Jamshadul Islam',
       image: Jamshadul,
-      position: 'Lead Developer',
-      department: 'Development',
+      position: 'Graphics Designer',
+      department: 'Design',
       company: 'NexGenix',
-      bio: 'Mohammed Jamshadul Islam is a highly skilled lead developer at NexGenix, specializing in software architecture and development practices. He guides the development team to ensure high-quality code and scalable solutions.',
+      bio: 'Mohammed Jamshadul Islam is a talented Graphics Designer at NexGenix, specializing in creating visually compelling designs that enhance brand identity. With expertise in digital illustration, typography, and branding, he ensures that all visual content aligns with the company’s vision and engages the target audience effectively.',
       category: 'Team Leader'
     },
     {
