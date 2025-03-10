@@ -4,12 +4,13 @@ import { motion } from 'framer-motion';
 
 const TeamsCard = ({
   name,
-  // email,
   image,
   isSelected,
   onClick,
-  position,
-  company
+  lead,
+  company,
+  department,
+
 }) => {
   return (
     <motion.div
@@ -53,7 +54,8 @@ const TeamsCard = ({
               <FaEnvelope size={16} /> {email}
             </p> */}
             <p className="text-xs font-medium">
-              {position} at {company}
+              <span className="font-black">{lead  } :</span> {department} at{' '}
+              {company}
             </p>
           </div>
         </div>

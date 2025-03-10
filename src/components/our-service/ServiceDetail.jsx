@@ -31,7 +31,7 @@ const ServiceDetail = () => {
   }
 
   return (
-    <div className="max-w-10/12 mx-auto px-4 mt-26">
+    <div className=" w-full md:max-w-10/12 mx-auto px-4 mt-26">
       {/* Back button */}
       <button
         onClick={() => navigate('/our-services')}
@@ -55,7 +55,7 @@ const ServiceDetail = () => {
       </button>
 
       {/* Hero Section */}
-      <div className="py-12 flex flex-col md:grid md:grid-cols-2 gap-8  items-stretch">
+      <div className="py-12 flex  flex-col-reverse md:grid md:grid-cols-2 gap-8  items-stretch">
         {/* Left Section */}
         <div className=" flex flex-col gap-6 justify-center bg-white rounded-lg p-8 flex-1 min-h-[400px] md:min-h-[500px]">
           <h1 className="text-4xl md:text-5xl  font-bold text-purple-900 mb-4 capitalize">

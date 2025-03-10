@@ -34,10 +34,10 @@ const AboutTeams = () => {
     },
     {
       id: 2,
-      name: 'Walid Ahmed',
+      name: 'Walid Been Ahmed',
       image: Walid,
       position: 'Operational and Innovation Strategy (Intern)',
-      department: 'Strategy & Innovation',
+      department: 'Operations, Business and R&D  department',
       company: 'NexGenix',
       bio: "Walid is an innovative thinker and strategist at NexGenix, focusing on operational efficiency and business growth. His expertise in market research and process optimization helps drive new ideas and innovation for our company's success.",
       category: 'Team Leader'
@@ -46,8 +46,8 @@ const AboutTeams = () => {
       id: 3,
       name: 'Mohammed Sohel',
       image: Sohel,
-      position: 'Front-end Developer and Quality Assurance (Intern)',
-      department: 'Development & QA',
+      position: 'Front-End Developer and Quality Assurance (Intern)',
+      department: 'Development department',
       company: 'NexGenix',
       bio: 'Sohel is a skilled front-end developer and quality assurance expert at NexGenix. With a passion for creating seamless user experiences, he ensures our websites and applications are both visually appealing and highly functional.',
       category: 'Team Leader'
@@ -57,29 +57,30 @@ const AboutTeams = () => {
       name: 'Supta',
       image: Supta,
       position: 'UI/UX Designer',
-      department: 'Design',
+      department: 'Creative Design and Content department',
       company: 'NexGenix',
       bio: 'Supta is a creative UI/UX designer dedicated to crafting user-centric designs at NexGenix. She specializes in wireframing, prototyping, and enhancing user experiences to make digital interactions intuitive and engaging.',
       category: 'Team Leader'
     },
+
     {
       id: 5,
-      name: 'Pinki',
-      image: Pinki,
-      position: 'UI/UX Designer (Intern)',
-      department: 'Design',
+      name: 'Riaz Uddin Ahmed Azad',
+      image: Riaz,
+      position: 'Junior Marketing Executive',
+      department: 'Service Sales and Marketing',
       company: 'NexGenix',
-      bio: 'Pinki is a UI/UX design intern passionate about creating visually compelling and user-friendly designs. She works closely with the design team to optimize digital interfaces and improve user engagement.',
+      bio: 'Riaz Uddin is a results-driven marketing executive focused on brand growth, campaign strategy, and audience engagement at NexGenix.',
       category: 'Team Member'
     },
     {
       id: 6,
-      name: 'Riaz Uddin',
-      image: Riaz,
-      position: 'Junior Marketing Executive',
-      department: 'Marketing & Strategy',
+      name: 'Pinki',
+      image: Pinki,
+      position: 'UI/UX Designer (Intern)',
+      department: 'Creative Design and Content',
       company: 'NexGenix',
-      bio: 'Riaz Uddin is a results-driven marketing executive focused on brand growth, campaign strategy, and audience engagement at NexGenix.',
+      bio: 'Pinki is a UI/UX design intern passionate about creating visually compelling and user-friendly designs. She works closely with the design team to optimize digital interfaces and improve user engagement.',
       category: 'Team Member'
     },
     {
@@ -97,7 +98,7 @@ const AboutTeams = () => {
       name: 'Tonmoy Mitra',
       image: Tonmoy,
       position: 'Graphic Designer (Intern)',
-      department: 'Design',
+      department: 'Creative Design and Content',
       company: 'NexGenix',
       bio: 'Tonmoy is a creative graphic design intern at NexGenix, specializing in branding, visual storytelling, and digital graphics. His innovative designs help strengthen our brand identity and marketing campaigns.',
       category: 'Team Member'
@@ -107,7 +108,7 @@ const AboutTeams = () => {
       name: 'Sanchari Sakti',
       image: Sanchari,
       position: 'Copywriting & Client Strategy Execution (Intern)',
-      department: 'Marketing & Strategy',
+      department: 'Operations, Business  and R&D ',
       company: 'NexGenix',
       bio: 'Sanchari is a talented copywriter and strategist at NexGenix, crafting compelling content that enhances brand messaging. Her expertise in content strategy and storytelling ensures effective engagement with target audiences.',
       category: 'Team Member'
@@ -116,8 +117,8 @@ const AboutTeams = () => {
       id: 10,
       name: 'Urmi Karmaker',
       image: urmi,
-      position: 'Head of Operations',
-      department: 'Operations',
+      position: 'AI Research & Backend Development Intern',
+      department: 'Development department',
       company: 'NexGenix',
       bio: 'Urmi Karmaker is an operations expert at NexGenix, managing day-to-day operations and ensuring efficiency in all aspects of the business. Her focus is on process improvement and operational excellence.',
       category: 'Team Leader'
@@ -125,20 +126,20 @@ const AboutTeams = () => {
 
     {
       id: 11,
-      name: 'Afsana Tasnim Laboni',
+      name: 'Afsana Tasnim Labonno',
       image: Afsana,
-      position: 'Project Manager',
-      department: 'Project Management',
+      position: 'UI/UX Design',
+      department: 'Service Sales and Marketing department',
       company: 'NexGenix',
       bio: 'Afsana Tasnim Laboni is a dynamic project manager who leads cross-functional teams to deliver successful projects at NexGenix. She excels in communication, planning, and ensuring projects are executed on time.',
       category: 'Team Leader'
     },
     {
       id: 12,
-      name: 'Anyat Hossain',
+      name: 'Anayet Hossen Masud',
       image: Anyat,
-      position: 'Head of Marketing',
-      department: 'Marketing',
+      position: 'Graphics Design',
+      department: 'Creative Design and Content department',
       company: 'NexGenix',
       bio: 'Anyat Hossain is a strategic marketing expert with a strong focus on digital campaigns, brand building, and market growth. He leads the marketing team at NexGenix, driving impactful campaigns and results.',
       category: 'Team Leader'
@@ -147,10 +148,10 @@ const AboutTeams = () => {
       id: 13,
       name: 'Mohammed Jamshadul Islam',
       image: Jamshadul,
-      position: 'Lead Developer',
-      department: 'Development',
+      position: 'Graphics Design',
+      department: 'Service Sales and Marketing department',
       company: 'NexGenix',
-      bio: 'Mohammed Jamshadul Islam is a highly skilled lead developer at NexGenix, specializing in software architecture and development practices. He guides the development team to ensure high-quality code and scalable solutions.',
+      bio: 'Mohammed Jamshadul Islam is a highly skilled Graphics Design at NexGenix, specializing in software architecture and development practices. He guides the development team to ensure high-quality code and scalable solutions.',
       category: 'Team Leader'
     },
     {
@@ -158,7 +159,7 @@ const AboutTeams = () => {
       name: 'Asaduzzaman',
       image: asad,
       position: 'Full Stack Developer (Intern)',
-      department: 'Development',
+      department: 'Development department ',
       company: 'NexGenix',
       bio: 'Asaduzzaman is a full-stack developer intern at NexGenix with expertise in front-end and back-end technologies. He is passionate about building dynamic web applications, ensuring seamless performance and user experience.',
       category: 'Team Leader'
@@ -226,10 +227,10 @@ const AboutTeams = () => {
             <TeamsCard
               key={member.id}
               name={member.name}
-              // email={member.email}
               image={member.image}
-              position={member.position}
               company={member.company}
+              department={member.department}
+              lead={'Team Lead'}
               isSelected={selectedMember === member.id}
               onClick={() => handleCardClick(member.id)}
             />
@@ -252,6 +253,8 @@ const AboutTeams = () => {
               image={member.image}
               position={member.position}
               company={member.company}
+              department={member.department}
+              lead={'department'}
               isSelected={selectedMember === member.id}
               onClick={() => handleCardClick(member.id)}
             />

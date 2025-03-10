@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 // import { useInView } from 'motion/react';
 import { RippleButton } from '../Button';
 import heroImage from '../../assets/images/hero-home.jpeg';
@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <section className="relative flex flex-col-reverse md:flex-row items-center justify-around px-6 md:px-10 py-10 md:py-20 overflow-hidden w-full">
       {/* Left Content */}
-      <div className="relative max-w-xl mt-10 md:mt-0 space-y-4 flex flex-col gap-5 md:gap-7 text-left w-full md:w-1/2 order-2 md:order-1 z-10">
+      <div className="relative max-w-xl mt-10 md:mt-0 space-y-4 flex flex-col gap-3 md:gap-7 text-left w-full md:w-1/2 order-2 md:order-1 z-10">
         <div className="relative">
           <h1 className="text-2xl md:text-4xl lg:text-6xl w-full font-bold text-text-color relative z-10">
             Elevate Your Brand with Tailored Marketing
@@ -30,32 +30,13 @@ const Hero = () => {
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="80"
-            height="80"
+            width="90"
+            height="90"
             viewBox="0 0 65 65"
             fill="none"
-            className="absolute top-8 left-6"
+            className="absolute -z-50  -top-4 -left-5 md:top-20 md:-left-2"
           >
-            <circle
-              opacity="0.1"
-              cx="32.5"
-              cy="32.5"
-              r="32.5"
-              fill="url(#paint0_linear_0_4114)"
-            />
-            <defs>
-              <linearGradient
-                id="paint0_linear_0_4114"
-                x1="96.6667"
-                y1="-32.3333"
-                x2="142.607"
-                y2="67.0223"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop offset="0.0425935" stopColor="#330B51" />
-                <stop offset="1" stopColor="#5F1D91" />
-              </linearGradient>
-            </defs>
+            <circle opacity="0.8" cx="32.5" cy="32.5" r="32.5" fill="#FCCEE8" />
           </svg>
         </div>
         <p className="text-purple-900">Magic Where Creativity Meets Results</p>
@@ -81,17 +62,17 @@ const Hero = () => {
 
       {/* SVG Dashed Line - Updated to span the whole section */}
       <svg
-        className="absolute top-0 left-0 w-full h-full pointer-events-none -z-10"
+        className=" hidden md:flex absolute top-[370.12px] left-[-0.81px] w-full h-[283.4px] pointer-events-none -z-10 rotate-[8.97deg]"
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1952 356"
+        viewBox="0 0 1987 283"
         preserveAspectRatio="none"
         fill="none"
       >
         <path
-          d="M-0.806641 135.116C45.4763 198.109 207.72 380.437 492.494 351.649C840.085 316.511 940.139 73.2465 1288.16 13.8264C1566.58 -3.7098 1828.01 61.0536 1951.37 107.437"
+          d="M0 150C50 220 200 280 500 260C850 240 950 80 1300 40C1600 10 1900 60 1937 100"
           stroke="#2D336B"
           strokeLinejoin="round"
-          strokeDasharray="5 3" // Reduced gap from 9 to 3
+          strokeDasharray="4 6"
           strokeWidth="1"
         />
       </svg>

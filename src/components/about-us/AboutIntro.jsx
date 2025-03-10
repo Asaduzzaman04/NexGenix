@@ -39,7 +39,7 @@ const AboutIntro = () => {
               resources that empower our members. Learn more about our journey,
               values, and the people behind our success.
             </motion.p>
-            <motion.svg
+            {/* <motion.svg
               initial={{ opacity: 0, scale: 0.8 }}
               animate={
                 leftInView
@@ -56,7 +56,23 @@ const AboutIntro = () => {
                 d="M44.7,24.5C31.9,47.9,-22.3,46,-36.7,21.7C-51,-2.6,-25.5,-49.3,1.6,-48.4C28.7,-47.5,57.4,1.1,44.7,24.5Z"
                 transform="translate(100 100)"
               />
-            </motion.svg>
+            </motion.svg> */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="90"
+              height="90"
+              viewBox="0 0 65 65"
+              fill="none"
+              className="absolute -z-50 -top-17 -left-10 md:-top-28 md:-left-2"
+            >
+              <circle
+                opacity="0.8"
+                cx="32.5"
+                cy="32.5"
+                r="32.5"
+                fill="#FCCEE8"
+              />
+            </svg>
           </div>
         </motion.div>
 
@@ -73,15 +89,18 @@ const AboutIntro = () => {
 
         {/* SVG Dashed Line */}
         <svg
-          className="absolute top-36 md:top-3/4 left-0 w-full h-24 -translate-y-1/2 pointer-events-none -z-10"
+          className=" hidden md:flex absolute top-[370.12px] left-[-0.81px] w-full h-[283.4px] pointer-events-none -z-10 rotate-[8.97deg]"
           xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1987 283"
+          preserveAspectRatio="none"
+          fill="none"
         >
           <path
-            d="M0,60 C100,120 200,0 300,60 C400,120 500,0 600,60 C700,120 800,0 900,60 C1000,120 1100,0 1200,60 C1300,120 1400,0 1500,60 C1600,120 1700,0 1800,60 H1920"
-            stroke="#000"
-            strokeWidth="2"
-            strokeDasharray="8 6"
-            fill="none"
+            d="M0 150C50 220 200 280 500 260C850 240 950 80 1300 40C1600 10 1900 60 1937 100"
+            stroke="#2D336B"
+            strokeLinejoin="round"
+            strokeDasharray="4 6"
+            strokeWidth="1"
           />
         </svg>
       </section>
