@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import AnimatedImageCard from '../AnimatedImageCard';
 
-import heroImage from '../../assets/images/our_service_nexgenix.jpg';
+// import heroImage from '../../assets/images/our_service_nexgenix.jpg';
 
 const ServiceIntro = () => {
   const [hasAnimated, setHasAnimated] = useState(false);
@@ -56,9 +56,9 @@ const ServiceIntro = () => {
               variants={itemVariants}
             >
               A Reliable Technical Partner That Provides Bespoke IT Solutions.
-              To Fulfill Our Client's Goal, We Employ Technologies Up To
-              Date With The Latest Industry Standards. Team Ascii Understand
-              Your Goals & Empower Your Business To Move Forward.
+              To Fulfill Our Client's Goal, We Employ Technologies Up To Date
+              With The Latest Industry Standards. Team Ascii Understand Your
+              Goals & Empower Your Business To Move Forward.
             </motion.p>
 
             {/* <motion.button
@@ -80,8 +80,7 @@ const ServiceIntro = () => {
           >
             <AnimatedImageCard
               imageSrc={
-                heroImage ||
-                'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+                'https://i.postimg.cc/vBBF6GNR/our-service-nexgenix.jpg'
               }
             />
           </motion.div>

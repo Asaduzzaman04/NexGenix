@@ -8,15 +8,16 @@ const TeamsCard = ({
   isSelected,
   onClick,
   lead,
+  position,
   company,
   department,
-
+  paralex,
 }) => {
   return (
     <motion.div
       className={`group w-[300px] h-[400px] border-2 border-[#5F1D91] rounded-lg relative overflow-hidden flex justify-center items-center shadow-md transition-all duration-300 ${
         isSelected ? 'z-30 scale-105' : 'z-10'
-      }`}
+      } ${paralex % 2 === 0 ? 'md:mt-0' : 'md:mt-20'}`}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       whileHover="hover"
@@ -54,7 +55,7 @@ const TeamsCard = ({
               <FaEnvelope size={16} /> {email}
             </p> */}
             <p className="text-xs font-medium">
-              <span className="font-black">{lead  } :</span> {department} at{' '}
+              <span className="font-black">{lead} </span> {department || position }  at{' '}
               {company}
             </p>
           </div>

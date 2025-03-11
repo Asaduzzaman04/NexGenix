@@ -75,7 +75,7 @@ const AboutTeams = () => {
     },
     {
       id: 6,
-      name: 'Pinki',
+      name: 'Pinki dey',
       image: Pinki,
       position: 'UI/UX Designer (Intern)',
       department: 'Creative Design and Content',
@@ -217,20 +217,21 @@ const AboutTeams = () => {
       {ceoData && <CEOSection ceo={ceoData} />}
 
       {/* Employee Card Section -  members one by one */}
-      <div className="px-10 mt-16">
+      <div className="px-10 mt-16 mx-auto ">
         <h2 className="text-2xl md:text-4xl  font-bold text-white mb-8 md:mb-11 relative z-10 text-center pl-4">
           Team Leaders
         </h2>
 
-        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:flex-row gap-10 flex-wrap justify-start items-center">
-          {teamLeader.map((member) => (
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:flex-row  flex-wrap justify-start items-center  gap-y-3 md:gap-0">
+          {teamLeader.map((member, i) => (
             <TeamsCard
               key={member.id}
+              paralex={i}
               name={member.name}
               image={member.image}
               company={member.company}
               department={member.department}
-              lead={'Team Lead'}
+              lead={'Team Lead : '}
               isSelected={selectedMember === member.id}
               onClick={() => handleCardClick(member.id)}
             />
@@ -245,16 +246,16 @@ const AboutTeams = () => {
         </h2>
 
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:flex-row gap-10 flex-wrap justify-start items-center">
-          {regularTeamMembers.map((member) => (
+          {regularTeamMembers.map((member, i) => (
             <TeamsCard
               key={member.id}
               name={member.name}
-              // email={member.email}
               image={member.image}
+              paralex={i}
               position={member.position}
               company={member.company}
-              department={member.department}
-              lead={'department'}
+              // department={member.department}
+              lead={''}
               isSelected={selectedMember === member.id}
               onClick={() => handleCardClick(member.id)}
             />
@@ -289,10 +290,10 @@ const AboutTeams = () => {
                   />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-[#5F1D91] mb-1">
+                  <h3 className="text-xl md:text-2xl  font-bold text-[#5F1D91] mb-1">
                     {selectedMemberData.name}
                   </h3>
-                  <h4 className="text-lg font-medium text-gray-700 mb-1">
+                  <h4 className=" text-sm md:text-lg font-medium text-gray-700 mb-1">
                     {selectedMemberData.position}
                   </h4>
                   <p className="text-gray-500">{selectedMemberData.company}</p>

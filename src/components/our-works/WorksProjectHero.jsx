@@ -2,7 +2,7 @@ import React from 'react';
 import { heroData } from '../../data/projectdetails';
 
 import { motion } from 'motion/react';
-import workHeroImage from '../../assets/images/our_works_nexgenix.jpg';
+// import workHeroImage from '../../assets/images/our_works_nexgenix.jpg';
 
 const WorksProjectHero = () => {
   return (
@@ -30,7 +30,7 @@ const WorksProjectHero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <img
-              src={workHeroImage || heroData.imageUrl}
+              src={'https://i.postimg.cc/j2HGpCW7/our-works-nexgenix.jpg'}
               alt="Digital Marketing Success"
               className="w-full h-auto rounded-lg shadow-lg"
             />

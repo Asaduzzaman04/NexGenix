@@ -9,6 +9,7 @@ import Service from '../pages/our-services/page';
 import ServiceDetail from '../components/our-service/ServiceDetail';
 import PrivacyPolicy from '../pages/TearmsCondition/PrivacyPolicy';
 import NotFound from '../pages/ErrorPage/NotFound';
+import OurEvents from '../pages/Events/Page';
 
 const Router = () => {
   return (
@@ -27,6 +28,8 @@ const Router = () => {
           <Route path="our-works" element={<OurWorks />} />
           {/* Contact us route */}
           <Route path="contact-us" element={<Contact />} />
+          {/* our events */}
+          <Route path="our-events" element={<OurEvents />} />
           {/* Privacy policy route */}
           <Route path="tearmsandcondition" element={<PrivacyPolicy />} />
           {/* Catch-all route for 404 */}

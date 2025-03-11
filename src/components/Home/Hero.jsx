@@ -1,7 +1,7 @@
 import React from 'react';
 // import { useInView } from 'motion/react';
 import { RippleButton } from '../Button';
-import heroImage from '../../assets/images/hero-home.jpeg';
+// import heroImage from 'https://i.postimg.cc/FRcbpLq0/hero-home.jpg';
 import AnimatedImageCard from '../AnimatedImageCard';
 import { Link } from 'react-router';
 import { CiYoutube } from 'react-icons/ci';
@@ -40,7 +40,7 @@ const Hero = () => {
           </svg>
         </div>
         <p className="text-purple-900">Magic Where Creativity Meets Results</p>
-        <div className="flex justify-start gap-4 items-center lg:pr-20">
+        <div className="flex flex-col md:flex-row pr-30 justify-start gap-4 items-center lg:pr-20">
           <RippleButton>
             <Link
               to={`/our-works`}
@@ -58,7 +58,7 @@ const Hero = () => {
       </div>
 
       {/* Right Content (Image) */}
-      <AnimatedImageCard imageSrc={heroImage} />
+      <AnimatedImageCard imageSrc={"https://i.postimg.cc/FRcbpLq0/hero-home.jpg"} />
 
       {/* SVG Dashed Line - Updated to span the whole section */}
       <svg

@@ -11,6 +11,7 @@ import {
   FaGlobe,
   FaArrowRight
 } from 'react-icons/fa';
+import { MdOutlineEvent } from 'react-icons/md';
 import { Link } from 'react-router';
 
 const Footer = () => {
@@ -124,6 +125,10 @@ const Footer = () => {
                 Tearms And Condition
               </p>
             </Link>
+          </div>
+          <div className="flex justify-center items-center gap-2 text-xl">
+            <Link to={`/our-events`}> Events </Link>
+            <MdOutlineEvent className='animate-bounce' />
           </div>
         </div>
       </div>

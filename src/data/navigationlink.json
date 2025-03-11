@@ -2,21 +2,21 @@
   {
     "text": "Home",
     "link": "/",
-    "id" : 1
+    "id": 1
   },
   {
-    "text": "About Us", 
+    "text": "About Us",
     "link": "/about-us",
-    "id" : 2
+    "id": 2
   },
   {
     "text": "Our Services",
     "link": "/our-services",
-    "id" : 3
+    "id": 3
   },
   {
     "text": "Our Works",
     "link": "/our-works",
-    "id" : 4
+    "id": 4
   }
 ]
