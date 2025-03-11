@@ -111,6 +111,7 @@ const OurEvents = () => {
               className="bg-gray-50 p-8 rounded-xl shadow-md"
               variants={itemVariants}
             >
+              
               <div className="flex items-center mb-4">
                 <FaCalendarAlt className="text-2xl text-purple-900 mr-3" />
                 <h3 className="text-xl font-semibold text-purple-900">
