@@ -46,7 +46,7 @@ const servicesDesc = [
 
 const Service = () => {
   return (
-    <section className="py-12 bg-primary text-center flex flex-col justify-center items-center gap-3 md:gap-5 lg:gap-8">
+    <section className="py-12 bg-white text-center flex flex-col justify-center items-center gap-3 md:gap-5 lg:gap-8">
       <h2 className="text-3xl md:text-4xl   font-bold text-purple-950 mb-8">
         Our Services
       </h2>

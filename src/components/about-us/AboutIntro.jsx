@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
+import { motion, useInView } from 'motion/react';
 import aboutUsVideo from '../../assets/images/About.mp4';
 import VideoPlayer from './VedioPlayer';
 

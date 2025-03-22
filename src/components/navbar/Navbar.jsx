@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'motion/react';
 import React, { useState, useEffect } from 'react';
 import { IoMdContact } from 'react-icons/io';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';

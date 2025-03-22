@@ -3,7 +3,26 @@ import { motion } from 'motion/react';
 import { FaCalendarAlt, FaMapMarkerAlt, FaTicketAlt } from 'react-icons/fa';
 import logo from '../../assets/images/nglogo.png';
 
-const OurEvents = () => {
+const OurEvents = ({ iseventExiest = false }) => {
+  if (!iseventExiest) {
+    return (
+      <div className="flex flex-col justify-center items-center h-screen text-purple-950">
+        <h1 className="text-5xl font-bold mb-4">No Event Exists</h1>
+        <p className="text-xl mb-8">
+          Stay connected with us for future events!
+        </p>
+        <a
+          href="https://www.linkedin.com/company/the-nexgenix/"
+          target="_blank"
+          rel="noreferrer"
+          className="px-6 py-3 bg-purple-900 text-white rounded-lg hover:bg-purple-800 transition-colors duration-300"
+        >
+          Stay Connected
+        </a>
+      </div>
+    );
+  }
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -35,11 +54,11 @@ const OurEvents = () => {
         }}
       >
         <div className="absolute inset-0 bg-black opacity-60"></div>
-        <div className="relative z-10 text-white px-8">
+        <div className="relative z-10 text-white px-8 ">
           <img
             src={logo}
             alt="nexgenix logo"
-            className="w-32 h-38 mx-auto mb-8"
+            className="w-32 h-38 rounded-2xl p-4 mx-auto mb-8 bg-[#FFFFFF]"
           />
           <h1 className="text-5xl font-bold mb-4">
             AI Revolution: Transforming the Future of Everyday Life
@@ -111,7 +130,6 @@ const OurEvents = () => {
               className="bg-gray-50 p-8 rounded-xl shadow-md"
               variants={itemVariants}
             >
-              
               <div className="flex items-center mb-4">
                 <FaCalendarAlt className="text-2xl text-purple-900 mr-3" />
                 <h3 className="text-xl font-semibold text-purple-900">

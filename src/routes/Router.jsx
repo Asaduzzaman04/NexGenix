@@ -10,6 +10,7 @@ import ServiceDetail from '../components/our-service/ServiceDetail';
 import PrivacyPolicy from '../pages/TearmsCondition/PrivacyPolicy';
 import NotFound from '../pages/ErrorPage/NotFound';
 import OurEvents from '../pages/Events/Page';
+import Portfolio from '../pages/Portfolio/page';
 
 const Router = () => {
   return (
@@ -26,6 +27,8 @@ const Router = () => {
           <Route path="our-services/:title" element={<ServiceDetail />} />
           {/* Our works route */}
           <Route path="our-works" element={<OurWorks />} />
+
+          <Route path="our-Portfolio" element={<Portfolio />} />
           {/* Contact us route */}
           <Route path="contact-us" element={<Contact />} />
           {/* our events */}

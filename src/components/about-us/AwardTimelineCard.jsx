@@ -4,7 +4,7 @@ import { motion, useInView, useAnimation } from 'motion/react';
 const AwardTimelineVertical = ({ data }) => {
   const { title: timelineTitle, statements } = data;
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.2 }); // Trigger when 20% of the element is in view
+  const isInView = useInView(ref, { once: true, amount: 0.2 }); 
   const controls = useAnimation();
 
   useEffect(() => {

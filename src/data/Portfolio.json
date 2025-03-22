@@ -1,0 +1,125 @@
+[
+  {
+    "portfolio": {
+      "projects": [
+        {
+          "title": "Brand Identity Design",
+          "description": "Modern brand identity design for tech startup",
+          "image": "https://i.postimg.cc/g2HmXm9h/10-1.jpg",
+          "tags": ["Branding", "Design", "Identity"],
+          "category": "Design",
+          "link": "/portfolio/brand-identity-design",
+          "featured": true
+        },
+        {
+          "title": "3D Social Media Icon",
+          "description": "Creative 3D render of social media branding",
+          "image": "https://i.postimg.cc/bwhqwd58/AL-Goni-Restaurant-canva.png",
+          "tags": ["3D Design", "Branding"],
+          "category": "Design",
+          "link": "/portfolio/3d-social-media-icon",
+          "featured": false
+        },
+        {
+          "title": "Social Media Marketing Campaign",
+          "description": "Effective Facebook marketing campaign for engagement",
+          "image": "https://i.postimg.cc/yN6B0tBb/American-Burger-After-Poster-design.png",
+          "tags": ["Marketing", "Social Media"],
+          "category": "Marketing",
+          "link": "/portfolio/social-media-marketing",
+          "featured": false
+        },
+        {
+          "title": "Agile Development Workshop",
+          "description": "Team collaboration and agile workflow strategies",
+          "image": "https://i.postimg.cc/Fsc9v0DD/61.png",
+          "tags": ["Development", "Strategy"],
+          "category": "Development",
+          "link": "/portfolio/agile-workshop",
+          "featured": false
+        },
+        {
+          "title": "Agile Development Workshop",
+          "description": "Team collaboration and agile workflow strategies",
+          "image": "https://images.unsplash.com/photo-1455849318743-b2233052fcff?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "tags": ["Development", "Strategy"],
+          "category": "Development",
+          "link": "/portfolio/agile-workshop",
+          "featured": false
+        },
+        {
+          "title": "Agile Development Workshop",
+          "description": "Team collaboration and agile workflow strategies",
+          "image": "https://images.unsplash.com/photo-1455849318743-b2233052fcff?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "tags": ["Development", "Strategy"],
+          "category": "Development",
+          "link": "/portfolio/agile-workshop",
+          "featured": false
+        },
+        {
+          "title": "Agile Development Workshop",
+          "description": "Team collaboration and agile workflow strategies",
+          "image": "https://images.unsplash.com/photo-1455849318743-b2233052fcff?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "tags": ["Development", "Strategy"],
+          "category": "Development",
+          "link": "/portfolio/agile-workshop",
+          "featured": false
+        },
+        {
+          "title": "Agile Development Workshop",
+          "description": "Team collaboration and agile workflow strategies",
+          "image": "https://images.unsplash.com/photo-1455849318743-b2233052fcff?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "tags": ["Development", "Strategy"],
+          "category": "Development",
+          "link": "/portfolio/agile-workshop",
+          "featured": false
+        },
+        {
+          "title": "Agile Development Workshop",
+          "description": "Team collaboration and agile workflow strategies",
+          "image": "https://images.unsplash.com/photo-1455849318743-b2233052fcff?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "tags": ["Development", "Strategy"],
+          "category": "Development",
+          "link": "/portfolio/agile-workshop",
+          "featured": false
+        },
+        {
+          "title": "Agile Development Workshop",
+          "description": "Team collaboration and agile workflow strategies",
+          "image": "https://images.unsplash.com/photo-1455849318743-b2233052fcff?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "tags": ["Development", "Strategy"],
+          "category": "Development",
+          "link": "/portfolio/agile-workshop",
+          "featured": false
+        },
+        {
+          "title": "Agile Development Workshop",
+          "description": "Team collaboration and agile workflow strategies",
+          "image": "https://images.unsplash.com/photo-1455849318743-b2233052fcff?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "tags": ["Development", "Strategy"],
+          "category": "Development",
+          "link": "/portfolio/agile-workshop",
+          "featured": false
+        },
+        {
+          "title": "Agile Development Workshop",
+          "description": "Team collaboration and agile workflow strategies",
+          "image": "https://images.unsplash.com/photo-1455849318743-b2233052fcff?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "tags": ["Development", "Strategy"],
+          "category": "Development",
+          "link": "/portfolio/agile-workshop",
+          "featured": false
+        },
+        {
+          "title": "Agile Development Workshop",
+          "description": "Team collaboration and agile workflow strategies",
+          "image": "https://images.unsplash.com/photo-1455849318743-b2233052fcff?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "tags": ["Development", "Strategy"],
+          "category": "Development",
+          "link": "/portfolio/agile-workshop",
+          "featured": false
+        }
+      ]
+    }
+  }
+]

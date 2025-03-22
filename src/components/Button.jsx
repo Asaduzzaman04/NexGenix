@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { motion, useMotionValue } from 'framer-motion';
+import { motion, useMotionValue } from 'motion/react';
 import { useState } from 'react';
 
 // RippleButton component creates a button with a ripple animation effect

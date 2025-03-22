@@ -10,14 +10,14 @@ const Root = () => {
   return (
     <main className="overflow-hidden font-Poppins">
       <SmoothScroll>
-      <ScrollToTop />
+        <ScrollToTop />
         <Navbar />
         <Outlet />
         <MarketingSection />
         <Footer />
       </SmoothScroll>
     </main>
-  );  
+  );
 };
 
 export default Root;

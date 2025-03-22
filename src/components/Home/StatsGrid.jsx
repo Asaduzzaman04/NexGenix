@@ -1,13 +1,13 @@
 import React from 'react';
-import { motion } from "motion/react";
-import { StatsCard } from "./StatsCard";
+import { motion } from 'motion/react';
+import { StatsCard } from './StatsCard';
 
 const StatsGrid = () => {
   const stats = [
-    { start: 0, end: 170, label: "Happy Clients", isPlus: true },
-    { start: 0, end: 200, label: "Projects Done", isPlus: true },
-    { start: 0, end: 20, label: "Creative People", isPlus: false },
-    { start: 0, end: 15, label: "Years Experience", isPlus: false },
+    { start: 0, end: 170, label: 'Happy Clients', isPlus: true },
+    { start: 0, end: 200, label: 'Projects Done', isPlus: true },
+    { start: 0, end: 20, label: 'Creative People', isPlus: false },
+    { start: 0, end: 15, label: 'Years Experience', isPlus: false }
   ];
 
   return (

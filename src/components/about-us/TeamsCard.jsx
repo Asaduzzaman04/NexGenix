@@ -1,6 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-// import { FaEnvelope } from 'react-icons/fa';
+import { motion } from 'motion/react';
 
 const TeamsCard = ({
   name,

@@ -9,15 +9,15 @@ const Review = React.memo(() => {
 
   useEffect(() => {
     const handleResize = () => {
-      setGradientWidth(window.innerWidth >= 640 ? 250 : 50); // Simplify condition
+      setGradientWidth(window.innerWidth >= 640 ? 250 : 50);
     };
 
     handleResize(); // Initial check
     window.addEventListener('resize', handleResize);
 
-    // Cleanup function
+  
     return () => window.removeEventListener('resize', handleResize);
-  }, []); // Empty dependency array ensures it runs only on mount/unmount
+  }, []); 
 
   return (
     <section className="py-16 flex flex-col items-center justify-center gap-10 overflow-hidden">
@@ -58,7 +58,4 @@ const Review = React.memo(() => {
     </section>
   );
 });
-
-Review.displayName = 'Review'; // Helpful for debugging in React DevTools
-
 export default Review;

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import AnimatedImageCard from '../AnimatedImageCard';
 
 // import heroImage from '../../assets/images/our_service_nexgenix.jpg';
@@ -31,8 +31,12 @@ const ServiceIntro = () => {
     <div
       className="w-full  py-16 px-4 md:px-8 lg:px-16 flex items-center"
       style={{
-        background: 'linear-gradient(155deg, #360955 18.41%, #5F1D91 139.88%)'
-      }}
+          backgroundImage:
+            "url('https://i.postimg.cc/B6Hx03C7/elegant-purple-curved-line-on-purple-background-with-lighting-effect-and-with-copy-space-for-text-lu.jpg')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
+        }}
     >
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-12">
