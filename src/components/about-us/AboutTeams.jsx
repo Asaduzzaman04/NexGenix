@@ -107,10 +107,10 @@ const AboutTeams = () => {
       id: 9,
       name: 'Sanchari Sakti',
       image: Sanchari,
-      position: 'Copywriting & Client Strategy Execution ',
+      position: 'Administrative and Data Management',
       department: 'Operations, Business  and R&D ',
       company: 'NexGenix',
-      bio: 'Sanchari is a talented copywriter and strategist at NexGenix, crafting compelling content that enhances brand messaging. Her expertise in content strategy and storytelling ensures effective engagement with target audiences.',
+      bio: 'Sanchari is an expert in administrative and data management at NexGenix, ensuring seamless operations through efficient workflow coordination and precise data handling. Her strong organizational skills and attention to detail support informed decision-making and overall productivity.',
       category: 'Team Member'
     },
     {

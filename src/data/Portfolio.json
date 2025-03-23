@@ -3,121 +3,535 @@
     "portfolio": {
       "projects": [
         {
-          "title": "Brand Identity Design",
-          "description": "Modern brand identity design for tech startup",
+          "id": "1",
+          "title": "Brand Identity Design for Tech Startup",
+          "description": "Modern brand identity design for a tech startup with a sleek, futuristic look",
           "image": "https://i.postimg.cc/g2HmXm9h/10-1.jpg",
-          "tags": ["Branding", "Design", "Identity"],
+          "tags": ["Branding", "Design", "Tech"],
           "category": "Design",
-          "link": "/portfolio/brand-identity-design",
           "featured": true
         },
         {
-          "title": "3D Social Media Icon",
-          "description": "Creative 3D render of social media branding",
+          "id": "2",
+          "title": "Restaurant Marketing Poster for AL Goni",
+          "description": "Vibrant marketing poster design for AL Goni Restaurant to attract food lovers",
           "image": "https://i.postimg.cc/bwhqwd58/AL-Goni-Restaurant-canva.png",
-          "tags": ["3D Design", "Branding"],
-          "category": "Design",
-          "link": "/portfolio/3d-social-media-icon",
-          "featured": false
-        },
-        {
-          "title": "Social Media Marketing Campaign",
-          "description": "Effective Facebook marketing campaign for engagement",
-          "image": "https://i.postimg.cc/yN6B0tBb/American-Burger-After-Poster-design.png",
-          "tags": ["Marketing", "Social Media"],
+          "tags": ["Marketing", "Restaurant", "Poster"],
           "category": "Marketing",
-          "link": "/portfolio/social-media-marketing",
           "featured": false
         },
         {
-          "title": "Agile Development Workshop",
-          "description": "Team collaboration and agile workflow strategies",
+          "id": "3",
+          "title": "American Burger Valentine's Poster Design",
+          "description": "Creative Valentine's Day poster design for American Burger with a festive theme",
+          "image": "https://i.postimg.cc/yN6B0tBb/American-Burger-After-Poster-design.png",
+          "tags": ["Design", "Poster", "Food"],
+          "category": "Design",
+          "featured": true
+        },
+        {
+          "id": "4",
+          "title": "Food Social Media Banner Design",
+          "description": "Eye-catching social media banner for a food brand to boost online engagement",
           "image": "https://i.postimg.cc/Fsc9v0DD/61.png",
-          "tags": ["Development", "Strategy"],
-          "category": "Development",
-          "link": "/portfolio/agile-workshop",
+          "tags": ["Marketing", "Social Media", "Food"],
+          "category": "Marketing",
           "featured": false
         },
         {
-          "title": "Agile Development Workshop",
-          "description": "Team collaboration and agile workflow strategies",
-          "image": "https://images.unsplash.com/photo-1455849318743-b2233052fcff?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "tags": ["Development", "Strategy"],
-          "category": "Development",
-          "link": "/portfolio/agile-workshop",
+          "id": "5",
+          "title": "Atlantis Dine Restaurant Branding",
+          "description": "Elegant branding and poster design for Atlantis Dine to elevate its visual identity",
+          "image": "https://i.postimg.cc/KY9bff8v/Atlantis-Dine-Canva.png",
+          "tags": ["Branding", "Design", "Restaurant"],
+          "category": "Design",
+          "featured": true
+        },
+        {
+          "id": "6",
+          "title": "Bailey Brasserie Social Media Campaign",
+          "description": "Dynamic social media marketing campaign for Bailey Brasserie to attract diners",
+          "image": "https://i.postimg.cc/G3TRPkwd/Boithok-After-poster-design.png",
+          "tags": ["Marketing", "Social Media", "Restaurant"],
+          "category": "Marketing",
           "featured": false
         },
         {
-          "title": "Agile Development Workshop",
-          "description": "Team collaboration and agile workflow strategies",
-          "image": "https://images.unsplash.com/photo-1455849318743-b2233052fcff?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "tags": ["Development", "Strategy"],
-          "category": "Development",
-          "link": "/portfolio/agile-workshop",
+          "id": "7",
+          "title": "Cafe Appeliano Poster Design",
+          "description": "Stylish poster design for Cafe Appeliano to promote its cozy ambiance",
+          "image": "https://i.postimg.cc/15xQvfs6/Cafe-Appeliano-After-Poster-design.png",
+          "tags": ["Design", "Poster", "Cafe"],
+          "category": "Design",
           "featured": false
         },
         {
-          "title": "Agile Development Workshop",
-          "description": "Team collaboration and agile workflow strategies",
-          "image": "https://images.unsplash.com/photo-1455849318743-b2233052fcff?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "tags": ["Development", "Strategy"],
-          "category": "Development",
-          "link": "/portfolio/agile-workshop",
+          "id": "8",
+          "title": "Delta Health Care Branding",
+          "description": "Professional branding for Delta Health Care Chittagong to build trust",
+          "image": "https://i.postimg.cc/rFSL3MwH/Delta-Health-Care-Chittagong-Ltd-1.png",
+          "tags": ["Branding", "Design", "Healthcare"],
+          "category": "Design",
+          "featured": true
+        },
+        {
+          "id": "9",
+          "title": "Dsmaak Cafe Social Media Marketing",
+          "description": "Engaging social media marketing for Dsmaak Cafe to drive customer visits",
+          "image": "https://i.postimg.cc/TPPMKbJ8/dsmaakcafebd.png",
+          "tags": ["Marketing", "Social Media", "Cafe"],
+          "category": "Marketing",
           "featured": false
         },
         {
-          "title": "Agile Development Workshop",
-          "description": "Team collaboration and agile workflow strategies",
-          "image": "https://images.unsplash.com/photo-1455849318743-b2233052fcff?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "tags": ["Development", "Strategy"],
-          "category": "Development",
-          "link": "/portfolio/agile-workshop",
+          "id": "10",
+          "title": "Fajitas BD Mirpur Poster Campaign",
+          "description": "Bold poster campaign for Fajitas BD Mirpur to highlight their menu",
+          "image": "https://i.postimg.cc/RZdxCdfQ/Fajitas-bd-Mirpur-After-Social-poster-content.png",
+          "tags": ["Marketing", "Poster", "Restaurant"],
+          "category": "Marketing",
+          "featured": true
+        },
+        {
+          "id": "11",
+          "title": "Food Brand Social Media Post Design",
+          "description": "Creative social media post design for a food brand to increase engagement",
+          "image": "https://i.postimg.cc/YSycYSdv/fbp-12.png",
+          "tags": ["Design", "Social Media", "Food"],
+          "category": "Design",
           "featured": false
         },
         {
-          "title": "Agile Development Workshop",
-          "description": "Team collaboration and agile workflow strategies",
-          "image": "https://images.unsplash.com/photo-1455849318743-b2233052fcff?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "tags": ["Development", "Strategy"],
-          "category": "Development",
-          "link": "/portfolio/agile-workshop",
+          "id": "12",
+          "title": "Restaurant Marketing Banner",
+          "description": "Stunning marketing banner for a restaurant to attract food enthusiasts",
+          "image": "https://i.postimg.cc/13sZZ2g3/fbp-14.png",
+          "tags": ["Marketing", "Banner", "Restaurant"],
+          "category": "Marketing",
           "featured": false
         },
         {
-          "title": "Agile Development Workshop",
-          "description": "Team collaboration and agile workflow strategies",
-          "image": "https://images.unsplash.com/photo-1455849318743-b2233052fcff?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "tags": ["Development", "Strategy"],
-          "category": "Development",
-          "link": "/portfolio/agile-workshop",
+          "id": "13",
+          "title": "Food Poster Design for Social Media",
+          "description": "Vibrant food poster design for social media to promote a restaurant's specials",
+          "image": "https://i.postimg.cc/1tgkHZdJ/fbp-16.png",
+          "tags": ["Design", "Poster", "Food"],
+          "category": "Design",
+          "featured": true
+        },
+        {
+          "id": "14",
+          "title": "Cafe Marketing Campaign",
+          "description": "Effective marketing campaign for a cafe to boost foot traffic",
+          "image": "https://i.postimg.cc/Jn99Y2Vm/fbp-17-1.png",
+          "tags": ["Marketing", "Campaign", "Cafe"],
+          "category": "Marketing",
           "featured": false
         },
         {
-          "title": "Agile Development Workshop",
-          "description": "Team collaboration and agile workflow strategies",
-          "image": "https://images.unsplash.com/photo-1455849318743-b2233052fcff?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "tags": ["Development", "Strategy"],
-          "category": "Development",
-          "link": "/portfolio/agile-workshop",
+          "id": "15",
+          "title": "Restaurant Branding Design",
+          "description": "Modern branding design for a restaurant to enhance its visual appeal",
+          "image": "https://i.postimg.cc/BbHRrB4F/fbp-35-1.jpg",
+          "tags": ["Branding", "Design", "Restaurant"],
+          "category": "Design",
+          "featured": true
+        },
+        {
+          "id": "16",
+          "title": "Food Social Media Marketing",
+          "description": "Engaging social media marketing for a food brand to attract customers",
+          "image": "https://i.postimg.cc/3rGM0Ymw/fbp-36-1.jpg",
+          "tags": ["Marketing", "Social Media", "Food"],
+          "category": "Marketing",
           "featured": false
         },
         {
-          "title": "Agile Development Workshop",
-          "description": "Team collaboration and agile workflow strategies",
-          "image": "https://images.unsplash.com/photo-1455849318743-b2233052fcff?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "tags": ["Development", "Strategy"],
-          "category": "Development",
-          "link": "/portfolio/agile-workshop",
+          "id": "17",
+          "title": "Restaurant Poster Design",
+          "description": "Creative poster design for a restaurant to promote its signature dishes",
+          "image": "https://i.postimg.cc/Dy39qHPP/fbp-40-1.jpg",
+          "tags": ["Design", "Poster", "Restaurant"],
+          "category": "Design",
           "featured": false
         },
         {
-          "title": "Agile Development Workshop",
-          "description": "Team collaboration and agile workflow strategies",
-          "image": "https://images.unsplash.com/photo-1455849318743-b2233052fcff?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "tags": ["Development", "Strategy"],
-          "category": "Development",
-          "link": "/portfolio/agile-workshop",
+          "id": "18",
+          "title": "Cafe Social Media Campaign",
+          "description": "Targeted social media campaign for a cafe to increase brand awareness",
+          "image": "https://i.postimg.cc/mgbKn9qc/fbp-42-1.jpg",
+          "tags": ["Marketing", "Social Media", "Cafe"],
+          "category": "Marketing",
+          "featured": true
+        },
+        {
+          "id": "19",
+          "title": "Food Brand Poster Design",
+          "description": "Stylish poster design for a food brand to showcase its offerings",
+          "image": "https://i.postimg.cc/DwBR3Zkx/fbp-44.png",
+          "tags": ["Design", "Poster", "Food"],
+          "category": "Design",
           "featured": false
+        },
+        {
+          "id": "20",
+          "title": "Restaurant Marketing Strategy",
+          "description": "Comprehensive marketing strategy for a restaurant to drive sales",
+          "image": "https://i.postimg.cc/BvbkS0J4/fbp-47.png",
+          "tags": ["Marketing", "Strategy", "Restaurant"],
+          "category": "Marketing",
+          "featured": true
+        },
+        {
+          "id": "21",
+          "title": "Cafe Branding Design",
+          "description": "Elegant branding design for a cafe to create a memorable identity",
+          "image": "https://i.postimg.cc/SKP5jvK8/fbp-48.png",
+          "tags": ["Branding", "Design", "Cafe"],
+          "category": "Design",
+          "featured": false
+        },
+        {
+          "id": "22",
+          "title": "Food Social Media Post",
+          "description": "Creative social media post for a food brand to engage followers",
+          "image": "https://i.postimg.cc/7h3QsPnM/fbp-5-1.png",
+          "tags": ["Marketing", "Social Media", "Food"],
+          "category": "Marketing",
+          "featured": false
+        },
+        {
+          "id": "23",
+          "title": "Restaurant Poster for Promotions",
+          "description": "Bold poster design for a restaurant to promote seasonal offers",
+          "image": "https://i.postimg.cc/rmtH4NdH/fbp-52.png",
+          "tags": ["Design", "Poster", "Restaurant"],
+          "category": "Design",
+          "featured": true
+        },
+        {
+          "id": "24",
+          "title": "Cafe Marketing Poster",
+          "description": "Attractive marketing poster for a cafe to highlight its menu",
+          "image": "https://i.postimg.cc/brcB9Skw/fbp-55.png",
+          "tags": ["Marketing", "Poster", "Cafe"],
+          "category": "Marketing",
+          "featured": false
+        },
+        {
+          "id": "25",
+          "title": "Food Brand Social Media Design",
+          "description": "Modern social media design for a food brand to boost online presence",
+          "image": "https://i.postimg.cc/MZV4KtJM/fbp-61.png",
+          "tags": ["Design", "Social Media", "Food"],
+          "category": "Design",
+          "featured": true
+        },
+        {
+          "id": "26",
+          "title": "Restaurant Marketing Banner",
+          "description": "Eye-catching marketing banner for a restaurant to attract diners",
+          "image": "https://i.postimg.cc/GhRfBYbM/fbp-7.png",
+          "tags": ["Marketing", "Banner", "Restaurant"],
+          "category": "Marketing",
+          "featured": false
+        },
+        {
+          "id": "27",
+          "title": "Food Poster for Social Media",
+          "description": "Creative food poster for social media to promote a restaurant's specials",
+          "image": "https://i.postimg.cc/NfxzRMMQ/fbp-9.png",
+          "tags": ["Design", "Poster", "Food"],
+          "category": "Design",
+          "featured": false
+        },
+        {
+          "id": "28",
+          "title": "Galesia Hotel Resort Branding",
+          "description": "Luxurious branding design for Galesia Hotel Resort to attract guests",
+          "image": "https://i.postimg.cc/MGn3kmYG/Galesia-Hotel-Resort-Ltd-Canva.jpg",
+          "tags": ["Branding", "Design", "Hotel"],
+          "category": "Design",
+          "featured": true
+        },
+        {
+          "id": "29",
+          "title": "Hotel Marketing Campaign",
+          "description": "Effective marketing campaign for Galesia Hotel Resort to boost bookings",
+          "image": "https://i.postimg.cc/QMv4jK6J/Galesia-Hotel-Resort-Ltd-Canva.png",
+          "tags": ["Marketing", "Campaign", "Hotel"],
+          "category": "Marketing",
+          "featured": false
+        },
+        {
+          "id": "30",
+          "title": "Hotel Poster Design",
+          "description": "Elegant poster design for Galesia Hotel Resort to showcase amenities",
+          "image": "https://i.postimg.cc/fRTgCNtm/Galesia-Hotel-Resort-Ltd-Canva-1.jpg",
+          "tags": ["Design", "Poster", "Hotel"],
+          "category": "Design",
+          "featured": true
+        },
+        {
+          "id": "31",
+          "title": "Hill Crown Resort Marketing",
+          "description": "Targeted marketing for Hill Crown Resort to attract tourists",
+          "image": "https://i.postimg.cc/wMpwm8Yt/Hill-Crown-poster-Canva.png",
+          "tags": ["Marketing", "Resort", "Poster"],
+          "category": "Marketing",
+          "featured": false
+        },
+        {
+          "id": "32",
+          "title": "Hotel Golden Inn Branding",
+          "description": "Sophisticated branding for Hotel Golden Inn to elevate its image",
+          "image": "https://i.postimg.cc/hjxCv46W/Hotel-Golden-inn-Canva-1.png",
+          "tags": ["Branding", "Design", "Hotel"],
+          "category": "Design",
+          "featured": true
+        },
+        {
+          "id": "33",
+          "title": "Hotel Niladri Poster Design",
+          "description": "Stylish poster design for Hotel Niladri to promote its services",
+          "image": "https://i.postimg.cc/90YJP8cL/Hotel-Niladri-canva.png",
+          "tags": ["Design", "Poster", "Hotel"],
+          "category": "Design",
+          "featured": false
+        },
+        {
+          "id": "34",
+          "title": "Hotel Seacox Marketing Campaign",
+          "description": "Effective marketing campaign for Hotel Seacox to increase bookings",
+          "image": "https://i.postimg.cc/vZB39tkv/hotel-seacox.png",
+          "tags": ["Marketing", "Campaign", "Hotel"],
+          "category": "Marketing",
+          "featured": true
+        },
+        {
+          "id": "35",
+          "title": "Restaurant Poster Design",
+          "description": "Creative poster design for a restaurant to promote its menu",
+          "image": "https://i.postimg.cc/BZTYG622/m8.png",
+          "tags": ["Design", "Poster", "Restaurant"],
+          "category": "Design",
+          "featured": false
+        },
+        {
+          "id": "36",
+          "title": "Prasad Restaurant Marketing",
+          "description": "Engaging marketing for Prasad Restaurant to attract food lovers",
+          "image": "https://i.postimg.cc/Yq23Kxrw/prasad-restoraent.png",
+          "tags": ["Marketing", "Restaurant", "Poster"],
+          "category": "Marketing",
+          "featured": false
+        },
+        {
+          "id": "37",
+          "title": "Doctor Delta Poster Design",
+          "description": "Professional poster design for Doctor Delta to promote healthcare services",
+          "image": "https://i.postimg.cc/ZRkcGtRf/poster-design-doctor-delta.png",
+          "tags": ["Design", "Poster", "Healthcare"],
+          "category": "Design",
+          "featured": true
+        },
+        {
+          "id": "38",
+          "title": "Metropolitan Healthcare Branding",
+          "description": "Modern branding for Metropolitan Healthcare to build credibility",
+          "image": "https://i.postimg.cc/JhHxY41D/metropoliton02.png",
+          "tags": ["Branding", "Design", "Healthcare"],
+          "category": "Design",
+          "featured": false
+        },
+        {
+          "id": "39",
+          "title": "Healthcare Marketing Campaign",
+          "description": "Targeted marketing campaign for Metropolitan Healthcare to reach patients",
+          "image": "https://i.postimg.cc/mg5VSFGW/metropoliton01.png",
+          "tags": ["Marketing", "Campaign", "Healthcare"],
+          "category": "Marketing",
+          "featured": true
+        },
+        {
+          "id": "40",
+          "title": "Online Doctor Consultation Poster",
+          "description": "Creative poster for online doctor consultation services to attract users",
+          "image": "https://i.postimg.cc/hPKC4B06/Medical-Services-Online-Doctor-Consultation-Instagram-Post-1.png",
+          "tags": ["Design", "Poster", "Healthcare"],
+          "category": "Design",
+          "featured": false
+        },
+        {
+          "id": "41",
+          "title": "Medical Services Social Media Post",
+          "description": "Engaging social media post for medical services to promote online consultations",
+          "image": "https://i.postimg.cc/gk4gnTSJ/Medical-Services-Online-Doctor-Consultation-Instagram-Post.png",
+          "tags": ["Marketing", "Social Media", "Healthcare"],
+          "category": "Marketing",
+          "featured": true
+        },
+        {
+          "id": "42",
+          "title": "Product Poster Design",
+          "description": "Stylish product poster design to highlight a brand's offerings",
+          "image": "https://i.postimg.cc/sXpcy6G3/product-poster-design.jpg",
+          "tags": ["Design", "Poster", "Product"],
+          "category": "Design",
+          "featured": false
+        },
+        {
+          "id": "43",
+          "title": "Restaurant Social Media Post",
+          "description": "Creative social media post for a restaurant to engage its audience",
+          "image": "https://i.postimg.cc/GtdjpFvG/s1-1.png",
+          "tags": ["Marketing", "Social Media", "Restaurant"],
+          "category": "Marketing",
+          "featured": false
+        },
+        {
+          "id": "44",
+          "title": "Salon Menu Design",
+          "description": "Elegant salon menu design to showcase services and pricing",
+          "image": "https://i.postimg.cc/Wb972Jzq/Salon-Menu-recover-11-01.png",
+          "tags": ["Design", "Menu", "Salon"],
+          "category": "Design",
+          "featured": true
+        },
+        {
+          "id": "45",
+          "title": "Salt Restaurant Poster Design",
+          "description": "Modern poster design for Salt Restaurant to promote its offerings",
+          "image": "https://i.postimg.cc/FzpVkYxq/salt-poster-01.png",
+          "tags": ["Design", "Poster", "Restaurant"],
+          "category": "Design",
+          "featured": false
+        },
+        {
+          "id": "46",
+          "title": "Salt Restaurant Marketing Campaign",
+          "description": "Effective marketing campaign for Salt Restaurant to attract diners",
+          "image": "https://i.postimg.cc/sf4cNLRc/salt-psoteer-2.png",
+          "tags": ["Marketing", "Campaign", "Restaurant"],
+          "category": "Marketing",
+          "featured": true
+        },
+        {
+          "id": "47",
+          "title": "Sampan Restaurant Branding",
+          "description": "Elegant branding design for Sampan Restaurant to enhance its identity",
+          "image": "https://i.postimg.cc/nV24kQvS/Sampan-Restaurant.png",
+          "tags": ["Branding", "Design", "Restaurant"],
+          "category": "Design",
+          "featured": false
+        },
+        {
+          "id": "48",
+          "title": "Sampan Restaurant Social Media Post",
+          "description": "Engaging social media post for Sampan Restaurant to attract customers",
+          "image": "https://i.postimg.cc/ZRFrXWXR/Sampan-Restaurant-2.png",
+          "tags": ["Marketing", "Social Media", "Restaurant"],
+          "category": "Marketing",
+          "featured": false
+        },
+        {
+          "id": "49",
+          "title": "Sampan Restaurant Poster Design",
+          "description": "Creative poster design for Sampan Restaurant to promote its menu",
+          "image": "https://i.postimg.cc/3wGjCSB2/Sampan-Restaurant-1.png",
+          "tags": ["Design", "Poster", "Restaurant"],
+          "category": "Design",
+          "featured": true
+        },
+        {
+          "id": "50",
+          "title": "Sampan Restaurant Marketing",
+          "description": "Targeted marketing for Sampan Restaurant to increase foot traffic",
+          "image": "https://i.postimg.cc/NFs1tgwx/Sampan-Restaurant.png",
+          "tags": ["Marketing", "Restaurant", "Poster"],
+          "category": "Marketing",
+          "featured": false
+        },
+        {
+          "id": "51",
+          "title": "Sampan Restaurant Visual Identity",
+          "description": "Modern visual identity design for Sampan Restaurant to stand out",
+          "image": "https://i.postimg.cc/rw3C4XS8/Sampan-Restaurant-2.png",
+          "tags": ["Branding", "Design", "Restaurant"],
+          "category": "Design",
+          "featured": true
+        },
+        {
+          "id": "52",
+          "title": "Sampan Restaurant Social Media Campaign",
+          "description": "Dynamic social media campaign for Sampan Restaurant to boost engagement",
+          "image": "https://i.postimg.cc/zvxTX9zY/Sampan-Restaurant.png",
+          "tags": ["Marketing", "Social Media", "Restaurant"],
+          "category": "Marketing",
+          "featured": false
+        },
+        {
+          "id": "53",
+          "title": "Sampan Restaurant Poster Campaign",
+          "description": "Bold poster campaign for Sampan Restaurant to highlight its specials",
+          "image": "https://i.postimg.cc/CxzsdLnP/Sampan-Restaurant-Canva.png",
+          "tags": ["Design", "Poster", "Restaurant"],
+          "category": "Design",
+          "featured": true
+        },
+        {
+          "id": "54",
+          "title": "Sampan Restaurant Marketing Strategy",
+          "description": "Comprehensive marketing strategy for Sampan Restaurant to drive sales",
+          "image": "https://i.postimg.cc/V6cq7qGp/Sampan-Restaurant-4.png",
+          "tags": ["Marketing", "Strategy", "Restaurant"],
+          "category": "Marketing",
+          "featured": false
+        },
+        {
+          "id": "55",
+          "title": "Sea Welcome Resort Branding",
+          "description": "Luxurious branding for Sea Welcome Resort to attract tourists",
+          "image": "https://i.postimg.cc/fTgx4nqx/Sea-Welcome-Resort-CANVA.png",
+          "tags": ["Branding", "Design", "Resort"],
+          "category": "Design",
+          "featured": true
+        },
+        {
+          "id": "56",
+          "title": "Shahjadi Resort Marketing",
+          "description": "Effective marketing for Shahjadi Resort to increase bookings",
+          "image": "https://i.postimg.cc/xdLHbkfR/Shahjadi-resort.png",
+          "tags": ["Marketing", "Resort", "Poster"],
+          "category": "Marketing",
+          "featured": false
+        },
+        {
+          "id": "57",
+          "title": "Fitness Center Social Media Post",
+          "description": "Engaging social media post for a fitness center to attract members",
+          "image": "https://i.postimg.cc/BQvxwQpS/Simple-Profile-Photo-Instagram-Post-4.png",
+          "tags": ["Marketing", "Social Media", "Fitness"],
+          "category": "Marketing",
+          "featured": true
+        },
+        {
+          "id": "58",
+          "title": "Vrinda's Kitchen Branding",
+          "description": "Warm and inviting branding for Vrinda's Kitchen to attract food lovers",
+          "image": "https://i.postimg.cc/GmWG2PCt/Vrinda-s-Kitchen-Canva.png",
+          "tags": ["Branding", "Design", "Restaurant"],
+          "category": "Design",
+          "featured": false
+        },
+        {
+          "id": "59",
+          "title": "Gym Grand Opening Flyer",
+          "description": "Bold flyer design for a gym's grand opening to attract new members",
+          "image": "https://i.postimg.cc/VkrXmG22/Yellow-Dark-Simple-Grand-Opening-Gym-and-Fitness-Flyer.png",
+          "tags": ["Design", "Flyer", "Fitness"],
+          "category": "Design",
+          "featured": true
         }
       ]
     }

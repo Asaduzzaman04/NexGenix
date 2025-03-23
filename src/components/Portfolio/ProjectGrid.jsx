@@ -1,18 +1,26 @@
 import React from 'react';
 import { usePortfolio } from '../../hooks/usePortfolio';
 import PortfolioProjectCard from './PortfolioProjectCard';
+import { TbMoodSad, TbSearch } from 'react-icons/tb';
+import { motion } from 'motion/react';
 
 const categories = ['All', 'Design', 'Marketing', 'Development', 'Content'];
 
 const ProjectGrid = () => {
-  const { filterProject, category, setcategory, searchQuery, setsearchQuery } =
-    usePortfolio();
+  const {
+    filterProject,
+    category,
+    setcategory,
+    searchQuery,
+    setsearchQuery,
+    loading
+  } = usePortfolio();
 
   return (
     <>
       {/* Categories and Search */}
       <div className="flex flex-col md:flex-row justify-between items-center mb-8 gap-4 border-b-[2px] pb-6 border-purple-800">
-        <div className="flex gap-4 flex-wrap ">
+        <div className="flex gap-4 flex-wrap">
           {categories.map((items, idx) => (
             <button
               key={idx}
@@ -38,30 +46,53 @@ const ProjectGrid = () => {
 
       {/* Render the filtered projects */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {filterProject.length > 0 ? (
+        {loading ? (
+          // Show skeleton cards while loading
+          Array.from({ length: 20 }).map((_, idx) => (
+            <PortfolioProjectCard
+              key={`skeleton-${idx}`}
+              project={null}
+              index={idx}
+              loading={true}
+            />
+          ))
+        ) : filterProject.length > 0 ? (
           filterProject.map((project, idx) => (
-            <PortfolioProjectCard key={idx} project={project} index={idx} />
-            // <div key={idx} className="p-4 border rounded-lg">
-            //   <img
-            //     src={project.image}
-            //     alt={project.title}
-            //     className="w-full h-48 object-cover rounded-lg mb-4"
-            //   />
-            //   <h3 className="text-lg font-semibold">{project.title}</h3>
-            //   <p className="text-gray-600">{project.description}</p>
-            //   <p className="text-sm text-gray-500">Category: {project.category}</p>
-            //   <p className="text-sm text-gray-500">Tags: {project.tags.join(', ')}</p>
-            //   <a
-            //     href={project.link}
-            //     className="text-purple-600 hover:underline mt-2 inline-block"
-            //   >
-            //     View Project
-            //   </a>
-            // </div>
+            <PortfolioProjectCard
+              key={project.id}
+              project={project}
+              index={idx}
+              loading={false}
+            />
           ))
         ) : (
-          <div className="h-[40vh] w-full mx-auto  flex justify-center items-center lg:col-start-2 ">
-            <p className="text-2xl text-center">No projects found.</p>
+          <div className="h-[40vh] w-full mx-auto flex flex-col justify-center items-center lg:col-start-2 text-gray-700">
+            {/* Animated Icon */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ opacity: 1, scale: 1 }}
+            >
+              <TbSearch className="text-6xl text-purple-600" />
+            </motion.div>
+
+            {/* Message */}
+            <motion.p
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ opacity: 1, scale: 1 }}
+              className="text-2xl font-semibold mt-4"
+            >
+              No projects found.
+            </motion.p>
+
+            {/* CTA Button */}
+            <motion.button
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ opacity: 1, scale: 0.9 }}
+              className="mt-4 px-6 py-2 bg-purple-800 text-white rounded-full shadow-md hover:bg-purple-700 transition"
+              onClick={() => setsearchQuery('')}
+            >
+              Clear Search
+            </motion.button>
           </div>
         )}
       </div>
